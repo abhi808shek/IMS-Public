@@ -89,7 +89,9 @@ const Header = () => {
                           <p class="dropedown_navitem mb-0">Real-time analytics</p>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center align-items-center p-2 mx-0 mt-1">
+                      </Link >
+                      <Link className="dropdown-item" href="#">
+                      <div className="d-flex justify-content-center align-items-center p-2 mx-0">
                         <div className="col-auto pe-3">
                             <div className="round_circle">
                               <StackIcon className="icon" />
@@ -100,7 +102,9 @@ const Header = () => {
                           <p class="dropedown_navitem mb-0">Stock management</p>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center align-items-center p-2 mx-0 mt-1">
+                      </Link>
+                      <Link className="dropdown-item" href="#">
+                      <div className="d-flex justify-content-center align-items-center p-2 mx-0">
                         <div className="col-auto pe-3">
                             <div className="round_circle">
                               <BarChartIcon className="icon" />
@@ -136,7 +140,9 @@ const Header = () => {
                           <p class="dropedown_navitem mb-0">Store management</p>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center align-items-center p-2 mx-0 mt-1">
+                      </Link>
+                      <Link className="dropdown-item" href="#">
+                      <div className="d-flex justify-content-center align-items-center p-2 mx-0">
                         <div className="col-auto pe-3">
                             <div className="round_circle">
                               <TruckIcon className="icon" />
@@ -147,7 +153,9 @@ const Header = () => {
                           <p class="dropedown_navitem mb-0">Supply chain</p>
                         </div>
                       </div>
-                      <div className="d-flex justify-content-center align-items-center p-2 mx-0 mt-1">
+                      </Link>
+                      <Link className="dropdown-item" href="#">
+                      <div className="d-flex justify-content-center align-items-center p-2 mx-0">
                         <div className="col-auto pe-3">
                             <div className="round_circle">
                               <CircleIcon className="icon" />

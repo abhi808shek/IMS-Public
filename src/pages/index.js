@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import EachSolution from "@/pages/eachSolution/index";
+import EachSolution from "@/pages/each-solution";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
