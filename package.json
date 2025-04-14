@@ -1,0 +1,21 @@
+{
+  "name": "ims-public",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "bootstrap": "^5.3.5",
+    "next": "15.3.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-responsive": "^10.0.1",
+    "react-select": "^5.10.1"
+  }
+}
