@@ -1,8 +1,9 @@
 import Head from "next/head";
-// import SortlySolutions from "/images/pages/each-solution/sortly_solutions.png"
 import Image from "next/image";
 import { Roboto } from 'next/font/google'
 import { useState } from "react";
+import Link from "next/link";
+import ArrowRightIcon from "@/assets/icon/arrow-right.svg"
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -217,62 +218,176 @@ export default function Features() {
 				<div className="container mb-5">
 					<h1 className={`${roboto.className} text-center mb-4`}>Sortly construction inventory <br /> management software<br /> feature</h1>
 				</div>
-				<div className="container col-md-8 mb-5">
+				<div className="container col-md-7 tabs">
 					<div className="d-flex justify-content-between">
 						<span onClick={() => setTab("Organizing")} className={`${roboto.className} ${tab === "Organizing" ? "active " : ""} main_solution_bg5_tabs`}>Organizing </span>
 						<span onClick={() => setTab("Managing")} className={`${roboto.className} ${tab === "Managing" ? "active " : ""} main_solution_bg5_tabs`}>Managing</span>
 						<span onClick={() => setTab("Reporting")} className={`${roboto.className} ${tab === "Reporting" ? "active " : ""} main_solution_bg5_tabs`}>Reporting</span>
 					</div>
 				</div>
-				<div className="container">
-					<div className="row">
-						<div className="col-md-4 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
+				<div className="tabs_content">
+					<div className="container cards">
+						<div className="row justify-content-center">
+							<div className="col-md-3 px-4 mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
 
-						<div className="col-md-4 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
+							<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
 
-						<div className="col-md-4 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-md-3 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
-
-						<div className="col-md-3 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
-
-						<div className="col-md-3 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-						</div>
-
-						<div className="col-md-3 mb-5 work_order d-flex flex-column justify-content-between align-items-center">
-							<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
-							<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
-							<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							<div className="col-md-3  px-4  mb-5  mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
 						</div>
 					</div>
+					<div className="container cards">
+						<div className="row justify-content-center align-iems-center">
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
 
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+
+								<div className="col-md-3 px -4 mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+						</div>
+
+					</div>
+					<div className="container cards">
+						<div className="row justify-content-center">
+							<div className="col-md-3 px-4 mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
+
+							<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
+
+							<div className="col-md-3  px-4  mb-5  mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+								<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+								<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+								<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+							</div>
+						</div>
+					</div>
+					<div className="container cards">
+						<div className="row justify-content-center align-iems-center">
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+
+								<div className="col-md-3 px-4  mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+
+								<div className="col-md-3 px-4 mb-5 mb-lg-0 work_order d-flex flex-column justify-content-between align-items-center">
+									<Image src="/images/pages/each-solution/order.svg" alt="work_order" width={24} height={24} />
+									<h5 className={`${roboto.className} text-center`}>Easy Inventory Import</h5>
+									<p className={`${roboto.className} text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+								</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
+
+			<div className="main_Solution_bg6">
+				<div className="main_solution_content pb-0">
+					<div className="container mb-5">
+						<h1 className={`${roboto.className} text-center mb-5`}>Read more about working in Sortlye</h1>
+					</div>
+				</div>
+
+				<div className="container">
+					<div className="row justify-content-center align-items-center">
+						<div className="col-3">
+							<div class="card p-3">
+								<div style={{ position: "relative", width: "100%", height: "300px" }} className="img_conatiner">
+									<Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+								</div>
+
+								<div class="card-body">
+									<h5 className={`${roboto.className} card-title`}>Blog Post</h5>
+									<p class="card-text">"This product exceeded my expectations! The quality is superb, and the customer service was outstanding. I highly recommend it to anyone looking for reliability and style."</p>
+									<Link href="#" className="link_btn">Antiques Inventory Management <span className="ms-4"><ArrowRightIcon/></span></Link>
+								</div>
+							</div>
+						</div>
+						<div className="col-3">
+							<div class="card p-3">
+								<div style={{ position: "relative", width: "100%", height: "300px" }} className="img_conatiner">
+									<Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+								</div>
+
+								<div class="card-body">
+									<h5 className={`${roboto.className} card-title`}>Blog Post</h5>
+									<p class="card-text">"This product exceeded my expectations! The quality is superb, and the customer service was outstanding. I highly recommend it to anyone looking for reliability and style."</p>
+									<Link href="#" className="link_btn">Antiques Inventory Management <span className="ms-4"><ArrowRightIcon/></span></Link>
+								</div>
+							</div>
+						</div>
+						<div className="col-3">
+							<div class="card p-3">
+								<div style={{ position: "relative", width: "100%", height: "300px" }} className="img_conatiner">
+									<Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+								</div>
+
+								<div class="card-body">
+									<h5 className={`${roboto.className} card-title`}>Blog Post</h5>
+									<p class="card-text">"This product exceeded my expectations! The quality is superb, and the customer service was outstanding. I highly recommend it to anyone looking for reliability and style."</p>
+									<Link href="#" className="link_btn">Antiques Inventory Management <span className="ms-4"><ArrowRightIcon/></span></Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			
+					
+						
+
+					
 		</>
 	);
 }
