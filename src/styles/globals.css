@@ -108,6 +108,22 @@ a {
 	background-position: left;
 	color: white;
 }
+.secondary_fill_btn {
+	background-color: #FFF0F2 !important;
+	outline: 0;
+	border: 0;
+	width: fit-content;
+	color: #E12B3E !important;
+	padding: 0.5rem 1rem;
+	font-size: 14px;
+	font-weight: 400;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 12px;
+}
+.secondary_fill_btn:hover {
+	background-color: #FFF0F2;
+}
 
 .main_solution_hero .primary_fill_btn {
 	background-color: #E12B3E;
@@ -145,6 +161,12 @@ a {
 	background-color: #FFF0F2;
 }
 
+@media (min-width: 1400px) {
+    
+	.custom_container.container {
+        max-width: 1170px !important;
+    }
+}
 
 
 
@@ -694,8 +716,6 @@ a {
 }
 
 .main_solution_bg5 {
-	/* padding: 8.125rem 13.875rem;
-	padding-bottom: 0rem !important; */
 	margin-top: 130px;
 }
 .main_solution_bg5 h1 {
@@ -762,6 +782,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 
 
@@ -849,3 +870,203 @@ a {
 		padding: 1rem;
 	}
 }
+/* end main solution page */
+
+/* each feature page  */
+.each_feature_hero{
+	margin-bottom: 100px;
+}
+.each_feature_hero .each_feature_content h1{
+	font-weight: 700;
+	font-size: 64px;
+	color:#000000;
+}
+.each_feature_hero .each_feature_content p{
+	font-weight: 700;
+	font-size: 32px;
+	color:#666666;
+	line-height: 150%;
+}
+.each_feature_hero_bg{
+	background-image: url('/images/pages/each-feature/bg2.svg');
+	background-size: 100%;
+	background-position: center 120%;
+	background-repeat: no-repeat;
+	padding-bottom:2rem;
+}
+.each_feature_hero_container{
+	margin-top: 102px !important;
+	padding-bottom: 65px;
+}
+.each_feature_bg{
+	width: 800px;
+    height: 500px;
+    position: relative;
+	margin-top:4.875rem;
+}
+.each_feature_heading{
+	margin-bottom: 100px;
+}
+.each_feature_heading h2{
+	font-weight: 700;
+	font-size: 48px;
+	color:#333333;
+	line-height: 100%;
+}
+.each_feature_heading p{
+	font-weight: 400;
+	font-size: 32px;
+	color:#666666;
+	line-height: 110%;
+}
+.check_list .list p{
+	font-size: 24px;
+	font-weight: 700;
+	color:#333333;
+
+}
+.check_list .list p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color:#201C44;
+}
+.check_list_bg{
+	width:470px;
+	height: 409px;
+	position: relative;
+}
+.each_feature_inventory_right{
+	margin-bottom: 100px;
+}
+.each_feature_inventory_left{
+	margin-bottom: 174px;
+}
+.each_feature_inventory_bg{
+	background-image: url(/images/pages/each-feature/bg4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.each_feature_inventory_bg_left{
+	background-image: url(/images/pages/each-feature/bg5.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.each_feature_inventory_content{
+	padding-top: 59px;
+	/* margin-top: 100px; */
+}
+.construction_supplies{
+	margin-bottom: 133px;
+}
+.construction_supplies .ellipse_container_left{
+	margin-bottom: 133px;
+}
+.ellipse_left_bg {
+	background-image: url('/images/pages/each-feature/bg6.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* padding: 3rem; */
+	height: 100%;
+	padding-bottom: 42px;
+}
+.ellipse_left_bg .image_container{
+	padding-top: 81px;
+    padding-left: 52px;
+    padding-right: 0;
+}
+.ellipse_right_bg {
+	background-image: url('/images/pages/each-feature/bg7.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* padding: 3rem; */
+	height: 100%;
+	padding-bottom: 42px;
+}
+.ellipse_right_bg .image_container{
+	padding-top: 81px;
+    padding-right: 82px;
+    padding-left: 0;
+}
+
+.inventory_import .image_box{
+	background-image: url('/images/pages/each-feature/bg7.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 131px;
+    height: 113px;
+}
+.inventory_card .card_sub_heaidng{
+	font-size: 13px;
+	color:#666666;
+	line-height: 125%;
+}
+.inventory_container{
+	margin-bottom: 87px;
+}
+.inventory_container:last-child{
+	margin-bottom: 0px;
+}
+
+.inventory_import {
+	position: relative;
+	width: 100%;
+	height: 100%; /* or whatever fits your layout */
+	overflow: hidden;
+	margin-bottom: 100px;
+  }
+  .inventory_import{
+	padding-top: 99px;
+	padding-bottom: 268px;
+  }
+  .inventory_import .bg_image {
+	position: absolute;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: fill; /* or 'cover' / 'contain' based on your need */
+	z-index: -1;
+  }
+  .inventory_import .bottom_text{
+	position: absolute;
+	bottom:7%;
+	left:0;
+	right:0;
+  }
+  .inventory_import .bottom_text p{
+	color:#666666;
+	font-size: 18px;
+  }
+  .inventory_import .bottom_text p .redirect_link	{
+	color:#E12B3E;
+	text-decoration: none;
+  }
+  .inventory_management{
+	margin-bottom: 106px;
+  }
+  .inventory_management_card{
+	background-color: #F1E9F9 !important;
+	border-radius: 12px !important;
+	box-shadow: 0px 4px 4px 0px #00000026;
+	border:0px !important;
+	outline: 0px !important;
+
+  }
+  .inventory_card h5{
+	font-weight: 700;
+	font-size: 24px;
+  }
+  .inventory_card p{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color:#666666;
+  }
+/* end each feature page  */

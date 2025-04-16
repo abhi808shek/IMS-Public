@@ -388,6 +388,10 @@ export default function Features() {
 				</div>
 			</div>
 
+					
+		</>
+	);
+}
 
 
 
@@ -396,7 +400,3 @@ export default function Features() {
 					
 						
 
-					
-		</>
-	);
-}
