@@ -7,6 +7,7 @@ import EachSolution from "@/pages/each-solution";
 import { Container, Row, Col } from "react-bootstrap";
 import EachFeature from "./each-feature";
 import Enterprise from "./enterprise";
+import EachIndustry from "./each-industry";
 
 export default function Home() {
 	return (
@@ -15,7 +16,8 @@ export default function Home() {
 			<div>
 				{/* <EachSolution/> */}
 				{/* <EachFeature/> */}
-				<Enterprise/>
+				{/* <Enterprise/> */}
+				<EachIndustry/>
 			</div>
 			<Footer />
     	</>

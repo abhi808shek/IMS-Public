@@ -920,17 +920,17 @@ a {
 	line-height: 110%;
 }
 
-.inventory_checklist .check_list p{
+.inventory_checklist .check_list p, .construction_supplies_checklist .check_list p{
 	font-size: 24px;
 	font-weight: 700;
 	color:#333333;
 
 }
-.inventory_checklist .check_list .heading_tag span {
+.inventory_checklist .check_list .heading_tag span, .construction_supplies_checklist .check_list .heading_tag span{
 	color:#E12B3E;
 
 }
-.inventory_checklist .check_list .list p{
+.inventory_checklist .check_list .list p, .construction_supplies_checklist .check_list .list p{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -1178,3 +1178,63 @@ a {
 	margin-bottom: 175px;
   }
 /* end enterprise page */
+
+/* each industry page*/
+.each_industry_hero h1{
+	font-size: 64px;
+}
+.each_industry_hero p{
+	font-size: 32px;
+	color:#666666;
+	line-height: 150%;
+}
+.each_industry_hero .heading{
+	margin-bottom: 78px;
+}
+.video-frame-wrapper {
+	max-width: 926px; /* as close to 926px as needed */
+	margin: auto;
+	margin-bottom: 110px;
+	background-color: #000;
+	border-radius: 10px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+  }
+
+  .video-frame-wrapper iframe {
+	width: 100%;
+	height: 532px; /* as per screenshot height */
+	display: block;
+  }
+  .each_industry_hero .bg_img{
+	/* position: absolute; */
+    /* bottom: -20%;
+    width: 100%;
+    height: 614px;
+    z-index: -1;
+    left: 0; */
+  }
+  .img_box{
+	width: 642px;
+    height: 558px;
+	position: relative;
+
+  }
+  .construction_supplies_checklist_bg{
+	background-image: url(/images/pages/each-industry/bg3.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .each_industry_construstion_supply_checklists .ellipse_left_bg{
+	background-image: url('/images/pages/each-industry/bg4.svg');
+  }
+  .each_industry_construstion_supply_checklists .ellipse_container_left{
+	margin-bottom: 150px;
+  }
+/* each industry end */
