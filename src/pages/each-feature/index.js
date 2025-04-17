@@ -2,6 +2,7 @@ import React from 'react'
 import { Roboto } from 'next/font/google'
 import Image from "next/image";
 import Link from 'next/link';
+import { useState } from "react";
 
 
 const roboto = Roboto({
@@ -10,6 +11,7 @@ const roboto = Roboto({
 })
 
 const EachFeature = () => {
+     const [tab, setTab] = useState("Managing");
   return (
     <>
     <div className='each_feature_hero'>
@@ -29,7 +31,7 @@ const EachFeature = () => {
         </div>
     </div>
 
-    <div className='each_feature_inventory_right'>
+    <div className='each_feature_inventory'>
         <div className='custom_container container '>
             <div className='row justify-content-center align-items-center'>
                 <div className='col-12 each_feature_heading'>
@@ -38,15 +40,13 @@ const EachFeature = () => {
                         Sortly helps businesses of all sizes track the inventory and assets that 
                         make their company run- saving them time, money, ans stress.
                     </p>
-
                 </div>
-
             </div>
         </div>
 
-        <div className='each_feature_inventory_bg'>
+        <div className='inventory_checklist inventory_checklist_bg_right'>
             <div className='custom_container container '>
-                <div className='row justify-content-between each_feature_inventory_content'>
+                <div className='row justify-content-between inventory_checklist_content'>
                     <div className='col-4 pe-5'>
                         <div className='check_list'>
                             <p>Organize and automate your inventory at the touch of a button. </p>
@@ -75,13 +75,11 @@ const EachFeature = () => {
                 </div>
             </div>
         </div>
-    </div>
 
-    <div className='each_feature_inventory_left'>
-        <div className='each_feature_inventory_bg_left'>
+        <div className='inventory_checklist inventory_checklist_bg_left'>
             <div className='custom_container container '>
-                <div className='row justify-content-between each_feature_inventory_content'>
-                <div className='col-6 '>
+                <div className='row justify-content-between inventory_checklist_content'>
+                    <div className='col-6 '>
                         <div className='check_list_bg ms-auto'>
                             <Image src="/images/pages/each-feature/bg3.svg" alt="upload" fill style={{ objectFit: 'cover' }} />
                         </div>
@@ -110,7 +108,9 @@ const EachFeature = () => {
                 </div>
             </div>
         </div>
+
     </div>
+
 
     <div className='construction_supplies'>
         <div className='custom_container container '>
@@ -158,7 +158,7 @@ const EachFeature = () => {
                 </div>
             </div>
         </div>
-        <div className='custom_container container '>
+        <div className='custom_container container ellipse_container_right'>
             <div className='row justify-content-between align-items-center'>
                 <div className='col-4 ps-5'>
                     <div className='check_list pt-4'>
@@ -184,11 +184,11 @@ const EachFeature = () => {
                         <Image className="me-0" src="/images/pages/each-solution/sortly_solutions.png" alt="upload" width={470} height={409} />	
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>
+                
+                
 
     <div className='inventory_import'>
         <Image src="/images/pages/each-feature/bg8.svg" alt="background" fill className="bg_image" />
@@ -207,112 +207,125 @@ const EachFeature = () => {
 
             </div>
         </div>
+       
+
         <div className='custom_container container'>
-            <div className='row justify-content-center align-items-center inventory_container'>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+            <div className='row '>
+                <div className="container col-md-6 inventory_import_tabs">
+                    <div className="d-flex justify-content-between">
+                        <span onClick={() => setTab("Organizing")} className={`${roboto.className} ${tab === "Organizing" ? "active " : ""} inventory_import_tab`}>Organizing </span>
+                        <span onClick={() => setTab("Managing")} className={`${roboto.className} ${tab === "Managing" ? "active " : ""} inventory_import_tab`}>Managing</span>
+                        <span onClick={() => setTab("Reporting")} className={`${roboto.className} ${tab === "Reporting" ? "active " : ""} inventory_import_tab`}>Reporting</span>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                 </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
             </div>
-            <div className='row justify-content-center align-items-center inventory_container'>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+            <div className='inventory_import_tab_content'>
+                <div className='row justify-content-center align-items-center inventory_container'>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
                 </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                <div className='row justify-content-center align-items-center inventory_container'>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
                 </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                <div className='row justify-content-center align-items-center inventory_container'>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
-            </div>
-            <div className='row justify-content-center align-items-center inventory_container'>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
                 </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                <div className='row justify-content-center align-items-center inventory_container'>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
                     </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
+                    <div className='col-3 px-5 inventory_card text-center'>
+                        <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
+                            <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
+                        </div>
+                        <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
+                        <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
+                    </div>  
                 </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
-            </div>
-            <div className='row justify-content-center align-items-center inventory_container'>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
-                <div className='col-3 px-5 inventory_card text-center'>
-                    <div className='image_box d-flex justify-content-center align-items-center mb-3 mx-auto'>
-                        <Image  src="/images/pages/each-feature/user.svg" alt="upload" width={106} height={106} />
-                    </div>
-                    <p className={`${roboto.className} fw-bold card_heading mb-3`}>Easy Inventory Import</p>
-                    <p className={`${roboto.className} card_sub_heaidng text-center`}>Easy inventory import transfers yor missing inventory into Sortly with the touch of buttion</p>
-                </div>  
             </div>
         </div>
         <div className='row bottom_text justify-content-center '>
@@ -321,6 +334,8 @@ const EachFeature = () => {
             </div>
 
         </div>
+
+            
     </div>
 
     <div className='inventory_management'>

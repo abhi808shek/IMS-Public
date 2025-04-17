@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import EachSolution from "@/pages/each-solution";
 import { Container, Row, Col } from "react-bootstrap";
 import EachFeature from "./each-feature";
+import Enterprise from "./enterprise";
 
 export default function Home() {
 	return (
@@ -13,7 +14,8 @@ export default function Home() {
 			<Header />
 			<div>
 				{/* <EachSolution/> */}
-				<EachFeature/>
+				{/* <EachFeature/> */}
+				<Enterprise/>
 			</div>
 			<Footer />
     	</>

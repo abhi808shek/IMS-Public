@@ -919,42 +919,58 @@ a {
 	color:#666666;
 	line-height: 110%;
 }
-.check_list .list p{
+
+.inventory_checklist .check_list p{
 	font-size: 24px;
 	font-weight: 700;
 	color:#333333;
 
 }
-.check_list .list p{
+.inventory_checklist .check_list .heading_tag span {
+	color:#E12B3E;
+
+}
+.inventory_checklist .check_list .list p{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
 	color:#201C44;
 }
-.check_list_bg{
+.inventory_checklist .check_list_bg{
 	width:470px;
 	height: 409px;
 	position: relative;
 }
-.each_feature_inventory_right{
-	margin-bottom: 100px;
+.each_feature_inventory{
+	margin-bottom: 175px;
 }
-.each_feature_inventory_left{
-	margin-bottom: 174px;
+.inventory_import_tabs{
+	margin-bottom: 6rem;
 }
-.each_feature_inventory_bg{
+.inventory_import_tab {
+	font-size: 24px;
+	font-weight: 700;
+	color: #666666;
+	cursor: pointer;
+}
+.inventory_import_tab.active {
+	color: #E12B3E;
+	border-bottom: 2px solid #E12B3E;
+}
+.inventory_checklist_bg_right{
 	background-image: url(/images/pages/each-feature/bg4.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+	margin-bottom: 100px;
 }
-.each_feature_inventory_bg_left{
+.inventory_checklist_bg_left{
 	background-image: url(/images/pages/each-feature/bg5.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
 }
-.each_feature_inventory_content{
+.inventory_checklist_content{
 	padding-top: 59px;
 	/* margin-top: 100px; */
 }
@@ -1070,3 +1086,95 @@ a {
 	color:#666666;
   }
 /* end each feature page  */
+
+/* enterprise page */
+.enterprise_hero{
+	padding-top: 56px;
+	margin-bottom: 90px;
+}
+.enterprise_hero h1{
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 51px;
+	padding-top: 56px;
+}
+.enterprise_hero p{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 150%;
+	color:#666666;
+}
+.enterprise_hero .bg_img{
+	bottom: 0;
+    right: 0;
+    width: fit-content;
+    z-index: -1;
+}
+.custom-form {
+	/* border: 2px solid #007bff; */
+	border-radius: 0.583rem;
+	padding: 4.313rem 1.516rem ;
+	max-width: 650px;
+	margin: 55px;
+	margin-top: 20px;
+	margin-right: 0px;
+	box-shadow: 0px 0px 4.66px 0px #00000036;
+	background-color: #fff;
+  }
+.form_inputs_fields{
+	margin-bottom: 37.3px;
+}
+  .form-floating > .form-control {
+	border-radius: 10px;
+	border: 1.17px solid #D8DDE3 !important;
+  }
+  .form-floating > .form-control:focus{
+	box-shadow: none;
+	padding: 0rem .5rem !important;
+	border: 1.17px solid #D8DDE3 !important;
+  }
+  .form-floating>.form-control:focus~label{
+	transform: none !important;
+  }
+  .form-check-input.checkbox{
+	width:1.5rem;
+	height:1.5rem;
+  }
+
+  .form-floating > label {
+	color: #999;
+	font-weight: 700;
+	position: absolute;
+	background-color: #fff;
+	color:#999999;
+    top: -13px !important;
+    left: 7px !important;
+    z-index: 2;
+    max-width: 100%;
+    height: fit-content !important;
+    padding: 0rem .5rem !important;
+  }
+
+  .form-label-section {
+	font-weight: 600;
+	color: #6A7682;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size:18.65px;
+	margin-bottom: 27px;
+  }
+
+  .form-check-label {
+	font-weight: 700;
+	color: #768898;
+	font-size: 16.32px;
+  }
+
+  .terms-text span {
+	color: red;
+	font-weight: 600;
+  }
+  .entrprise_large_business{
+	margin-bottom: 175px;
+  }
+/* end enterprise page */
