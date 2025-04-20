@@ -76,9 +76,9 @@ a {
 	border: 0 !;
 	width: fit-content !important;
 	color: #ffff !important;
-	padding: 0.5rem 1rem;
-	font-size: 1rem;
-	font-weight: normal;
+	padding: 0.5rem 1rem !important;
+	font-size: 1rem !important;
+	font-weight: normal !important;
 	overflow: hidden;
 	white-space: nowrap;
 	border-radius: 8px !important;
@@ -88,6 +88,7 @@ a {
 	background-position: left;
 	color: white;
 }
+
 .primary_btn_lg {
 	background: linear-gradient(to left, #e12b3e 50%, #e12b3ee6 50%);
 	background-size: 200% 100%;
@@ -1922,9 +1923,118 @@ a {
 	);
 	inset: -1rem;
 }
+.simple_inventory{
+	margin-bottom: 3.625rem;
+}
+.simple_inventory .simple_inventory_heading{
+	margin-bottom: 81px;
+}
+.simple_inventory .simple_inventory_heading h2{
+	font-size: 64px;
+	color:#000000;
+	margin-bottom:3.188rem;
+	
+}
+.simple_inventory .simple_inventory_heading p{
+	font-size: 32px;
+	color:#666666;
+	line-height: 2;
+}
+.simple_inventory .simple_inventory_heading p span{
+	color: #E12B3E;
+}
+.simple_inventory .simple_inventory_heading  .sub_title{
+	margin-bottom: 3.188rem;
+}
+.simple_inventory_card_wrapper .card{
+	
+	border: none;
+}
+.simple_inventory_card_wrapper .card .card_img{
+	width: 150px;
+}
+.simple_inventory_card_wrapper .card_text p{
+	color:#BB3194;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 100%;
+}
+.water_mark_wrapper p{
+	font-size: 4.5rem;
+	font-weight: 700;
+	line-height: 1;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	background-image: linear-gradient(to right, #E12B3E, #9333EA, #EC4899);
+	opacity: 0.1;
+}
+.water_mark_wrapper .water_mark{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.software_product .software_product_wrapper{
+	margin-bottom: 100px;
+}
+.software_product .software_product_wrapper .title{
+	font-size: 30px;
+	color:#E12B3E;
+	margin-bottom: 3.125rem;
+}
+.software_product .software_product_wrapper .description{
+	font-size: 24px;
+	color:#555555;
+	margin-bottom: 3.125rem;
+}
+.software_product .software_product_wrapper .primary_btn.btn_md{
+	padding: 12px 58px !important;
+}
+.software_product .software_product_wrapper .img_wrapper{
+	width: 400px;
+}
 
-
-
+.software_product_wrapper.left{
+	background-image: url("/images/pages/home-page/bg5.svg");
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.software_product_wrapper.right{
+	background-image: url("/images/pages/home-page/bg6.svg");
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.possibilities_wrapper .title{
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	background-image: linear-gradient(to right, #E12B3E, #9333EA, #3B82F6);
+}
+.possibilities_wrapper .sub_title{
+	color:#4b5563;
+	line-height: 1.625;
+	font-size: 1.125rem;
+}
+.inventory_control_wrapper .title{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	background-image: linear-gradient(to right, #E12B3E, #A855F7);
+}
+.inventory_control_wrapper .sub_title{
+	font-size: 1rem;
+    line-height: 1.625;
+	color:#4b5563;
+}
+.inevtory_car p{
+	color:#4b5563;
+}
 /* end home */
 
 /* main solution page start */
@@ -1934,6 +2044,9 @@ a {
 	border: 0px !important;
 	outline: none !important;
 	border-radius: 32px !important;
+}
+.main-solution-card .img_wrapper{
+	width: 70px;
 }
 .bd-top-green {
 	border-top: 6px solid #DAF9BA !important;

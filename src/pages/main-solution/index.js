@@ -40,7 +40,7 @@ export default function MainSolution() {
 					<div className="col-md-9">
 						<div className="main_solution_content pb-0">
 							<div className="container mb-5">
-								<h3 className={`${roboto.className} mb-5 w-75`}>A business toolkit for <br />every business</h3>
+								<h3 className={`${roboto.className} fw-bold mb-5 w-75`}>A business toolkit for <br />every business</h3>
 							</div>
 
 							<div className="container mb-5">
@@ -50,8 +50,8 @@ export default function MainSolution() {
 											<div className="col-md-6 col-lg-4 mb-5 pe-4 ">
 												<div class="card py-4 px-2 main-solution-card bd-top-green">
 													<div class="card-body">
-														<div className='icon position-relative mb-3'>
-															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'cover' }} />
+														<div className='icon position-relative ms-2 mb-3 ratio ratio-1x1 img_wrapper'>
+															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
 														</div>
 														<h5 className={roboto.className+" mb-2 fw-bold card-title"}>Antiques</h5>
 														<p className={roboto.className + " mb-2"} style={{fontSize: "1rem", color: "#666666"}}>Track,organize and manage all your business’s inventory</p>
@@ -71,8 +71,8 @@ export default function MainSolution() {
 											<div className="col-md-6 col-lg-4 mb-5 pe-4 ">
 												<div class="card py-4 px-2 main-solution-card bd-top-blue">
 													<div class="card-body">
-														<div className='icon position-relative mb-3'>
-															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'cover' }} />
+													    <div className='icon position-relative ms-2 mb-3 ratio ratio-1x1 img_wrapper'>
+															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
 														</div>
 														<h5 className={roboto.className+" mb-2 fw-bold card-title"}>Antiques</h5>
 														<p className={roboto.className + " mb-2"} style={{fontSize: "1rem", color: "#666666"}}>Track,organize and manage all your business’s inventory</p>
@@ -92,8 +92,8 @@ export default function MainSolution() {
 											<div className="col-md-6 col-lg-4 mb-5 pe-4 ">
 												<div class="card py-4 px-2 main-solution-card bd-top-purple">
 													<div class="card-body">
-														<div className='icon position-relative mb-3'>
-															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'cover' }} />
+													    <div className='icon position-relative ms-2 mb-3 ratio ratio-1x1 img_wrapper'>
+															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
 														</div>
 														<h5 className={roboto.className+" mb-2 fw-bold card-title"}>Antiques</h5>
 														<p className={roboto.className + " mb-2"} style={{fontSize: "1rem", color: "#666666"}}>Track,organize and manage all your business’s inventory</p>
@@ -113,8 +113,8 @@ export default function MainSolution() {
 											<div className="col-md-6 col-lg-4 mb-5 pe-4 ">
 												<div class="card py-4 px-2 main-solution-card bd-top-green2">
 													<div class="card-body">
-														<div className='icon position-relative mb-3'>
-															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'cover' }} />
+													    <div className='icon position-relative ms-2 mb-3 ratio ratio-1x1 img_wrapper'>
+															<Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
 														</div>
 														<h5 className={roboto.className+" mb-2 fw-bold card-title"}>Antiques</h5>
 														<p className={roboto.className + " mb-2"} style={{fontSize: "1rem", color: "#666666"}}>Track,organize and manage all your business’s inventory</p>

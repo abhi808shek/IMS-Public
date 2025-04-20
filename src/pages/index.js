@@ -14,6 +14,8 @@ import AboutUs from "./about-us";
 import Blogs from "./blogs";
 import HomePage from "./home";
 import MainSolution from "./main-solution";
+import MainIndustries from "./main-industry";
+import BlogDetail from "./blog-details";
 
 export default function Home() {
 	return (
@@ -27,8 +29,11 @@ export default function Home() {
 				{/* <MainFeature/> */}
 				{/* <HelpCenter/> */}
 				{/* <AboutUs/> */}
+				{/* <BlogDetail /> */}
+				{/* <BlogDetail/> */}
 				{/* <Blogs/> */}
 				{/* <MainSolution/> */}
+				{/* <MainIndustries/> */}
 				<HomePage/>
 			</div>
 			<Footer />

@@ -9,7 +9,7 @@ const roboto = Roboto({
 })
 
 
-const Blogs = () => {
+const AboutUs = () => {
 
     const [filter, setFilter] = useState("All")
     const filterData = [
@@ -48,7 +48,7 @@ const Blogs = () => {
 
                     <div className='col-7 position-relative'>
                         <div className='about_hero_img position-relative'>
-                            <Image className="me-4" src="/images/pages/blogs/bg1.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
+                            <Image className="me-4" src="/images/pages/blogs/bg2.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
                             <Image className="me-4 hero_img_bg" src="/images/pages/about-us/bg2.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
                         </div>
                     </div>
@@ -84,7 +84,7 @@ const Blogs = () => {
                         <div className="row">
                             {
                                 Array(15).keys().map((e, i) => (
-                                    <div className="col-md-6 col-lg-4">
+                                    <Link href="/blogs/blog-detail" style={{textDecoration: "none"}}  className="col-md-6 col-lg-4">
                                         <div key={`blogsCard` + i} class={`card rounded blogs-card mb-4 position-relative ${i % 2 === 0 ? "card1" : "card2"}`}>
                                             <div className="blog-card-overlay rounded position-absolute w-100 h-100" />
                                             <div class="card-body d-flex flex-column justify-content-end">
@@ -98,7 +98,7 @@ const Blogs = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))
                             }
                         </div>
@@ -121,4 +121,4 @@ const Blogs = () => {
     )
 }
 
-export default Blogs
+export default AboutUs
