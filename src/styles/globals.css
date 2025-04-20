@@ -66,6 +66,27 @@ a {
 	width: 15px;
 	height: 15px;
 }
+.gradient-pulse-bg {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+	  to right,
+	  rgba(225, 43, 62, 0.2),
+	  rgba(168, 85, 247, 0.2)
+	);
+	z-index: 0;
+	border-radius: 20px;
+	animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	transition: animation 0.3s ease-in-out;
+}
+@keyframes pulse {
+	0%, 100% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0.4;
+	}
+  }
 
 .primary_btn {
 	background: linear-gradient(to left, #e12b3e 50%, #e12b3ee6 50%);
@@ -2005,7 +2026,7 @@ a {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.possibilities_wrapper .title{
+.possibilities_wrapper .top_heading{
 	font-size: 3rem;
 	font-weight: 700;
 	line-height: 1;
@@ -2014,7 +2035,7 @@ a {
 	display: inline-block;
 	background-image: linear-gradient(to right, #E12B3E, #9333EA, #3B82F6);
 }
-.possibilities_wrapper .sub_title{
+.possibilities_wrapper .sub_heading{
 	color:#4b5563;
 	line-height: 1.625;
 	font-size: 1.125rem;
@@ -2032,8 +2053,224 @@ a {
     line-height: 1.625;
 	color:#4b5563;
 }
-.inevtory_car p{
+.inevtory_card.card{
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	/* transition: transform 0.3s ease;  */
+	transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.inevtory_card.card:hover{
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 8px 10px -6px rgba(0, 0, 0, 0.1);
+	transform: translateY(-8px);
+}
+.inevtory_card .card-text{
 	color:#4b5563;
+	font-size: 1rem;
+}
+.inevtory_card .card-title{
+	font-size: 1.125rem;
+    line-height: 1.75rem;
+	font-weight: 600;
+}
+.inevtory_card .img_bg{
+	width: fit-content;
+    height: 2.5rem;
+    background-color: #e12b3e1a;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+	cursor: pointer;
+}
+.inevtory_card .img_bg .icon{
+	color: #e12b3e;
+	width: 22px;
+}
+
+.img_bg:hover .gradient-pulse-bg {
+	animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+  
+.img_bg:hover .icon {
+	opacity: 0.6;
+}
+.possibilities_wrapper{
+	background-image: linear-gradient(to bottom right,#ffffff,#f9fafb,#ffffff);
+
+}
+.possibilities_wrapper .possibilities_wrapper_container{
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.possibilities_wrapper .bg1{
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(
+    circle at 80% 20%,
+    rgba(139, 92, 246, 0.1),
+    transparent 50%
+  );
+}  
+.possibilities_wrapper .bg2{
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(
+		circle at 20% 80%,
+		rgba(225, 43, 62, 0.1),
+		transparent 50%
+	  );
+}  
+.possibilities_wrapper .left_panal:hover  .img_gradiant{
+	opacity: 1;
+}
+.possibilities_wrapper .left_panal .img_wrapper_outer{
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.possibilities_wrapper .left_panal .image_wrapper{
+	border-radius: 20px;
+	overflow: hidden;
+}
+.possibilities_wrapper .left_panal .img_gradiant{
+	width: 100%;
+	height: 100%;
+	top:0;
+	background-image: linear-gradient(
+		to right,
+		rgba(225, 43, 62, 0.2),
+		rgba(168, 85, 247, 0.2),
+		rgba(225, 43, 62, 0)
+	  );
+	transition-property: opacity;
+	transition-duration: 500ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	opacity: 0;
+}
+.possibilities_wrapper .left_panal .floating_cards.total_items_card .card_text .title{
+	font-weight: 600;
+	background-clip: text;
+	background-image: linear-gradient(to right, #E12B3E, #a855f7);
+	color: transparent;
+	font-size: 1rem;
+}
+.total_items_card .card_text .sub_title{
+	font-weight: 700;
+	color:#e12b3e;
+	line-height: 2rem;
+	font-size: 1.5rem;
+}
+.possibilities_wrapper .left_panal .floating_cards.live_tracking .card_text .title{
+	font-size: 0.875rem;
+    line-height: 1.25rem;
+	font-weight: 600;
+	color: #000000;
+}
+.possibilities_wrapper .left_panal .floating_cards{
+	border-radius: 20px;
+	width: fit-content;
+	background-color: #fff;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.possibilities_wrapper .left_panal .total_items_card .card_icon{
+	width: 48px;
+	height: 48px;
+	background-color: #e12b3e1a;
+	border-radius: 16px;
+	overflow: hidden;
+}
+.possibilities_wrapper .left_panal .total_items_card .card_icon .icon{
+	color:#e12b3e;
+	aspect-ratio: 4/3;
+	width: 30px;
+}
+.possibilities_wrapper .left_panal .live_tracking .card_icon .icon{
+	color:#e12b3e;
+	aspect-ratio: 4/3;
+	width: 30px;
+}
+.possibilities_wrapper .left_panal .total_items_card .card_icon .icon_bg{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+    to right,
+    rgba(225, 43, 62, 0.2),
+    rgba(168, 85, 247, 0.2)
+  );
+}
+.icon_bg:hover .gradient-pulse-bg {
+	animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.possibilities_wrapper .left_panal .floating_cards.live_tracking{
+	top: 3%;
+	left: 3%;
+}
+.possibilities_wrapper .left_panal .floating_cards.total_items_card{
+	bottom: -3%;
+	right: -3%;
+}
+.workflow_list h3{
+	font-size: 700;
+	font-size: 1.5rem;
+    line-height: 2rem;
+}
+.workflow_wrapper .workflow_list .text_small{
+	color:#4b5563;
+}
+.workflow_wrapper .workflow_list .card_sub_text{
+	color:#4b5563;
+	font-size: 14px;
+}
+.arrow_icon{
+	aspect-ratio: 1/2;
+	width: 16px;
+	color:#9ca3af;
+}
+.workflow_list_wrapper .list_card .file_icon{
+	width: 40px;
+	height: 40px;
+	background-color: #e12b3e1a;
+	border-radius: 16px;
+}
+.workflow_list_wrapper .list_card .file_icon .icon{
+	aspect-ratio: 4/3;
+	width: 24px;
+	color: #e12b3e;
+}
+.workflow_list_wrapper .list_card{
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+	background-color: #fff;
+}
+.worflow_img{
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.worflow_img_wrapper .worflow_card{
+	width: fit-content;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+	bottom: -2rem;
+    left: -2rem;
+}
+.worflow_card .card_text{
+	color: #e12b3e;
+	font-size: 1.5rem;
+    line-height: 2rem;
+}
+.worflow_card .icon_outer{
+	width: 40px;
+	height: 40px;
+	background-color: #e12b3e1a;
+	border-radius: 16px;
+}
+.worflow_card .icon_outer .icon{
+	aspect-ratio: 4/3;
+	width: 24px;
+	color: #e12b3e;
 }
 /* end home */
 

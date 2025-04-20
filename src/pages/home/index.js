@@ -3,7 +3,12 @@ import Image from "next/image";
 import { Roboto } from 'next/font/google'
 import PlayCircle from "@/assets/icon/play-circle-line.svg"
 import Rocket from "@/assets/icon/rocket-line.svg"
-// import CurvyFigure from "@/assets/icon/curvy-figure.svg"
+import Store from "@/assets/icon/store.svg"
+import Stack from "@/assets/icon/stack-line.svg"
+import RadarLine from "@/assets/icon/radar-line.svg"
+import FileList from "@/assets/icon/file-list.svg"
+import ArrowRight from "@/assets/icon/arrow-right-line.svg"
+import FlowChart from "@/assets/icon/flow-chart.svg"
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -224,56 +229,241 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className='possibilities_wrapper'>
-            <div className='row justify-content-center'>
-                <div className='col-8 text-center'>
-                    <h3  className={`${roboto.className} title fw-bod text-center mb-4`}>One Platform, Endless Possibilities</h3>
-                    <p className={`${roboto.className} sub_title fw-bod text-center`}>
-                        Experience the future of inventory management with our AI-powered system. Transform <br/>your operations with 
-                        cutting-edge features designed for the modern enterprise.
-                    </p>
+        <div className='possibilities_wrapper position-relative'>
+            <div className='bg1 position-absolute'></div>
+            <div className='bg2 position-absolute'></div>
+            <div className='possibilities_wrapper_container row mx-0'>
+                <div className='row justify-content-center'>
+                    <div className='col-8 text-center'>
+                        <h3  className={`${roboto.className} top_heading fw-bod text-center mb-4`}>One Platform, Endless Possibilities</h3>
+                        <p className={`${roboto.className} sub_heading fw-bod text-center`}>
+                            Experience the future of inventory management with our AI-powered system. Transform <br/>your operations with 
+                            cutting-edge features designed for the modern enterprise.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className='row mx-0'>
-                <div className='col-6'>
+                <div className='row mx-0'>
+                    <div className='col-6 left_panal position-relative'>
+                        <div className='img_wrapper_outer position-relative'>
+                            <div className='image_wrapper ratio ratio-4x3 position-relative'>
+                                <Image src="/images/pages/home-page/bg8.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
+                            </div>
+                            <div className='img_gradiant position-absolute'>
+                            </div>
+                        </div>
 
-                </div>
-                <div className='col-5 inventory_control_wrapper'>
-                    <h4 className={`${roboto.className} title fw-bod text-center mb-4`}>Complete Inventory Control</h4>
-                    <p className={`${roboto.className} sub_title fw-bod mb-4`}>
-                        Experience next-level inventory management with our AI-powered solution that 
-                        learns and adapts to your unique business requirements in real-time.
-                    </p>
-                    <div className='d-flex'>
-                    <div class="card inevtory_card">
-                        <div class="card-body">
-                            <div className='row'>
-                                <div className='col-auto'>
-                                    <div className='img_wrapper'>
-                                        <div className='img'>
-                                            <Image src="/Icons/store.svg" alt="upload" fill style={{ objectFit: 'conatin' }}  />
+                        <div className='floating_cards live_tracking p-4 position-absolute'>
+                            <div className='d-flex justify-content-center align-items-center'>
+                                <div className='card_icon d-flex justify-content-center align-items-center position-relative me-2'>
+                                <RadarLine className="icon"/>
+                                </div>
+                                    
+                                <div className='card_text'>
+                                    <p className='title mb-0'>Live Tracking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='floating_cards total_items_card p-4 position-absolute'>
+                            <div className='d-flex justify-content-center align-items-center'>
+                                <div className='card_icon d-flex justify-content-center align-items-center position-relative me-2'>
+                                    <div className='icon_bg gradient-pulse-bg  position-absolute'></div>
+                                    <Stack className="icon"/>
+                                </div>
+
+
+                                <div className='card_text'>
+                                    <p className='title mb-0'>Total Items</p>
+                                    <p className='sub_title mb-0'>25,430</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div className='col-5 inventory_control_wrapper'>
+                        <h4 className={`${roboto.className} title fw-bod text-center mb-4`}>Complete Inventory Control</h4>
+                        <p className={`${roboto.className} sub_title  mb-4`}>
+                            Experience next-level inventory management with our AI-powered solution that 
+                            learns and adapts to your unique business requirements in real-time.
+                        </p>
+                        <div className='row '>
+                            <div className='col-6 '>
+                            <div class="inevtory_card card p-3">
+                                <div class="card-body p-0">
+                                    <div className='row justify-content-start mx-0'>
+                                        <div className='col-2 pe-0'>
+                                        <div className='img_bg position-relative me-2'>
+                                        <div class="gradient-pulse-bg position-absolute"> </div>
+                                            <Store className="icon"/>
+
                                         </div>
+                                        </div>
+                                        <div className='col-10 ps-0'>
+                                        <div className='card_text'>
+                                            <h5 class="card-title">Smart Stock Management</h5>
+                                            <p className={`${roboto.className} card-text mb-0`}>
+                                                AI-powered tracking across multiple locations with 
+                                                predictive analytics
+                                            </p>
+
+                                        </div>
+
+                                        </div>
+
+                                    
+                                    
                                     </div>
-
+                                
                                 </div>
-
-
-                                <div className='col-10'>
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                </div>
+                            </div>
 
                             </div>
-                           
+                            <div className='col-6 '>
+                            <div class="inevtory_card card p-3">
+                                <div class="card-body p-0">
+                                    <div className='row justify-content-start mx-0'>
+                                        <div className='col-2 pe-0'>
+                                        <div className='img_bg position-relative me-2'>
+                                        <div class="gradient-pulse-bg position-absolute"> </div>
+                                            <Store className="icon"/>
+
+                                        </div>
+                                        </div>
+                                        <div className='col-10 ps-0'>
+                                        <div className='card_text'>
+                                            <h5 class="card-title">Smart Stock Management</h5>
+                                            <p className={`${roboto.className} card-text mb-0`}>
+                                                AI-powered tracking across multiple locations with 
+                                                predictive analytics
+                                            </p>
+
+                                        </div>
+
+                                        </div>
+
+                                    
+                                    
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                            </div>
+                        
+
                         </div>
-                    </div>
 
                     </div>
 
                 </div>
 
+                <div className='row'>
+                    <div className='col-6 workflow_wrapper'>
+                        <div className='row mx-0 align-item-center'>
+                            <div className='col-6'>
+                                <div className='workflow_list'>
+                                    <h3 className={`${roboto.className} fw-bold`}>Streamlined Workflows</h3>
+                                    <p className='text_small'>
+                                        Automate your business processes with integrated workflows 
+                                        for orders, invoicing, and delivery management.
+                                    </p>
+                                    <div className='workflow_list_wrapper'>
+                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 '>
+                                            <div className='d-flex'>
+                                                <div className='file_icon d-flex align-items-center justify-content-center me-3'>
+                                                    <FileList className="icon"/>
+                                                </div>
+                                                <div>
+                                                <p className='card_text mb-0 fw-semibold'>Purchase Orders</p>
+                                                <p className='card_sub_text mb-0'>Create and track orders</p>
+
+                                                </div>
+                                            </div>
+                                            <div className='arrow_icon'>
+                                                <ArrowRight/>
+                                            </div>
+                                        </div>
+                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 mt-3'>
+                                            <div className='d-flex'>
+                                                <div className='file_icon d-flex align-items-center justify-content-center me-3'>
+                                                    <FileList className="icon"/>
+                                                </div>
+                                                <div>
+                                                <p className='card_text mb-0 fw-semibold'>Delivery Challans</p>
+                                                <p className='card_sub_text mb-0'>Streamlined shipping process</p>
+
+                                                </div>
+                                            </div>
+                                            <div className='arrow_icon'>
+                                                <ArrowRight/>
+                                            </div>
+                                        </div>
+                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 mt-3'>
+                                            <div className='d-flex'>
+                                                <div className='file_icon d-flex align-items-center justify-content-center me-3'>
+                                                    <FileList className="icon"/>
+                                                </div>
+                                                <div>
+                                                <p className='card_text mb-0 fw-semibold'>Invoicing</p>
+                                                <p className='card_sub_text mb-0'>Automated billing system</p>
+
+                                                </div>
+                                            </div>
+                                            <div className='arrow_icon'>
+                                                <ArrowRight/>
+                                            </div>
+                                        </div>
+                                            
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div className='col-6 px-5'>
+                                <div className='worflow_img_wrapper position-relative'>
+                                    <div className='worflow_img position-relative ratio ratio-4x3 position-relative'>
+                                        <Image src="/images/pages/home-page/bg9.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
+                                        
+                                    </div> 
+
+                                <div className='card worflow_card position-absolute'>
+                                        <div className='d-flex justify-content-center align-items-center'>
+                                            <div className='icon_outer d-flex justify-content-center align-items-center me-2'>
+                                                <FlowChart className="icon"/>
+                                            </div>
+                                            <div>
+                                                <p className='fw-semibold card_title mb-0'>Active Workflows</p>
+                                                <p className='fw-bold card_text mb-0'>1,240</p>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                </div>
+                                
+                                
+                            </div>
+
+
+
+                    
+
+
+                        </div>
+                      
+                       
+
+                    </div>
+
+                </div>
             </div>
+
+           
+
                     
                
 
