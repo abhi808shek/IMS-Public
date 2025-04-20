@@ -8,6 +8,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import EachFeature from "./each-feature";
 import Enterprise from "./enterprise";
 import EachIndustry from "./each-industry";
+import MainFeature from "./main-feature";
+import HelpCenter from "./help-center";
+import AboutUs from "./about-us";
+import Blogs from "./blogs";
+import HomePage from "./home";
+import MainSolution from "./main-solution";
 
 export default function Home() {
 	return (
@@ -17,7 +23,13 @@ export default function Home() {
 				{/* <EachSolution/> */}
 				{/* <EachFeature/> */}
 				{/* <Enterprise/> */}
-				<EachIndustry/>
+				{/* <EachIndustry/> */}
+				{/* <MainFeature/> */}
+				{/* <HelpCenter/> */}
+				{/* <AboutUs/> */}
+				{/* <Blogs/> */}
+				{/* <MainSolution/> */}
+				<HomePage/>
 			</div>
 			<Footer />
     	</>
