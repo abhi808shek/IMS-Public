@@ -9,6 +9,7 @@ import RadarLine from "@/assets/icon/radar-line.svg"
 import FileList from "@/assets/icon/file-list.svg"
 import ArrowRight from "@/assets/icon/arrow-right-line.svg"
 import FlowChart from "@/assets/icon/flow-chart.svg"
+import ShieldUSer from "@/assets/icon/shield-user-line.svg"
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -361,7 +362,7 @@ const Home = () => {
 
                 <div className='row'>
                     <div className='col-6 workflow_wrapper'>
-                        <div className='row mx-0 align-item-center'>
+                        <div className='row mx-0 align-items-center'>
                             <div className='col-6'>
                                 <div className='workflow_list'>
                                     <h3 className={`${roboto.className} fw-bold`}>Streamlined Workflows</h3>
@@ -370,7 +371,7 @@ const Home = () => {
                                         for orders, invoicing, and delivery management.
                                     </p>
                                     <div className='workflow_list_wrapper'>
-                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 '>
+                                        <div className='list_card d-flex align-items-center justify-content-between p-4 '>
                                             <div className='d-flex'>
                                                 <div className='file_icon d-flex align-items-center justify-content-center me-3'>
                                                     <FileList className="icon"/>
@@ -385,7 +386,7 @@ const Home = () => {
                                                 <ArrowRight/>
                                             </div>
                                         </div>
-                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 mt-3'>
+                                        <div className='list_card d-flex align-items-center justify-content-between p-4 mt-3'>
                                             <div className='d-flex'>
                                                 <div className='file_icon d-flex align-items-center justify-content-center me-3'>
                                                     <FileList className="icon"/>
@@ -400,7 +401,7 @@ const Home = () => {
                                                 <ArrowRight/>
                                             </div>
                                         </div>
-                                        <div className='list_card d-flex align-items-center justify-content-betwen p-4 mt-3'>
+                                        <div className='list_card d-flex align-items-center justify-content-between p-4 mt-3'>
                                             <div className='d-flex'>
                                                 <div className='file_icon d-flex align-items-center justify-content-center me-3'>
                                                     <FileList className="icon"/>
@@ -415,49 +416,105 @@ const Home = () => {
                                                 <ArrowRight/>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-6 px-5'>
+                                <div className='worflow_img_wrapper position-relative'>
+                                    <div className='worflow_img position-relative ratio ratio-4x3'>
+                                        <Image src="/images/pages/home-page/bg9.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
+                                    </div> 
+                                        
+
+                                    <div className='card floating_cards worflow_card position-absolute'>
+                                            <div className='d-flex justify-content-center align-items-center'>
+                                                <div className='icon_outer d-flex justify-content-center align-items-center'>
+                                                    <FlowChart className="icon"/>
+                                                </div>
+                                                <div>
+                                                    <p className='fw-semibold card_title mb-0'>Active Workflows</p>
+                                                    <p className='fw-bold card_text mb-0'>1,240</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                                             
 
 
 
+                    <div className='col-6 advance_management_wrapper'>
+                        <div className='row'>
+                            <div className='col-6'>
+                                <div className='advance_management_img_wrapper position-relative'>
+                                    <div className='advance_management_img posotion-relative ratio ratio-4x3'>
+                                        <Image src="/images/pages/home-page/bg10.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
                                     </div>
+
+                                    <div className='card floating_cards advance_management_card position-absolute'>
+                                            <div className='d-flex justify-content-center align-items-center'>
+                                                <div className='icon_outer d-flex justify-content-center align-items-center'>
+                                                    <ShieldUSer className="icon"/>
+                                                </div>
+                                                <div>
+                                                    <p className='fw-semibold card_title mb-0'>Active Users</p>
+                                                    <p className='fw-bold card_text mb-0'>342</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
                                 </div>
-
-
                             </div>
-                            <div className='col-6 px-5'>
-                                <div className='worflow_img_wrapper position-relative'>
-                                    <div className='worflow_img position-relative ratio ratio-4x3 position-relative'>
-                                        <Image src="/images/pages/home-page/bg9.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
-                                        
-                                    </div> 
-
-                                <div className='card worflow_card position-absolute'>
-                                        <div className='d-flex justify-content-center align-items-center'>
-                                            <div className='icon_outer d-flex justify-content-center align-items-center me-2'>
-                                                <FlowChart className="icon"/>
+                            <div className='col-6'>
+                                <div className='advance_management_list'>
+                                    <h3 className={`${roboto.className} fw-bold`}>Streamlined Workflows</h3>
+                                    <p className='text_small'>
+                                        Automate your business processes with integrated workflows 
+                                        for orders, invoicing, and delivery management.
+                                    </p>
+                                </div>
+                                <div className='advance_management_list_wrapper'>
+                                    <div className='list_card d-flex align-items-center justify-content-between p-4 '>
+                                        <div className='d-flex'>
+                                            <div className='file_icon d-flex align-items-center justify-content-center me-3'>
+                                                <FileList className="icon"/>
                                             </div>
                                             <div>
-                                                <p className='fw-semibold card_title mb-0'>Active Workflows</p>
-                                                <p className='fw-bold card_text mb-0'>1,240</p>
+                                            <p className='card_text mb-0 fw-semibold'>Purchase Orders</p>
+                                            <p className='card_sub_text mb-0'>Create and track orders</p>
+
                                             </div>
                                         </div>
-                                </div>
+                                        <div className='arrow_icon'>
+                                            <ArrowRight/>
+                                        </div>
+                                    </div>
 
                                 </div>
-                                
-                                
                             </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                                
+                                
 
 
 
                     
 
 
-                        </div>
                       
                        
 
-                    </div>
 
                 </div>
             </div>
