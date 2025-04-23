@@ -25,14 +25,21 @@ const Footer = () => {
       <div className="footer_top_bg">
         <div className="footer_top_bg2">
           <div className="footer_top">
-            <div className="row">
-              <div className="col-6">
-              <h2>
+            <div className="row justify-content-md-around justify-content-xl-center footer_top_content_wrapper">
+              <div className="col-12 col-lg-5 col-xl-5 mb-5 mb-lg-0">
+              <h2 className="text_one">
                   Transform Your <br/>
-                  <span className="position-relative">Business 
+                  <span className="position-relative me-3">Business 
                     <span className="bottom_boder position-absolute"></span>
                   </span> 
-                  with Smart<br/> Inventory Control
+                   with Smart<br/> Inventory Control
+                </h2>
+              <h2 className="text_two">
+                  Transform Your <br/>
+                  <span className="position-relative me-3">Business 
+                    <span className="bottom_boder position-absolute"></span>
+                  </span> 
+                   with Smart Inventory Control
                 </h2>
                 <div className="check_list">
                   <div className="d-flex align-items-start list_item">
@@ -65,24 +72,24 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-12 col-lg-6 col-xl-5">
                 <div className="card">
                   <div className="card_body d-flex flex-column justify-content-center align-items-center">
-                    <div className="icon_box d-flex justify-content-center align-items-center mb-4">
+                    <div className="icon_box d-flex justify-content-center align-items-center mb-3">
                       <RocketLineIcon className="icon"/>
                     </div>
                     <h3 className="mb-2">Join 12M+ Users</h3>
-                    <p>Start your journey to better inventory management</p>
+                    <p className="mb-0">Start your journey to better inventory management</p>
                   </div>
                   <button type="button" class="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
                   <div className="card_bottom d-flex justify-content-center align-items-center mt-4">
                     <div className="d-flex justify-content-center align-items-center me-5">
                       <ShiledCheckLineIcon className="shield_icon me-1"/>
-                      <span>Secure</span>
+                      <span className={`${roboto.className}`}>Secure</span>
                     </div>
                     <div className="d-flex justify-content-center align-items-center">
                       <HoursLineIcon className="shield_icon me-1"/>
-                      <span>Secure</span>
+                      <span className={`${roboto.className}`}>24/7 Support</span>
                     </div>
 
                   </div>

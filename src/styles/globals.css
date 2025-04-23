@@ -495,9 +495,10 @@ a {
 .footer_top_bg2{
 	background-image: radial-gradient(circle at 25% 75%, hsl(353.74deg 75.21% 52.55% / 10%), transparent 50%);
 }
+
 .footer_top{
-	margin-left:14rem !important;
-	margin-right:14rem !important;
+	margin-left:6.5rem !important;
+	margin-right:6.5rem !important;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 	/* background: linear-gradient(to bottom right, #fff, #f9fafb, #fff); */
@@ -508,6 +509,12 @@ a {
 	background-position: center;
 	background-size: cover;
 
+}
+.footer_top_content_wrapper{
+	gap: 4rem;
+}
+.footer_top .text_one{
+	display: none;
 }
 .footer_top h2{
 	color:#111827;
@@ -566,7 +573,7 @@ a {
  margin-bottom: 2rem;
 }
 .footer_top .card .primary_btn{
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 	line-height: 1.75rem;
 	font-weight: 600;
 }
@@ -1065,6 +1072,10 @@ a {
         padding-top: 147px;
         padding-bottom: 115px;
     }
+	.footer_top{
+		margin-left:14rem !important;
+		margin-right:14rem !important;
+	}
 }
 /* Large screens (1700px–1919px) */
 @media (min-width: 1700px) and (max-width: 1919px) {
@@ -1088,6 +1099,10 @@ a {
 
 	.main_industry_hero_content {
 		padding: 100px 98px;
+	}
+	.footer_top {
+		margin-left: 6.5rem !important;
+		margin-right: 6.5rem !important;
 	}
 }
 @media (min-width:1200px) and (max-width:1359px){
@@ -1126,6 +1141,22 @@ a {
 	}
 	.main_Solution_bg6 .link_btn{
 		font-size: 0.75rem;
+	}
+	.footer_top .text_one{
+		display: none;
+	}
+	.footer_top {
+		margin-left: 4.5rem !important;
+		margin-right: 4.5rem !important;
+	}
+	.footer_top .text_block{
+		display: none;
+	}
+	.footer_top_content_wrapper {
+		gap: 3rem;
+	}
+	.footer_top p{
+		font-size: 0.875rem;
 	}
 }
 @media (min-width: 992px) and (max-width:1199px) {
@@ -1171,15 +1202,35 @@ a {
 	.main_Solution_bg6 {
 		margin-bottom: 4.978rem;
 	}
+	.footer_top h2 {
+		font-size: 2rem;
+	}
+	.footer_top_content_wrapper {
+		gap: 0rem !important;
+	}
+	.footer_top {
+		margin-left: 2.5rem !important;
+		margin-right: 2.5rem !important;
+	}
+	.check_list p{
+		font-size: 0.813rem;
+	}
+	.footer_top {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
 
 }
 
 /* Tablets (768px–991px) */
 @media (min-width: 768px) and (max-width: 991px) {
+	.main_Solution_bg6 {
+        margin-bottom: 1rem;
+    }
 	.main_industry_hero_content {
 		padding-right: 50px;
 		padding-left: 50px;
-		padding-top: 50px;
+		padding-top: 0px;
 		padding-bottom: 40px;
 		
 	}
@@ -1188,7 +1239,7 @@ a {
 		background-size: contain;
 		background-position: right -72px bottom -96px;
 		padding-bottom: 40px;
-		margin-top: 4.418rem;
+		margin-top: 2.418rem;
 	}
 	.main_indutry_right_panal_wrapper{
 		padding-left: 40px !important;
@@ -1212,11 +1263,20 @@ a {
 	.antique_inventory_card .link_btn{
 		width: 100% !important;
 	}
-	.main_Solution_bg6 {
-		margin-bottom: 3.978rem;
-	}
 	.antique_inventory_cards_wrapper {
 		margin-bottom: 50px;
+	}
+	.footer_top h2{
+		font-size: 2rem;
+	}
+	.footer_top {
+		margin-left: 2.5rem !important;
+		margin-right: 2.5rem !important;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	.footer_top_content_wrapper {
+		gap: 0rem;
 	}
 }
 /* Mobile (below 768px) */
@@ -1224,7 +1284,7 @@ a {
 	.main_industry_hero_content {
         padding-right: 40px;
         padding-left: 40px;
-        padding-top: 50px;
+        padding-top: 0px;
         padding-bottom: 40px;
     }
 	.main_industry_hero {
@@ -1232,7 +1292,7 @@ a {
 		background-size: contain;
 		background-position: right -72px bottom -96px;
 		margin-bottom: 50px;
-		margin-top: 3.418rem;
+		margin-top: 1.418rem;
 
 	}
 	.main_industry_hero .industry_header {
@@ -1253,7 +1313,7 @@ a {
 		background-size: 100%;
     }
 	.antique_inventory_cards h3 {
-		font-size: 1em;
+		font-size: 1rem;
 		color: #000000;
 	}
 	.antique_inventory_cards_heading {
@@ -1264,6 +1324,21 @@ a {
 	}
 	.antique_inventory_cards_wrapper {
 		margin-bottom: 50px;
+	}
+	.footer_top h2{
+		font-size: 2rem;
+	}
+	.footer_top {
+		margin-left: 1.5rem !important;
+		margin-right: 1.5rem !important;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	.footer_top_content_wrapper {
+		gap: 0rem;
+	}
+	.footer_top .card p{
+		font-size: 0.75rem;
 	}
 }
 

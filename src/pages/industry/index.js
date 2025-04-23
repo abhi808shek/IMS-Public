@@ -45,10 +45,10 @@ export default function MainIndustries() {
 
      
         <div className="row align-items-center justify-content-center antique_inventory_cards_wrapper">
-          <div className="col-md-10 col-lg-9">
+          <div className="col-md-11 col-lg-9">
             <div className="antique_inventory_cards pb-0">
               <div className="container antique_inventory_cards_heading">
-                <h3 className={`${roboto.className} fw-bold w-sm-100 w-md-75 mb-0`}>
+                <h3 className={`${roboto.className} fw-bold w-sm-100 w-md-75 mb-0 px-4 px-md-4`}>
                   Stay on top of your business’svaluable assets.
                   <br />
                   Browse Sortly’s asset tracking solutions
@@ -56,11 +56,11 @@ export default function MainIndustries() {
               </div>
 
               <div className="container">
-                <div className="row">
+                <div className="row mx-0">
                   {Array(15)
                     .keys()
                     .map((_) => (
-                      <Link href="/each-industry"  className="col-md-6 col-lg-6 col-xl-4 pe-4" style={{ textDecoration: "none" }}>
+                      <Link href="/each-industry"  className="col-md-6 col-lg-6 col-xl-4 pe-md-4" style={{ textDecoration: "none" }}>
                         <div class="antique_inventory_card card">
                           <div class="card-body p-0">
                               <div className="mb-2">
@@ -95,9 +95,9 @@ export default function MainIndustries() {
         </div>
 
         <div className="row align-items-center justify-content-center">
-          <div className="col-md-9">
+          <div className="col-md-11 col-lg-9">
             <div className="row">
-              <div className="col-md-6 col-lg-4 px-3">
+              <div className="col-md-6 col-lg-4 px-4 px-md-3">
                 <div class="card p-3 mb-3 mb-lg-0">
                   <div className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
@@ -121,7 +121,7 @@ export default function MainIndustries() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 px-3">
+              <div className="col-md-6 col-lg-4 px-4 px-md-3">
                 <div class="card p-3 mb-3 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
@@ -145,7 +145,7 @@ export default function MainIndustries() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 px-3">
+              <div className="col-md-6 col-lg-4 px-4 px-md-3">
                 <div class="card p-3 mb-3 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
