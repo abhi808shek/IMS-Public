@@ -87,7 +87,7 @@ export default function MainIndustries() {
 
       <div className="main_Solution_bg6">
         <div className="main_solution_content mt-0 pb-0">
-          <div className="container mb-5">
+          <div className="container mb-4 mb-sm-3 md-md-5">
             <h1 className={`${roboto.className} text-center mb-0 mb-0`}>
               Read more about working in Sortly
             </h1>
@@ -98,7 +98,7 @@ export default function MainIndustries() {
           <div className="col-md-11 col-lg-9">
             <div className="row">
               <div className="col-md-6 col-lg-4 px-4 px-md-3">
-                <div class="card p-3 mb-3 mb-lg-0">
+                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>
@@ -122,7 +122,7 @@ export default function MainIndustries() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 px-4 px-md-3">
-                <div class="card p-3 mb-3 mb-lg-0">
+                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>
@@ -146,7 +146,7 @@ export default function MainIndustries() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 px-4 px-md-3">
-                <div class="card p-3 mb-3 mb-lg-0">
+                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>

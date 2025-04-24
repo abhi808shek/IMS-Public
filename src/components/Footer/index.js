@@ -72,14 +72,14 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-12 col-lg-6 col-xl-5">
+              <div className="col-12 col-lg-5 col-xl-5 col-xxl-4">
                 <div className="card">
                   <div className="card_body d-flex flex-column justify-content-center align-items-center">
                     <div className="icon_box d-flex justify-content-center align-items-center mb-3">
                       <RocketLineIcon className="icon"/>
                     </div>
                     <h3 className="mb-2">Join 12M+ Users</h3>
-                    <p className="mb-0">Start your journey to better inventory management</p>
+                    <p className="mb-0 text-center">Start your journey to better inventory management</p>
                   </div>
                   <button type="button" class="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
                   <div className="card_bottom d-flex justify-content-center align-items-center mt-4">

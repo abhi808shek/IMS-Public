@@ -962,7 +962,8 @@ a {
 		padding: 3rem;
 	} */
 	.main_solution_content h1 {
-		font-size: 34px;
+		/* font-size: 22px; */
+		font-size: 20px;
 	}
 	.main_solution_content p {
 		font-size: 16px;
@@ -985,6 +986,9 @@ a {
 	.main_solution_bg4 {
 		height: 300px;
 		padding: 1rem;
+	}
+	.footer_top .card {
+		padding: 1.5rem;
 	}
 }
 /* end main solution page */
@@ -1076,6 +1080,9 @@ a {
 		margin-left:14rem !important;
 		margin-right:14rem !important;
 	}
+	.main_Solution_bg6 .img_conatiner {
+		height: 413px;
+	}
 }
 /* Large screens (1700px–1919px) */
 @media (min-width: 1700px) and (max-width: 1919px) {
@@ -1128,7 +1135,7 @@ a {
 		font-size: 1.5rem;
 	}
 	.antique_inventory_card {
-		padding: 1.2rem;
+		padding: 1rem;
 	}
 	.antique_inventory_cards h3 {
 		font-size: 1.5rem;
@@ -1264,7 +1271,7 @@ a {
 		width: 100% !important;
 	}
 	.antique_inventory_cards_wrapper {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 	.footer_top h2{
 		font-size: 2rem;
@@ -1278,7 +1285,9 @@ a {
 	.footer_top_content_wrapper {
 		gap: 0rem;
 	}
+	
 }
+	
 /* Mobile (below 768px) */
 @media (max-width: 767px) {
 	.main_industry_hero_content {
@@ -1331,14 +1340,24 @@ a {
 	.footer_top {
 		margin-left: 1.5rem !important;
 		margin-right: 1.5rem !important;
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 	.footer_top_content_wrapper {
 		gap: 0rem;
 	}
 	.footer_top .card p{
-		font-size: 0.75rem;
+		/* font-size: 0.75rem; */
+		font-size: 0.65rem;
+	}
+	.antique_inventory_card {
+		margin-bottom: 2rem;
+    }
+	.main_Solution_bg6 {
+		margin-bottom: 1.978rem;
+	}
+	.footer_top .card .card_body {
+		margin-bottom: 1.5rem;
 	}
 }
 
