@@ -11,9 +11,9 @@ const roboto = Roboto({
 export default function BlogDetail() {
   return (
     <>
-      <div className="row breadcrumb-wrapper px-5 mx-3 mb-4">
+      <div className="row breadcrumb-wrapper px-md-3 px-2 mx-0 mx-md-3 mb-md-3 mb-lg-4">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
+          <ol class="breadcrumb mb-0 align-items-center">
             <li className={`${roboto.className} breadcrumb-item`}>
               <Link href="/blogs" className="item_link">
                 Blog
@@ -35,44 +35,35 @@ export default function BlogDetail() {
         </nav>
       </div>
 
-      <div className="container mb-4">
+      <div className="container blog_details_post_header">
         <div className="row d-flex justify-content-center">
-          <div className="col-md-8">
-            <div className="fw-bold mb-3">Construction</div>
-            <h1
-              className={roboto.className + " fw-bold mb-3"}
-              style={{ fontSize: "64px" }}
-            >
+          <div className="col-md-10 col-lg-8">
+            <div className="fw-bold heading_badge">Construction</div>
+            <h1  className={roboto.className + " fw-bold heading"}>
               Download Shortly's 2025 <br />
               state of construction
               <br />
               report
             </h1>
-            <div className={roboto.className + " mb-3"}>
+            <div className={roboto.className + " mb-0 publish_Date"}>
               19 Apr 2025 • 2 min read{" "}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container mb-4">
+      <div className="container feature_image">
         <div className="row d-flex justify-content-center">
           <div className="ratio ratio-16x9">
-            <Image
-              className="me-4"
-              alt="upload"
-              layout="fill"
-              objectFit="cover"
-              src="/images/pages/blogs-detail/blog-detail-banner.jpeg"
-            />
+            <Image className="me-4" alt="upload" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg" />
           </div>
         </div>
       </div>
 
-      <div className="container mb-4">
-        <div className="row d-flex justify-content-center">
-          <div className="col-md-8">
-            <p>
+      <div className="container post_container mb-4">
+        <div className="row d-flex justify-content-center containt">
+          <div className="col-md-11 col-lg-8">
+            <p className="mb-4">
               The construction industry has faced a tumultuous few years, and
               2025 is no exception. The lingering effects of the pandemic,
               coupled with new economic challenges, have made it more important
@@ -81,7 +72,7 @@ export default function BlogDetail() {
               deep into the current industry landscape, analyzing key trends and
               offering predictions for the coming year.
             </p>
-            <p>
+            <p className="mb-4">
               Sortly's <b>2025 State of Construction Report</b> takes an
               in-depth look at the major trends, challenges, and opportunities
               currently shaping the construction industry. Here's a glimpse of
@@ -119,25 +110,22 @@ export default function BlogDetail() {
 
       <div className="container mb-4">
         <div className="row d-flex justify-content-center">
-          <div className="col-md-8">
+          <div className="col-md-10 col-lg-8">
             <h5 className="fw-bold mb-4">About Shortly</h5>
-            <Image
-              className="d-block mx-auto mb-4"
-              width="550"
-              height="490"
-              alt="upload"
-              src="/images/pages/blogs-detail/about-shortly.png"
-            />
+            <div className="ratio ratio-4x3">
+              <Image className="d-block mx-auto mb-4" alt="upload" src="/images/pages/blogs-detail/about-shortly.png" fill objectFit="contain" />
+            </div>
+
           </div>
         </div>
       </div>
 
-      <div className="container mb-4">
-        <div className="row d-flex justify-content-center">
-          <div className="col-md-8">
+      <div className="container post_container mb-4">
+        <div className="row d-flex justify-content-center containt">
+          <div className="col-md-11 col-md-8">
             <p>
               Sortly is an{" "}
-              <span className="text-danger">inventory management solution</span>{" "}
+              <span className="heighlight_text">inventory management solution</span>{" "}
               that helps you track, manage, and organize your inventory from any
               device, in any location. We're an easy-to-use inventory software
               that's perfect for construction businesses of all sizes. Sortly
@@ -147,11 +135,11 @@ export default function BlogDetail() {
             </p>
             <p>
               With Sortly, you can{" "}
-              <span className="text-danger">track construction inventory</span>{" "}
+              <span className="heighlight_text">track construction inventory</span>{" "}
               like supplies, parts, tools, equipment, and anything else that
               matters to your construction business. It comes equipped with
               smart features like{" "}
-              <span className="text-danger">
+              <span className="heighlight_text">
                 barcoding & QR coding, low stock alerts, customizable folders,
                 data-rich reporting
               </span>
@@ -170,44 +158,34 @@ export default function BlogDetail() {
         </div>
       </div>
 
-      <div className="container mb-4">
-        <div className="row d-flex justify-content-center">
-          <div className="col-md-8">
+      <div className="container mb-4 post_container">
+        <div className="row d-flex justify-content-center containt">
+          <div className="col-md-10 col-lg-8">
             <p>
               <b>
                 Start your two-week{" "}
-                <span className="text-danger">free trial of Sortly</span> today.
+                <span className="heighlight_text">free trial of Sortly</span> today.
               </b>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="container mb-4">
+      <div className="container mb-4 px-3 px-md-4">
         <div className="row">
           {Array(4)
             .keys()
             .map((e, i) => (
-              <Link
-                href="/blog-detail"
-                style={{ textDecoration: "none" }}
-                className="col-sm-6 col-md-4 col-lg-3 mb-4"
-              >
-                <div class="card">
+              <Link href="/blog-detail" style={{ textDecoration: "none" }} className="col-sm-6 col-md-6 col-lg-3 mb-4" >
+                <div class="card blog_details_card"> 
                   <div className="ratio ratio-16x9">
-                    <Image
-                      class="card-img-top"
-                      layout="fill"
-                      objectFit="cover"
-                      src="/images/pages/blogs-detail/blog-detail-banner.jpeg"
-                      alt="Card image cap"
-                    />
+                    <Image class="card-img-top" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg"alt="Card image cap"/>
                   </div>
-                  <div class="card-body">
+                  <div class="card-body p-0 mt-3">
                     <h5 class="card-title fw-bold mb-2">
                       6 Inventory management best practises in consstruction
                     </h5>
-                    <div className="mb-2">
+                    <div className="mb-2 d-flex align-items-center">
                       <span class="badge badge-pill badge-light shadow-sm text-dark me-2">
                         construction
                       </span>
@@ -215,7 +193,7 @@ export default function BlogDetail() {
                         small business
                       </span>
                     </div>
-                    <div className="fw-bold" style={{ fontSize: ".75rem" }}>
+                    <div className="date-time">
                       March 21 2025 • 3 min read
                     </div>
                   </div>
