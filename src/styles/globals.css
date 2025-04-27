@@ -269,11 +269,24 @@ a {
 	color:#505861;
   }
 /* end bredcrumb */
+.custom_container.container {
+	max-width: 1090px !important;
+}
 @media (min-width: 1400px) {
     
 	.custom_container.container {
         max-width: 1170px !important;
     }
+}
+@media (min-width:1200px) and (max-width:1359px){
+	custom_container.container {
+		max-width: 1065px !important;
+	}
+}
+@media (min-width: 992px) and (max-width:1199px){
+	.custom_container.container {
+		max-width: 920px !important;
+	}
 }
 
 
@@ -1658,12 +1671,14 @@ a {
 	font-weight: 700;
 	font-size: 64px;
 	color:#000000;
+	margin-bottom: 3.188rem;
 }
 .each_feature_hero .each_feature_content p{
 	font-weight: 700;
 	font-size: 32px;
 	color:#666666;
 	line-height: 150%;
+	margin-bottom: 4.875rem;
 }
 .each_feature_hero_bg{
 	background-image: url('/images/pages/each-feature/bg2.svg');
@@ -1676,12 +1691,7 @@ a {
 	margin-top: 102px !important;
 	padding-bottom: 65px;
 }
-.each_feature_bg{
-	width: 800px;
-    height: 500px;
-    position: relative;
-	margin-top:4.875rem;
-}
+
 .each_feature_heading{
 	margin-bottom: 100px;
 }
@@ -1689,7 +1699,8 @@ a {
 	font-weight: 700;
 	font-size: 48px;
 	color:#333333;
-	line-height: 100%;
+	line-height: 120%;
+	margin-bottom: 1.25rem;
 }
 .each_feature_heading p{
 	font-weight: 400;
@@ -1697,8 +1708,7 @@ a {
 	color:#666666;
 	line-height: 110%;
 }
-
-.inventory_checklist .check_list p, .construction_supplies_checklist .check_list p{
+.inventory_checklist .check_list p, .construction_supplies .check_list p{
 	font-size: 24px;
 	font-weight: 700;
 	color:#333333;
@@ -1708,19 +1718,124 @@ a {
 	color:#E12B3E;
 
 }
-.inventory_checklist .check_list .list p, .construction_supplies_checklist .check_list .list p{
+.inventory_checklist .check_list .list p, .construction_supplies .check_list .list p{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
 	color:#201C44;
+	margin-bottom: 0px;
+}
+.inventory_checklist .check_list .heading_tag{
+	margin-bottom: 0.75rem;
+	line-height: 100%;
 }
 .inventory_checklist .check_list_bg{
-	width:470px;
-	height: 409px;
+	/* width:470px; */
+	/* height: 409px; */
+	width: 100%;
 	position: relative;
+	padding-top: 25px;
+    padding-bottom: 25px;
 }
 .each_feature_inventory{
 	margin-bottom: 175px;
+}
+.inventory_checklist_bg_right{
+	background-image: url(/images/pages/each-feature/bg4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+	background-position: right -25px bottom 0px;
+	margin-bottom: 100px;
+	padding-bottom: 21px;
+}
+.inventory_checklist_bg_left{
+	background-image: url(/images/pages/each-feature/bg5.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left -25px bottom 0px;
+	margin-bottom: 100px;
+	padding-bottom: 21px;
+}
+.inventory_checklist_content{
+	padding-top: 59px;
+	/* margin-top: 100px; */
+}
+.construction_supplies{
+	margin-bottom: 133px;
+}
+.construction_supplies .ellipse_container_left{
+	margin-bottom: 133px;
+}
+.construction_supplies .ellipse_container_left .check_list{
+	padding-left: 5rem;
+}
+.construction_supplies .ellipse_container_right .check_list{
+	padding-right: 5rem;
+}
+.ellipse_left_bg {
+	background-image: url('/images/pages/each-feature/bg6.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* padding: 3rem; */
+	height: 100%;
+	padding-bottom: 29px;
+    padding-top: 59px;
+}
+.ellipse_left_bg .image_container{
+	/* padding-top: 81px;
+    padding-left: 52px;
+    padding-right: 0; */
+	width: 81%;
+    left: 70px;
+    bottom: 0px;
+}
+.ellipse_right_bg {
+	background-image: url('/images/pages/each-feature/bg7.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* padding: 3rem; */
+	height: 100%;
+	padding-bottom: 29px;
+    padding-top: 59px;
+}
+.ellipse_right_bg .image_container{
+	/* padding-top: 81px;
+    padding-right: 82px;
+    padding-left: 0; */
+	width: 81%;
+    left: 14px;
+    bottom: 0px;
+}
+.ellipse_right_bg .image_container .img_elips{
+	padding-left: 60px;
+}
+.ellipse_left_bg .image_container .img_elips{
+	padding-right: 60px;
+}
+
+
+.inventory_import .image_box{
+	background-image: url('/images/pages/each-feature/bg7.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 131px;
+    height: 113px;
+	margin-bottom: 0.625rem;
+}
+.inventory_import.inventory_card .card_sub_heaidng{
+	font-size: 13px;
+	color:#666666;
+	line-height: 125%;
+}
+.inventory_import .inventory_container{
+	margin-bottom: 87px;
+}
+.inventory_import .inventory_container:last-child{
+	margin-bottom: 0px;
 }
 .inventory_import_tabs{
 	margin-bottom: 6rem;
@@ -1735,91 +1850,16 @@ a {
 	color: #E12B3E;
 	border-bottom: 2px solid #E12B3E;
 }
-.inventory_checklist_bg_right{
-	background-image: url(/images/pages/each-feature/bg4.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-	margin-bottom: 100px;
-}
-.inventory_checklist_bg_left{
-	background-image: url(/images/pages/each-feature/bg5.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-.inventory_checklist_content{
-	padding-top: 59px;
-	/* margin-top: 100px; */
-}
-.construction_supplies{
-	margin-bottom: 133px;
-}
-.construction_supplies .ellipse_container_left{
-	margin-bottom: 133px;
-}
-.ellipse_left_bg {
-	background-image: url('/images/pages/each-feature/bg6.svg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* padding: 3rem; */
-	height: 100%;
-	padding-bottom: 42px;
-}
-.ellipse_left_bg .image_container{
-	padding-top: 81px;
-    padding-left: 52px;
-    padding-right: 0;
-}
-.ellipse_right_bg {
-	background-image: url('/images/pages/each-feature/bg7.svg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* padding: 3rem; */
-	height: 100%;
-	padding-bottom: 42px;
-}
-.ellipse_right_bg .image_container{
-	padding-top: 81px;
-    padding-right: 82px;
-    padding-left: 0;
-}
-
-.inventory_import .image_box{
-	background-image: url('/images/pages/each-feature/bg7.svg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 131px;
-    height: 113px;
-}
-.inventory_card .card_sub_heaidng{
-	font-size: 13px;
-	color:#666666;
-	line-height: 125%;
-}
-.inventory_container{
-	margin-bottom: 87px;
-}
-.inventory_container:last-child{
-	margin-bottom: 0px;
-}
-
 .inventory_import {
+	background-color: #FFF5F5;
+	border-top-left-radius:150px ;
+	border-bottom-right-radius:150px;
 	position: relative;
-	width: 100%;
-	height: 100%; /* or whatever fits your layout */
-	overflow: hidden;
-	margin-bottom: 100px;
-  }
-  .inventory_import{
 	padding-top: 99px;
 	padding-bottom: 268px;
-  }
-  .inventory_import .bg_image {
+	margin-bottom: 120px;
+}
+.inventory_import .bg_image {
 	position: absolute;
 	top: 0 !important;
 	left: 0 !important;
@@ -1827,42 +1867,51 @@ a {
 	height: 100% !important;
 	object-fit: fill; /* or 'cover' / 'contain' based on your need */
 	z-index: -1;
-  }
-  .inventory_import .bottom_text{
+}
+.inventory_import .bottom_text{
 	position: absolute;
-	bottom:7%;
+	bottom:97px;
 	left:0;
 	right:0;
-  }
-  .inventory_import .bottom_text p{
+}
+.inventory_import .bottom_text p{
 	color:#666666;
 	font-size: 18px;
-  }
-  .inventory_import .bottom_text p .redirect_link	{
+}
+.inventory_import .bottom_text p .redirect_link	{
 	color:#E12B3E;
 	text-decoration: none;
-  }
-  .inventory_management{
+}
+.inventory_import .inventory_card.card{
+	border: none;
+    background-color: transparent;
+}
+.inventory_import .inventory_card .card_heading{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color:#000000;
+	margin-bottom: 0.625rem;
+}
+.inventory_import .inventory_card .card_sub_heaidng{
+	font-size: 12px;
+	line-height: 100%;
+	color:#666666;
+}
+.inventory_management{
 	margin-bottom: 106px;
-  }
-  .inventory_management_card{
+}
+.inventory_management_card{
 	background-color: #F1E9F9 !important;
 	border-radius: 12px !important;
 	box-shadow: 0px 4px 4px 0px #00000026;
 	border:0px !important;
 	outline: 0px !important;
+}
+.inventory_management_card .card-text{
+	color: #666666;
+}
 
-  }
-  .inventory_card h5{
-	font-weight: 700;
-	font-size: 24px;
-  }
-  .inventory_card p{
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 150%;
-	color:#666666;
-  }
 /* end each feature page  */
 
 /* enterprise page */
@@ -1882,79 +1931,357 @@ a {
 	line-height: 150%;
 	color:#666666;
 }
-.enterprise_hero .bg_img{
+.enterprise_hero .enterprise_bg_img{
 	bottom: 0;
-    right: 0;
+	right: -75px;
     width: fit-content;
     z-index: -1;
 }
 .custom-form {
 	/* border: 2px solid #007bff; */
 	border-radius: 0.583rem;
-	padding: 4.313rem 1.516rem ;
+	padding: 4.313rem 1.688rem;
 	max-width: 650px;
-	margin: 55px;
+	margin-bottom: 60px;
 	margin-top: 20px;
 	margin-right: 0px;
 	box-shadow: 0px 0px 4.66px 0px #00000036;
 	background-color: #fff;
-  }
+}
 .form_inputs_fields{
 	margin-bottom: 37.3px;
 }
-  .form-floating > .form-control {
-	border-radius: 10px;
-	border: 1.17px solid #D8DDE3 !important;
-  }
-  .form-floating > .form-control:focus{
-	box-shadow: none;
-	padding: 0rem .5rem !important;
-	border: 1.17px solid #D8DDE3 !important;
-  }
-  .form-floating>.form-control:focus~label{
-	transform: none !important;
-  }
-  .form-check-input.checkbox{
-	width:1.5rem;
-	height:1.5rem;
-  }
+.form-floating > .form-control {
+border-radius: 10px;
+border: 1.17px solid #D8DDE3 !important;
+}
+.form-floating > .form-control:focus{
+box-shadow: none;
+padding: 0rem .5rem !important;
+border: 1.17px solid #D8DDE3 !important;
+}
+.form-floating>.form-control:focus~label{
+transform: none !important;
+}
+.form-check-input.checkbox{
+width:1.5rem;
+height:1.5rem;
+}
+.form-floating > label {
+color: #999;
+font-weight: 700;
+position: absolute;
+background-color: #fff;
+color:#999999;
+top: -13px !important;
+left: 7px !important;
+z-index: 2;
+max-width: 100%;
+height: fit-content !important;
+padding: 0rem .5rem !important;
+}
 
-  .form-floating > label {
-	color: #999;
-	font-weight: 700;
-	position: absolute;
-	background-color: #fff;
-	color:#999999;
-    top: -13px !important;
-    left: 7px !important;
-    z-index: 2;
-    max-width: 100%;
-    height: fit-content !important;
-    padding: 0rem .5rem !important;
-  }
+.form-label-section {
+font-weight: 600;
+color: #6A7682;
+margin-top: 20px;
+margin-bottom: 10px;
+font-size:18.65px;
+margin-bottom: 27px;
+}
 
-  .form-label-section {
-	font-weight: 600;
-	color: #6A7682;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size:18.65px;
-	margin-bottom: 27px;
-  }
+.form-check-label {
+font-weight: 700;
+color: #768898;
+font-size: 16.32px;
+}
 
-  .form-check-label {
-	font-weight: 700;
-	color: #768898;
-	font-size: 16.32px;
-  }
+.terms-text span {
+color: red;
+font-weight: 600;
+}
+.entrprise_large_business{
+margin-bottom: 175px;
+}
+@media (min-width: 1440px) and (max-width: 1699px) {
+.custom-form {
+	max-width: 574px;
+}
+}
+@media (min-width:1200px) and (max-width:1359px){
+	.enterprise_hero h1 {
+		font-size: 48px;
+		margin-bottom: 27px;
+	}
+	.enterprise_hero p {
+		font-size: 27px;
+	}
+	.enterprise_hero .enterprise_bg_img {
+		bottom: 0;
+		right: -135px;
+	}
+	.each_feature_heading h2 {
+		font-size: 40px;
+	}
+	.each_feature_heading p {
+		font-size: 28px;
+	}
+}	
+@media (min-width: 992px) and (max-width:1199px) {
+	.enterprise_hero h1 {
+		font-size: 44px;
+	}
+	.enterprise_hero p {
+		font-size: 22px;
+	}
+	.enterprise_hero .enterprise_bg_img {
+		bottom: 0;
+		right: -163px;
+	}
+	.each_feature_heading {
+		margin-bottom: 50px;
+	}
+	.each_feature_heading h2 {
+		font-size: 29px;
+	}
+	.each_feature_heading p {
+		font-size: 21px;
+	}
+	.inventory_checklist_bg_right {
+		background-position: right -125px bottom -6px;
+	}
+	.inventory_checklist_bg_left{
+		background-position: left -125px bottom -6px;
+	}
+	.inventory_checklist .check_list p, .construction_supplies .check_list p {
+		font-size: 16px;
+	}
+	.construction_supplies .ellipse_container_left .check_list{
+		padding-left: 2rem;
+	}
+	.construction_supplies .ellipse_container_right .check_list{
+		padding-right: 2rem;
+	}
+	.construction_supplies .ellipse_container_left {
+		margin-bottom: 95px;
+	}
+	.construction_supplies .ellipse_left_bg {
+		padding-bottom: 10px;
+		padding-top: 73px;
+	}
+	.construction_supplies .ellipse_left_bg .image_container {
+		left: 48px;
+		bottom: 9px;
+	}
+	.construction_supplies .ellipse_right_bg .image_container {
+		width: 81%;
+		left: 0px;
+		bottom: 0px;
+	}
+	.inventory_import .bottom_text p {
+		font-size: 15px;
+	}
+	.each_feature_hero .each_feature_content h1 {
+		font-size: 44px;
+		margin-bottom: 2.188rem;
+	}
+	.each_feature_hero .each_feature_content p {
+		font-size: 21px;
+		margin-bottom: 2.875rem;
+	}
+	
+}
+/* Tablets (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.enterprise_hero h1 {
+		font-size: 41px;
+		font-weight: 700;
+		margin-bottom: 18px;
+		padding-top: 0px;
+	}
+	.enterprise_hero p {
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+	.enterprise_hero {
+		padding-top: 18px;
+		margin-bottom: 53px;
+	}
+	.custom-form{
+		margin: auto;
+	}
+	.each_feature_heading h2 {
+		font-size: 34px;
+	}
+	.each_feature_heading p {
+		font-size: 20px;
+	}
+	.each_feature_heading {
+		margin-bottom: 40px;
+	}
+	.construction_supplies .ellipse_left_bg .image_container {
+		width: 70%;
+		left: 97px;
+	}
+	.construction_supplies .ellipse_container_left .check_list{
+		padding-left: 0rem;
+	}
+	.construction_supplies .ellipse_container_right .check_list{
+		padding-right: 0rem;
+	}
+	.construction_supplies .ellipse_container_left {
+		margin-bottom: 100px;
+	}
+	.inventory_checklist_content {
+		padding-top: 15px;
+	}
+	
+	.inventory_checklist .check_list p, .construction_supplies_checklist .check_list p {
+		font-size: 21px;
+	}
+	.inventory_import .inventory_card .card_sub_heaidng {
+		font-size: 8px;
+	}
+	.inventory_import .inventory_card .card_heading {
+		font-size: 11px;
+	}
+	.inventory_import_tab {
+		font-size: 17px;
+	}
+	.inventory_import .bottom_text p {
+		font-size: 13px;
+	}
+	.inventory_management_card .card-text{
+		font-size: 0.75rem;
+	}
+	.each_feature_hero .each_feature_content h1 {
+		font-size: 34px;
+		margin-bottom: 1.188rem;
+	}
+	.each_feature_hero .each_feature_content p {
+		font-size: 15px;
+		margin-bottom: 2.875rem;
+	}
+	
+}
+@media (max-width: 767px){
+	.enterprise_hero h1 {
+		font-size: 31px;
+		font-weight: 700;
+		margin-bottom: 22px;
+		padding-top: 0px;
+	}
+	.enterprise_hero p {
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 150%;
+		color: #666666;
+	}
+	.custom-form {
+		padding: 2.5rem 1.5rem;
+	}
+	.enterprise_hero {
+		padding-top: 20px;
+		margin-bottom: 65px;
+	}
+	.form_inputs_fields {
+		margin-bottom: 22.3px;
+	}
+	.form-label-section {
+		font-size: 14.65px;
+	}
+	.custom-form .form-floating>label{
+		font-size: 0.875rem;
+	}
+	.form-check-input.checkbox {
+		width: 1rem;
+		height: 1rem;
+	}
+	.form-check-label {
+		font-size: 10.32px;
+	}
+	.each_feature_heading h2 {
+		font-size: 18px;
+		margin-bottom: 1rem;
+	}
+	.each_feature_heading p {
+		font-size: 11px;
+	}
+	.each_feature_heading {
+		margin-bottom: 20px;
+	}
+	.construction_supplies .ellipse_left_bg,.ellipse_right_bg {
+		padding-bottom: 2px;
+		padding-top: 45px;
+	}
+	.construction_supplies .ellipse_left_bg .image_container {
+		left: 44px;
+		bottom: 9px;
+	}
+	.ellipse_right_bg .image_container {
+		left: 6px;
+	}
+	.construction_supplies .ellipse_container_left .check_list{
+		padding-left: 0rem;
+	}
+	.construction_supplies .ellipse_container_right .check_list{
+		padding-right: 0rem;
+	}
+	.construction_supplies .ellipse_container_left {
+		margin-bottom: 50px;
+	}
+	.construction_supplies {
+		margin-bottom: 90px;
+	}
+	.inventory_checklist_content {
+		padding-top: 26px;
+	}
+	.inventory_checklist .check_list p, .construction_supplies .check_list p {
+		font-size: 17px;
+	}
+	.inventory_import .inventory_container {
+		margin-bottom: 0px;
+	}
+	.inventory_import .inventory_card .card_heading {
+		font-size: 19px;
+	}
+	.inventory_import .inventory_card .card_sub_heaidng {
+		font-size: 16px;
+	}
+	.inventory_import_tab {
+		font-size: 14px;
+	}
+	.inventory_import .bottom_text p {
+		font-size: 12px;
+	}
+	.inventory_management {
+		margin-bottom: 50px;
+	}
+	.inventory_import {
+		margin-bottom: 68px;
+	}
+	.each_feature_hero_container {
+		margin-top: 15px !important;
+	}
+	.each_feature_hero {
+		margin-bottom: 50px;
+	}
+	.each_feature_hero .each_feature_content p {
+		font-size: 9px;
+		margin-bottom: 0.875rem;
+	}
+	.each_feature_hero .each_feature_content h1 {
+		font-size: 22px;
+		margin-bottom: 1.188rem;
+	}
+	.each_feature_hero_bg {
+		background-position: center bottom 0%;
+		padding-bottom: 0rem
+	}
 
-  .terms-text span {
-	color: red;
-	font-weight: 600;
-  }
-  .entrprise_large_business{
-	margin-bottom: 175px;
-  }
+} 
+
+
 /* end enterprise page */
 
 /* each industry page*/
@@ -2284,7 +2611,7 @@ a {
 	color:#333333;
   }
   
-  /* kkkkkkkkkkkk */
+/* kkkkkkkkkkkk */
   
 .help-section.training {
 	margin-left : 0;
@@ -2541,6 +2868,7 @@ a {
 
 
 /* blog details page */
+
 .blog_details_post_header{
 	padding:22px 0 20px;
 }
@@ -2592,6 +2920,7 @@ a {
     text-align: left;
     margin-top: 12px;
 }
+
 @media (min-width: 992px) and (max-width:1199px) {
 	
 	.blog_details_post_header .heading {
@@ -2646,6 +2975,8 @@ a {
 }
 
 /* end blog details page */
+
+
 /* home */
 .home_hero .text_left h1{
 	font-size: 4.5rem;
@@ -2745,7 +3076,6 @@ a {
 	margin-bottom: 3.188rem;
 }
 .simple_inventory_card_wrapper .card{
-	
 	border: none;
 }
 .simple_inventory_card_wrapper .card .card_img{
