@@ -93,8 +93,6 @@ const Enterprise = () => {
             </div>
         </div>
 
-
-
         <div className='inventory_checklist inventory_checklist_bg_right'>
             <div className='custom_container container '>
                 <div className='row justify-content-between inventory_checklist_content align-items-center'>
@@ -532,7 +530,6 @@ const Enterprise = () => {
                             
     </div>
 
-   
     </>
   )
 }

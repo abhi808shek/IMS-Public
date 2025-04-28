@@ -1045,15 +1045,6 @@ a {
 	border-bottom: 2px solid #E12B3E;
 }
 
-.work_order {
-	width: 200px;
-}
-.work_order h5 {
-	font-weight: 700;
-}
-.work_order p {
-	font-size: 12px !important;
-}
 .main_Solution_bg6{
 	margin-bottom: 6.978rem;
 }
@@ -1714,9 +1705,13 @@ a {
 	color:#333333;
 
 }
-.inventory_checklist .check_list .heading_tag span, .construction_supplies_checklist .check_list .heading_tag span{
+.inventory_checklist .check_list .heading_tag span, .construction_supplies .check_list .heading_tag span{
 	color:#E12B3E;
 
+}
+.inventory_checklist .check_list .check{
+	margin-bottom: 0.875rem;
+	font-size: 16px;
 }
 .inventory_checklist .check_list .list p, .construction_supplies .check_list .list p{
 	font-size: 16px;
@@ -1826,6 +1821,9 @@ a {
     height: 113px;
 	margin-bottom: 0.625rem;
 }
+.inventory_import .card_img{
+	margin-bottom: 0.625rem;
+}
 .inventory_import.inventory_card .card_sub_heaidng{
 	font-size: 13px;
 	color:#666666;
@@ -1859,15 +1857,23 @@ a {
 	padding-bottom: 268px;
 	margin-bottom: 120px;
 }
-.inventory_import .bg_image {
+.each_industry_invetory.inventory_import{
+	background-color:transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 97px;
+}
+
+
+/* .inventory_import .bg_image {
 	position: absolute;
 	top: 0 !important;
 	left: 0 !important;
 	width: 100% !important;
 	height: 100% !important;
-	object-fit: fill; /* or 'cover' / 'contain' based on your need */
+	object-fit: fill;
 	z-index: -1;
-}
+} */
 .inventory_import .bottom_text{
 	position: absolute;
 	bottom:97px;
@@ -2136,7 +2142,7 @@ margin-bottom: 175px;
 		padding-top: 15px;
 	}
 	
-	.inventory_checklist .check_list p, .construction_supplies_checklist .check_list p {
+	.inventory_checklist .check_list p {
 		font-size: 21px;
 	}
 	.inventory_import .inventory_card .card_sub_heaidng {
@@ -2278,6 +2284,9 @@ margin-bottom: 175px;
 		background-position: center bottom 0%;
 		padding-bottom: 0rem
 	}
+	.each_industry_invetory.inventory_import .inventory_import_tabs{
+		margin-bottom: 4rem;
+	}
 
 } 
 
@@ -2290,6 +2299,7 @@ margin-bottom: 175px;
 }
 .each_industry_hero h1{
 	font-size: 64px;
+	margin-bottom: 51px;
 }
 .each_industry_hero p{
 	font-size: 32px;
@@ -2302,7 +2312,7 @@ margin-bottom: 175px;
 .video-frame-wrapper {
 	max-width: 926px; /* as close to 926px as needed */
 	margin: auto;
-	margin-bottom: 110px;
+	margin-bottom: 0px;
 	background-color: #000;
 	border-radius: 10px;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -2314,20 +2324,26 @@ margin-bottom: 175px;
 	height: 532px; /* as per screenshot height */
 	display: block;
   }
-  .each_industry_hero .bg_img{
+  .each_industry_hero .each_industry_bg_img{
 	/* position: absolute; */
-    /* bottom: -20%;
+	bottom: 0px;
     width: 100%;
-    height: 614px;
+    height: 500px;
     z-index: -1;
-    left: 0; */
+    left: 0;
   }
-  .img_box{
+  .video_frame{
+	position: relative;
+    /* padding-top: 8rem; */
+    padding-bottom: 6.875rem;
+    margin-bottom: 6.25rem;
+  }
+  /* .img_box{
 	width: 642px;
     height: 558px;
 	position: relative;
 
-  }
+  } */
   .construction_supplies_checklist_bg{
 	background-image: url(/images/pages/each-industry/bg3.svg);
     background-size: cover;
@@ -2345,6 +2361,84 @@ margin-bottom: 175px;
   .each_industry_construstion_supply_checklists .ellipse_container_left{
 	margin-bottom: 150px;
   }
+
+  @media (min-width:1200px) and (max-width:1359px){
+	.each_industry_hero h1 {
+		font-size: 50px;
+		margin-bottom: 35px;
+	}
+	.each_industry_hero p {
+		font-size: 23px;
+	}
+  }
+  @media (min-width: 992px) and (max-width:1199px){
+	.each_industry_hero h1 {
+		font-size: 40px;
+		margin-bottom: 35px;
+	}
+	.each_industry_hero p {
+		font-size: 18px;
+	}
+	.each_industry_hero .heading {
+		margin-bottom: 45px;
+	}
+	.video_frame {
+		margin-bottom: 2.25rem;
+	}
+  }
+  /* Tablets (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px){
+	.each_industry_hero h1 {
+		font-size: 27px;
+		margin-bottom: 27px;
+	}
+	.each_industry_hero p {
+		font-size: 14px;
+	}
+	.each_industry_hero .heading {
+		margin-bottom: 30px;
+	}
+	.video-frame-wrapper iframe {
+		height: 362px;
+	}
+	.video_frame {
+		padding-bottom: 0.875rem;
+		margin-bottom: 4.25rem;
+	}
+	.construction_supplies_checklist_bg {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
+}
+@media (max-width: 767px){
+	.each_industry_hero .heading {
+		margin-bottom: 20px;
+	}
+	.each_industry_hero h1 {
+		font-size: 23px;
+		margin-bottom: 20px;
+	}
+	.each_industry_hero p {
+		font-size: 8px;
+	}
+	.each_industry_hero {
+		margin-top: 30px;
+	}
+	.video-frame-wrapper iframe {
+		height: 221px;
+	}
+	.video_frame {
+		padding-bottom: 0.875rem;
+		margin-bottom: 2.25rem;
+	}
+	.construction_supplies_checklist_bg {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	.each_industry_construstion_supply_checklists .ellipse_container_left {
+		margin-bottom: 52px;
+	}
+}
 /* each industry end */
 
 /* main feature */

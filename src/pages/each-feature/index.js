@@ -190,9 +190,7 @@ const EachFeature = () => {
             </div>
         </div>
     </div>
-                
-                
-
+  
     <div className='inventory_import'>
         <div className='custom_container container '>
             <div className='row justify-content-center align-items-center'>
@@ -206,9 +204,9 @@ const EachFeature = () => {
                     </p>
 
                 </div>
-
             </div>
         </div>
+
         <div className='custom_container container'>
             <div className='row '>
                 <div className="container col-8 col-md-6 inventory_import_tabs">
@@ -254,8 +252,8 @@ const EachFeature = () => {
                             </p>
                         </div>
                     </div>
-
                 </div>
+
                 <div className='row justify-content-center align-items-center inventory_container'>
                     <div className='col-12 col-md-3 px-5 px-md-2 px-lg-4 px-xl-5 mb-4 mb-md-0 '>
                         <div className='inventory_card card text-center'>
@@ -482,26 +480,7 @@ const EachFeature = () => {
             </div>
         </div>
     </div>
-                                    
-
-
-
-                
-   
-
-
-                                
-
-
-
-
-
-    
-
-
-
-
-      
+             
     </>
   )
 }
