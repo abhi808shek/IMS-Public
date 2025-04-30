@@ -479,7 +479,7 @@ const EachIndustry = () => {
                 </div>
             </div>
             </div>
-      </div>
+         </div>
 
                 
 

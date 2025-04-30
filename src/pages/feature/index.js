@@ -52,7 +52,7 @@ const MainFeature = () => {
           </div>
         </div>
       </div>
-      <div className="toolkit_card">
+      <div className="inevntory_toolkit_cards">
         <div className="custom_container container ">
           <div className="row ">
             <div className="container col-md-6 py-3 inventory_import_tabs">
@@ -361,7 +361,7 @@ const MainFeature = () => {
         </div>
       </div>
 
-      <div className="toolkit_card">
+      <div className="inevntory_toolkit_cards">
         <div className="toolkit_cards_container">
           <div className="position-absolute toolkit_bg toolkit_bg_right">
             <div className="img_box">
