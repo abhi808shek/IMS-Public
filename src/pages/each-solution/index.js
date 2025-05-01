@@ -88,7 +88,7 @@ export default function Features() {
 				</div>
 			</div>
 
-			<div className="each_solution_toolkit">
+			<div className="business_inventory_toolkit_cards">
 				<div className="row justify-content-center align-itens-center mx-0">
 					<div className="col-lg-11 col-xl-10 px-4">
 						<div className="row mx-0">

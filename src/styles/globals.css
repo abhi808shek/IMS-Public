@@ -671,7 +671,6 @@ a {
 .each_solution_bg {
 	padding-bottom: 89px;
 }
-
 .each_solution_left_panel {
 	padding-left: 98px;
     padding-right: 98px;
@@ -686,58 +685,56 @@ a {
 	height: 100%;
 	overflow: hidden;
 }
-
-
-.each_solution_toolkit{
+.business_inventory_toolkit_cards{
 	margin-top:100px;
 	margin-bottom: 127px;
 }
-.each_solution_toolkit h1{
+.business_inventory_toolkit_cards h1{
 	font-size: 32px;
 	color: #000000;
 	margin-bottom: 2rem;
 }
-.each_solution_toolkit .toolkit_card {
+.business_inventory_toolkit_cards .toolkit_card {
 	border-width: 0px 6px 6px 0px;
 	border-style: solid;
 	border-radius: 32px;
 	padding: 24px;
 	cursor: pointer ;
 }
-.each_solution_toolkit .toolkit_card.green {
+.business_inventory_toolkit_cards .toolkit_card.green {
 	background-color: #FAFFFE;
 	border-color: #BAF9F2;
 }
-.each_solution_toolkit .toolkit_card.blue {
+.business_inventory_toolkit_cards .toolkit_card.blue {
 	background-color: #F7FBFE;
 	border-color: #BADBF9;
 }
-.each_solution_toolkit .toolkit_card h4 {
+.business_inventory_toolkit_cards .toolkit_card h4 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 120%;
 }
-.each_solution_toolkit .toolkit_card p {
+.business_inventory_toolkit_cards .toolkit_card p {
 	color: #666666;
 	line-height: 120%;
 }
-.each_solution_toolkit .toolkit_card span {
+.business_inventory_toolkit_cards .toolkit_card span {
 	font-size: 14px;
 }
-.each_solution_toolkit .toolkit_card.green span {
+.business_inventory_toolkit_cards .toolkit_card.green span {
 	color: #1BEFD8;
 	line-height: 150%;;
 }
-.each_solution_toolkit .toolkit_card.blue span {
+.business_inventory_toolkit_cards .toolkit_card.blue span {
 	color: #74BAF9;
 }
-.each_solution_toolkit .toolkit_card_wrapper{
+.business_inventory_toolkit_cards .toolkit_card_wrapper{
 	margin-bottom: 2.938rem;
 }
-.each_solution_toolkit .toolkit_card_wrapper.left{
+.business_inventory_toolkit_cards .toolkit_card_wrapper.left{
 	padding-right: 1.84rem;
 }
-.each_solution_toolkit .toolkit_card_wrapper.right{
+.business_inventory_toolkit_cards .toolkit_card_wrapper.right{
 	padding-left: 1.84rem;
 }
 @media (min-width:1200px) and (max-width:1359px){
@@ -758,10 +755,9 @@ a {
 		font-size: 17px;
 		line-height: 150%;
 	}
-	.each_solution_toolkit .toolkit_card p {
+	.business_inventory_toolkit_cards .toolkit_card p {
 		font-size: 0.875rem;
-	}
-	
+	}	
 }
 /* Tablets (768px–991px) */
 @media (min-width: 768px) and (max-width: 991px){
@@ -784,22 +780,22 @@ a {
 		font-size: 47px;
 		margin-bottom: 21px;
 	}	
-	.each_solution_toolkit .toolkit_card p {
+	.business_inventory_toolkit_cards .toolkit_card p {
 		font-size: 0.688rem;
 	}
-	.each_solution_toolkit h1 {
+	.business_inventory_toolkit_cards h1 {
 		font-size: 21px;
 	}
-	.each_solution_toolkit .toolkit_card h4 {
+	.business_inventory_toolkit_cards .toolkit_card h4 {
 		font-size: 18px;
 	}
-	.each_solution_toolkit .toolkit_card span {
+	.business_inventory_toolkit_cards .toolkit_card span {
 		font-size: 12px;
 	}
-	.each_solution_toolkit .toolkit_card {
+	.business_inventory_toolkit_cards .toolkit_card {
 		padding: 15px;
 	}
-	.each_solution_toolkit .toolkit_card_wrapper {
+	.business_inventory_toolkit_cards .toolkit_card_wrapper {
 		margin-bottom: 1.938rem;
 	}
 	.construction_supplies {
@@ -827,29 +823,25 @@ a {
 		background-size: auto 100%;
 		background-position: center;
 	}
-	.each_solution_toolkit h1 {
+	.business_inventory_toolkit_cards h1 {
 		font-size: 22px;
 	}
-	.each_solution_toolkit .toolkit_card p {
+	.business_inventory_toolkit_cards .toolkit_card p {
 		font-size: 0.75rem;
 	}
-	.each_solution_toolkit .toolkit_card_wrapper.left {
+	.business_inventory_toolkit_cards .toolkit_card_wrapper.left {
 		padding-right: 0.75rem;
 	}
-	.each_solution_toolkit .toolkit_card_wrapper.right {
+	.business_inventory_toolkit_cards .toolkit_card_wrapper.right {
 		padding-left: 0.75rem;
 	}
-	.each_solution_toolkit .toolkit_card_wrapper {
+	.business_inventory_toolkit_cards .toolkit_card_wrapper {
 		margin-bottom: 1.938rem;
 	}
-	.each_solution_toolkit .toolkit_card h4 {
+	.business_inventory_toolkit_cards .toolkit_card h4 {
 		font-size: 18px;
 	}
-	
 }
-	
-	
-		
 
 /* end each-solution */
 
@@ -955,96 +947,6 @@ a {
 	color: #666666;
 	font-weight: 400;
 	line-height: 1.2;
-}
-
-
-.main_solution_upload{
-	margin-top: 100px;
-}
-.main_solution_bg2 {
-	background-image: url('/images/pages/each-solution/bg2.png');
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding-top:119px;
-	padding-bottom: 90px;
-	padding-left: 184px;
-	padding-right: 182px;
-}
-.main_solution_bg2 .main_solution_upload_left_panel{
-	padding-top: 134px;
-    padding-bottom: 134px;
-	margin-right: 47px;
-
-}
-
-.main_solution_bg3 h1 {
-	font-size: 32px;
-	font-weight: 700;
-}
-
-
-
-.main_solution_check_list{
-	margin-top:127px;
-}
-.main_solution_bg4_box{
-	padding: 0 8rem;
-	margin-top: 133px;
-}
-.main_solution_bg4 {
-	background-image: url('/images/pages/each-solution/bg4.svg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* padding: 3rem; */
-	height: 100%;
-	padding-bottom: 42px;
-}
-.main_solution_bg4 img {
-	width: 470px;
-	height: 409px;
-}
-.main_solution_bg4_box .image_container{
-	padding-top: 81px;
-    padding-left: 52px;
-    padding-right: 92px;
-    /* padding-bottom: 42px; */
-}
-.main_solution_bg4_list{
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	flex-direction: column;
-	padding-bottom: 42px;
-}
-
-.main_solution_bg5 {
-	margin-top: 130px;
-}
-.main_solution_bg5 h1 {
-	font-weight: 700;
-	font-size: 46px;
-}
-.main_solution_bg5 p {
-	font-size: 32px;
-	color: #666666;
-}
-.main_solution_content .tabs{
- 	margin-bottom:6.063rem ;
-}
-.main_solution_content .cards{
-	margin-bottom: 5.438rem;
-}
-.main_solution_bg5_tabs {
-	font-size: 24px;
-	font-weight: 700;
-	color: #666666;
-	cursor: pointer;
-}
-.main_solution_bg5_tabs.active {
-	color: #E12B3E;
-	border-bottom: 2px solid #E12B3E;
 }
 
 .main_Solution_bg6{
@@ -1180,8 +1082,6 @@ a {
 }
 /* Code for tablet screen size */
 @media (min-width: 768px) and (max-width: 1199px) {
-	
-	
 	.main_solution_content h1 {
 		font-size: 32px !important;
 	}
@@ -1285,8 +1185,6 @@ a {
 		font-size: 16px;
 	}
 }
-
-	
 
 /* end main solution page */
 
@@ -2481,15 +2379,10 @@ margin-bottom: 175px;
 	color:#666666;
 	margin-bottom: 51px;
 }
-.hero_img{
-	position: relative;
-	width:100%;
-	height: 747px;
-}
-.inevntory_toolkit_cards{
+.img_business_inevntory_toolkit_cards{
 	margin-bottom: 47px;
 }
-.inevntory_toolkit_cards .inventory_import_tabs{
+.img_business_inevntory_toolkit_cards .inventory_import_tabs{
 	margin-bottom: 60px;
 }
 .toolkit_cards_container{
@@ -2520,44 +2413,122 @@ margin-bottom: 175px;
 	width: 100%;
 	height: 100%;
 }
-.inevntory_toolkit_cards .title_tag{
+.img_business_inevntory_toolkit_cards .title_tag{
 	color:#E12B3E;
 	font-size: 32px;
 }
-.inevntory_toolkit_cards .title{
+.img_business_inevntory_toolkit_cards .title{
 	font-size: 32px;
 	line-height: 100%;
 }
-.inevntory_toolkit_cards .sub_title{
+.img_business_inevntory_toolkit_cards .sub_title{
 	font-size: 32px;
 	color:#666666;
 	line-height: 150%;
 }
-.inevntory_toolkit_cards .card{
+.img_business_inevntory_toolkit_cards .card{
 	border-radius: 0.75rem;
 	box-shadow: 0px 4px 4px 0px #00000026;
 	border: 0px;
 	outline: 0px;
+	margin-bottom: 2.938rem;
 
 }
-.inevntory_toolkit_cards .card .card_img{
-	aspect-ratio: 4 / 3;
-    width: 100%;
+.img_business_inevntory_toolkit_cards .card .card_img{
     overflow: hidden;
-    position: relative;
 	border-radius: 0.75rem;
 }
-.inevntory_toolkit_cards .card .card_img .card-title{
+.img_business_inevntory_toolkit_cards .card .card-title{
 	font-size: 18px;
 	margin-bottom: 4px;
 }
-.inevntory_toolkit_cards .card .card-text{
+.img_business_inevntory_toolkit_cards .card .card-text{
 	font-size: 14px;
 	color:#666666;
 
 }
 .footer_top_bg.main_feature{
 	margin-bottom: 183px;
+}
+@media (min-width: 992px) and (max-width:1199px){
+	.main_feature_hero h1 {
+		font-size: 49px;
+		margin-bottom: 35px;
+	}
+	.main_feature_hero p {
+		font-size: 23px;
+		margin-bottom: 35px;
+	}
+	.main_feature_hero .main_heading {
+		margin-bottom: 50px;
+	}
+	.img_business_inevntory_toolkit_cards .title_tag {
+		font-size: 30px;
+	}
+	.img_business_inevntory_toolkit_cards .title {
+		font-size: 29px;
+	}
+	.img_business_inevntory_toolkit_cards .sub_title {
+		font-size: 26px;
+	}
+}
+  /* Tablets (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px){
+	.main_feature_hero h1 {
+		font-size: 32px;
+		margin-bottom: 35px;
+	}
+	.main_feature_hero p {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+	.main_feature_hero .main_heading {
+		margin-bottom: 45px;
+	}
+	.main_feature_hero {
+		padding-top: 30px;
+		margin-bottom: 80px;
+	}
+	.img_business_inevntory_toolkit_cards .title_tag {
+		font-size: 28px;
+	}
+	.img_business_inevntory_toolkit_cards .title {
+		font-size: 23px;
+	}
+	.img_business_inevntory_toolkit_cards .sub_title {
+		font-size: 17px;
+	}
+	.img_business_inevntory_toolkit_cards .card .card-text {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 767px){
+	.main_feature_hero h1 {
+		font-size: 33px;
+		margin-bottom: 30px;
+	}
+	.main_feature_hero p {
+		font-size: 19px;
+		margin-bottom: 30px;
+	}
+	.main_feature_hero {
+		padding-top: 35px;
+		margin-bottom: 60px;
+	}
+	.img_business_inevntory_toolkit_cards .title_tag {
+		font-size: 22px;
+	}
+	.img_business_inevntory_toolkit_cards .title {
+		font-size: 18px;
+	}
+	.img_business_inevntory_toolkit_cards .sub_title {
+		font-size: 14px;
+	}
+	.img_business_inevntory_toolkit_cards .inventory_import_tabs {
+		margin-bottom: 20px;
+	}
+
 }
 /* end main feature */
 
