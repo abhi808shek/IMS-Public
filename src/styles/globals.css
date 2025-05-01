@@ -2732,6 +2732,7 @@ margin-bottom: 175px;
 .aboutus_hero h1{
 	font-size: 64px;
 	color:#000000;
+	margin-bottom: 30px;
 }
 .aboutus_hero h1 span{
 	font-size: 64px;
@@ -2749,7 +2750,7 @@ margin-bottom: 175px;
     top: 43px !important;
 }
 .aboutus_hero .leftpanal{
-	padding-right: 136px;
+	/* padding-right: 136px; */
 }
 .aboutus_hero .hero_container{
 	padding-right: 39px;
@@ -2765,19 +2766,20 @@ margin-bottom: 175px;
 .business_potential h2{
 	font-size: 48px;
 	color: #333333;
+	margin-bottom: 1.25rem;
 }
 .business_potential p{
 	font-size: 32px;
 	color:#666666;
 }
 .business_potential .content{
-	margin-bottom: 6rem;
+	margin-bottom: 8rem;
 }
 .business_potential{
 	background-image: url('/images/pages/about-us/bg4.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position:center bottom -30%;
+	background-position:center bottom 0%;
 	width: 100%;
 }
 .sortly_counter_cards{
@@ -2808,6 +2810,7 @@ margin-bottom: 175px;
 	border:none;
 	outline: none;
 	color:#333333;
+	padding: 23px 24px;
 }
 .sortly_counter_cards .card .card-title{
 	font-size: 24px !important;	
@@ -2816,16 +2819,21 @@ margin-bottom: 175px;
 	font-size: 48px !important;
 	color:#E12B3E;
 	vertical-align: sub;
+	font-weight: 900;
 }
 .sortly_counter_cards .card .card-text{
 	font-size: 24px !important;
 }
+.sortly_counter_cards .image_wrapper{
+	width: 118px;
+}
 .talant_locate_cards .card{
-	padding: 33px 25px;
+	padding:24px;
 	box-shadow: 0px 4px 4px 0px #00000040;
 	border: none;
 	outline: none;
 	margin-bottom: 2.5rem;
+	border-radius: 12px;
 
 }
 .talant_locate_cards .card-title{
@@ -2837,10 +2845,10 @@ margin-bottom: 175px;
 .talant_locate_cards .card-subtitle{
 	font-weight: 700;
 	font-size: 24px;
-	color:#333333;
+	color:#333333 !important;
 }
 .talant_locate_cards .card-body{
-	margin-top:83px;
+	margin-top:27px;
 }
 .talant_locate_img p{
 	font-size: 32px;
@@ -2869,6 +2877,202 @@ margin-bottom: 175px;
 	background-repeat: no-repeat;
 	background-position:center right 0;
 	width: 100%;
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+	.aboutus_hero h1,.aboutus_hero h1 span {
+		font-size: 51px;
+		margin-bottom: 17px;
+	}
+	.aboutus_hero p {
+		font-size: 19px;
+	}
+	.business_potential .content {
+		margin-bottom: 1rem;
+	}
+	.business_potential p {
+		font-size: 25px;
+	}
+	.business_potential h2 {
+		font-size: 40px;
+	}
+	.sortly_counter_cards .title {
+		top: calc(0% - 57px);
+		width: 100%;
+	}
+	.sortly_counter_cards p {
+		font-size: 36px;
+	}
+	.sortly_counter_cards .card .card-title {
+		font-size: 17px !important;
+	}
+	.sortly_counter_cards .card span {
+		font-size: 33px !important
+	}
+	.sortly_counter_cards .card .card-text {
+		font-size: 17px !important;
+	}
+	.talant_locate_cards .card {
+		padding: 18px;
+	}
+	.talant_locate_cards .card-title {
+		font-size: 33px;
+	}
+	.talant_locate_cards .card-subtitle {
+		font-size: 17px;
+	}
+	.talant_locate_img p {
+		font-size: 22px;
+	}
+	.inventory_cards .inventory_management_card .card-text{
+		font-size: 0.75rem;
+	}
+}
+ /* Tablets (768px–991px) */
+ @media (min-width: 768px) and (max-width: 991px){
+	.aboutus_hero {
+		margin-bottom: 50px;
+	}
+	.business_potential p {
+		font-size: 18px;
+	}
+	.business_potential h2 {
+		font-size: 31px;
+	}
+	.business_potential .content {
+		margin-bottom: 1rem;
+	}
+	.sortly_counter_cards {
+		margin-top: 164px;
+		padding-bottom: 100px;
+		padding-top: 100px;
+		background-position: center left -51px;
+	}
+	.sortly_counter_cards .title {
+		top: calc(0% - 41px);
+		width: 100%;
+	}
+	.sortly_counter_cards p {
+		font-size: 27px;
+	}
+	.sortly_counter_cards .card {
+		padding: 11px 10px;
+	}
+	.sortly_counter_cards .image_wrapper {
+		width: 88px;
+	}
+	.sortly_counter_cards .card .card-title {
+		font-size: 13px !important;
+	}
+	.sortly_counter_cards .card span {
+		font-size: 28px !important;
+	}
+	.sortly_counter_cards .card .card-text {
+		font-size: 13px !important;
+	}
+	.talant_locate_cards .card {
+		padding: 12px;
+	}
+	.talant_locate_cards .card-body {
+		margin-top: 20px;
+	}
+	.talant_locate_cards .card-title {
+		font-size: 26px;
+	}
+	.talant_locate_cards .card-subtitle {
+		font-size: 13px;
+	}
+	.talant_locate_img p span {
+		font-size: 17px;
+	}
+	.talant_locate_img p {
+		font-size: 17px;
+	}
+	.inventory_cards .inventory_management_card .card-text{
+		font-size: 0.75rem;
+	}
+	
+ }
+@media (max-width: 767px){
+	.aboutus_hero .hero_container {
+		padding-bottom: 4rem;
+	}
+	.aboutus_hero {
+		margin-bottom: 20px;
+	}
+	.aboutus_hero h1,.aboutus_hero h1 span {
+		font-size: 44px;
+		margin-bottom: 6px;
+	}
+	.aboutus_hero p {
+		font-size: 16px;
+	}
+	.aboutus_hero .hero_img_bg {
+		left: 20px !important;
+		top: 10px !important;
+	}
+	.business_potential h2 {
+		font-size: 21px;
+		margin-bottom: 1rem;
+	}
+	.business_potential p {
+		font-size: 11px;
+	}
+	.business_potential .content {
+		margin-bottom: 0.75rem;
+	}
+	.business_potential .ratio-16x9{
+		--bs-aspect-ratio: 47% !important;
+	}
+	.business_potential .img_potential{
+		top:30px !important;
+	}
+	.sortly_counter_cards p {
+		font-size: 25px;
+	}
+	.sortly_counter_cards .image_wrapper {
+		width: 100px;
+	}
+	.sortly_counter_cards .card .card-title {
+		font-size: 16px !important;
+	}
+	.sortly_counter_cards .card span {
+		font-size: 33px !important;
+	}
+	.sortly_counter_cards .card .card-text {
+		font-size: 15px !important;
+	}
+	.sortly_counter_cards .title {
+		top: calc(0% - 23px);
+		width: 100%;
+	}
+	.sortly_counter_cards {
+		margin-top: 102px;
+		padding-bottom: 0px;
+		padding-top: 119px;
+		background-position: center top 14px;
+	}
+	.talant_locate_cards .card-title {
+		font-size: 37px;
+	}
+	.talant_locate_cards .card-subtitle {
+		font-size: 17px;
+	}
+	.world_bg {
+        padding-bottom: 70px;
+        padding-top: 41px;
+    }
+	.talant_locate_cards {
+        padding-bottom: 52px;
+        padding-top: 4px;
+		margin-bottom: 11px;
+    }
+	.talant_locate_img p {
+		font-size: 18px;
+	}
+	.talant_locate_img p span {
+		font-size: 18px;
+	}
 }
 /* end about us page */
 
