@@ -81,7 +81,7 @@ const Footer = () => {
                     <h3 className="mb-2">Join 12M+ Users</h3>
                     <p className="mb-0 text-center">Start your journey to better inventory management</p>
                   </div>
-                  <button type="button" class="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
+                  <button type="button" className="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
                   <div className="card_bottom d-flex justify-content-center align-items-center mt-4">
                     <div className="d-flex justify-content-center align-items-center me-5">
                       <ShiledCheckLineIcon className="shield_icon me-1"/>

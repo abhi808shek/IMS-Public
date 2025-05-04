@@ -103,13 +103,13 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav class="navbar main_header navbar-expand-lg bg-body-tertiary px-4 py-3">
-        {/* <div class="container"> */}
-        <Link class="navbar-brand fs-5" href="/">
+      <nav className="navbar main_header navbar-expand-lg bg-body-tertiary px-4 py-3">
+        {/* <div className="container"> */}
+        <Link className="navbar-brand fs-5" href="/">
           Logo
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -117,10 +117,10 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li
               className={`nav-item dropdown ${show ? "show" : ""}`}
               onMouseEnter={() => setShow(true)}
@@ -153,7 +153,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           Feature
                         </p>
-                        <p class="dropedown_navitem mb-0">
+                        <p className="dropedown_navitem mb-0">
                           Real-time analytics
                         </p>
                       </div>
@@ -170,7 +170,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           Industry
                         </p>
-                        <p class="dropedown_navitem mb-0">Stock management</p>
+                        <p className="dropedown_navitem mb-0">Stock management</p>
                       </div>
                     </div>
                   </Link>
@@ -185,7 +185,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           Blogs
                         </p>
-                        <p class="dropedown_navitem mb-0">Advanced analytics</p>
+                        <p className="dropedown_navitem mb-0">Advanced analytics</p>
                       </div>
                     </div>
                   </Link>
@@ -233,7 +233,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           Solutions
                         </p>
-                        <p class="dropedown_navitem mb-0">Store management</p>
+                        <p className="dropedown_navitem mb-0">Store management</p>
                       </div>
                     </div>
                   </Link>
@@ -248,7 +248,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           About Us
                         </p>
-                        <p class="dropedown_navitem mb-0">Supply chain</p>
+                        <p className="dropedown_navitem mb-0">Supply chain</p>
                       </div>
                     </div>
                   </Link>
@@ -263,7 +263,7 @@ const Header = () => {
                         <p className="text_black fw-medium mb-0 dropedown_navlink">
                           Enterprises
                         </p>
-                        <p class="dropedown_navitem mb-0">Production control</p>
+                        <p className="dropedown_navitem mb-0">Production control</p>
                       </div>
                     </div>
                   </Link>
@@ -271,14 +271,14 @@ const Header = () => {
               </ul>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link  px-0" href="#">
+            <li className="nav-item">
+              <Link className="nav-link  px-0" href="#">
                 Pricing
               </Link>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link px-0" href="#">
+            <li className="nav-item">
+              <Link className="nav-link px-0" href="#">
                 Customers
               </Link>
             </li>

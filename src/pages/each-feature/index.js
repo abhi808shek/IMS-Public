@@ -411,7 +411,7 @@ const EachFeature = () => {
                 <div className='row'>
                     <div className='col-12 col-md-6 mb-3 mb-md-4'>
                         <div className='inventory_management_card card'>
-                            <div class="card-body p-4">
+                            <div className="card-body p-4">
                                 <div className='card_img mb-3 mb-md-4'>
                                     <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                 </div>
@@ -421,13 +421,13 @@ const EachFeature = () => {
                                     You and your construction crew should be working-not searching forYou 
                                     and your construction crew should be working-not searching for.
                                 </p>
-                                <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                             </div>
                         </div>
                     </div>
                     <div className='col-12 col-md-6 mb-3 mb-md-4'>
                         <div className='inventory_management_card card'>
-                            <div class="card-body p-4">
+                            <div className="card-body p-4">
                                 <div className='card_img mb-3 mb-md-4'>
                                     <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                 </div>
@@ -437,14 +437,14 @@ const EachFeature = () => {
                                     You and your construction crew should be working-not searching forYou 
                                     and your construction crew should be working-not searching for.
                                 </p>
-                                <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                 
                             </div>
                         </div>
                     </div>
                     <div className='col-12 col-md-6 mb-3 mb-md-4'>
                         <div className='inventory_management_card card'>
-                            <div class="card-body p-4">
+                            <div className="card-body p-4">
                                 <div className='card_img mb-3 mb-md-4'>
                                     <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                 </div>
@@ -454,14 +454,14 @@ const EachFeature = () => {
                                     You and your construction crew should be working-not searching forYou 
                                     and your construction crew should be working-not searching for.
                                 </p>
-                                <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                 
                             </div>
                         </div>
                     </div>
                     <div className='col-12 col-md-6 mb-3 mb-md-4'>
                         <div className='inventory_management_card card'>
-                            <div class="card-body p-4">
+                            <div className="card-body p-4">
                                 <div className='card_img mb-3 mb-md-4'>
                                     <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                 </div>
@@ -471,7 +471,7 @@ const EachFeature = () => {
                                     You and your construction crew should be working-not searching forYou 
                                     and your construction crew should be working-not searching for.
                                 </p>
-                                <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                 
                             </div>
                         </div>

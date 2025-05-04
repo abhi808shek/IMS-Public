@@ -16,7 +16,7 @@ const AboutUs = () => {
    
     <div className='row breadcrumb-wrapper px-5 mx-3 '>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
+            <ol className="breadcrumb mb-0">
                 <li className={`${roboto.className}  breadcrumb-item`}><Link href="#" className='item_link'>Home</Link></li>
                 <li className={`${roboto.className} breadcrumb-item active`} aria-current="page">About us</li>
             </ol>
@@ -32,8 +32,8 @@ const AboutUs = () => {
                     streamline and modernize every aspect of managing inventory.
                 </p>
                 <div className='d-flex justify-content-start align-ites-center'>
-                    <button type="button" class="btn secondary_fill_btn me-2">See All Features</button>
-                    <button type="button" class="btn primary_btn">Try Sortly Free</button>
+                    <button type="button" className="btn secondary_fill_btn me-2">See All Features</button>
+                    <button type="button" className="btn primary_btn">Try Sortly Free</button>
                 </div>
             </div>
 
@@ -77,8 +77,8 @@ const AboutUs = () => {
 
             <div className='row gx-5 pb-0 pb-md-5 mx-0'>
                 <div className='col-12 col-md-4 mb-4'>
-                    <div class="card">
-                        <div class="card-body p-0">
+                    <div className="card">
+                        <div className="card-body p-0">
                             <div className='d-flex justify-content-center align-items-center'>
                                 <div className='row position-relative mb-md-0 mb-lg-3 mb-xl-4 mx-0 ratio ratio-1x1 image_wrapper'>
                                     <Image className="mx-auto" src="/Icons/qr_code.svg" alt5="upload" fill style={{ objectFit: 'contain' }} />
@@ -92,8 +92,8 @@ const AboutUs = () => {
 
                         
                 <div className='col-12 col-md-4 mb-4'>
-                    <div class="card">
-                        <div class="card-body p-0">
+                    <div className="card">
+                        <div className="card-body p-0">
                             <div className='d-flex justify-content-center align-items-center'>
                                 <div className='row position-relative mb-md-0 mb-lg-3 mb-xl-4  mx-0 ratio ratio-1x1 image_wrapper'>
                                     <Image className="mx-auto" src="/Icons/qr_code.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
@@ -107,8 +107,8 @@ const AboutUs = () => {
 
                         
                 <div className='col-12 col-md-4 mb-4 '>
-                    <div class="card">
-                        <div class="card-body p-0">
+                    <div className="card">
+                        <div className="card-body p-0">
                             <div className='d-flex justify-content-center align-items-center'>
                                 <div className='row position-relative mb-md-0 mb-lg-3 mb-xl-4  mx-0 ratio ratio-1x1 image_wrapper'>
                                     <Image className="mx-auto" src="/Icons/qr_code.svg" alt="upload" fill style={{ objectFit: 'contain' }} />
@@ -134,8 +134,8 @@ const AboutUs = () => {
                 <div className='col-12 col-md-6'>
                     <div className='row justify-content-start align-items-center'>
                     <div className='col-5'>
-                        <div class="card">
-                            <div class="card-body px-0 py-0">
+                        <div className="card">
+                            <div className="card-body px-0 py-0">
                                 <div>
                                     <h5 className={`${roboto.className} card-title`}>3</h5>
                                     <h6 className={`${roboto.className} card-subtitle mb-2 text-body-secondary`}>Countries</h6> 
@@ -144,8 +144,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className='col-5'>
-                        <div class="card">
-                            <div class="card-body px-0 py-0">
+                        <div className="card">
+                            <div className="card-body px-0 py-0">
                                 <div>
                                     <h5 className={`${roboto.className} card-title`}>45</h5>
                                     <h6 className={`${roboto.className} card-subtitle mb-2 text-body-secondary`}>Eployees</h6> 
@@ -156,8 +156,8 @@ const AboutUs = () => {
                     </div>
                     <div className='row justify-content-start align-items-center'>
                         <div className='col-5'>
-                            <div class="card">
-                                <div class="card-body px-0 py-0">
+                            <div className="card">
+                                <div className="card-body px-0 py-0">
                                     <div>
                                         <h5 className={`${roboto.className} card-title`}>17</h5>
                                         <h6 className={`${roboto.className} card-subtitle mb-2 text-body-secondary`}>States</h6> 
@@ -189,67 +189,67 @@ const AboutUs = () => {
             <div className='row'>
                 <div className='col-12 col-md-6 mb-4 mb-lg-4'>
                     <div className='inventory_management_card card'>
-                        <div class="card-body p-3 p-lg-4">
+                        <div className="card-body p-3 p-lg-4">
                             <div className='card_img mb-4'>
                                 <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
 
                             </div>
                             <h5 className={`${roboto.className} card-title  mb-2 mb-md-2 mb-lg-3 mb-xl-4`}>A business toolkit.</h5>
-                            <p class="card-text mb-4">
+                            <p className="card-text mb-4">
                                 You and your construction crew should be working-not searching forYou 
                                 and your construction crew should be working-not searching for.
                             </p>
-                            <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                            <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                         </div>
                     </div>
                 </div>
                 <div className='col-12 col-md-6 mb-4 mb-lg-4'>
                     <div className='inventory_management_card card'>
-                        <div class="card-body p-3 p-lg-4">
+                        <div className="card-body p-3 p-lg-4">
                             <div className='card_img mb-4'>
                                 <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                             </div>
 
                             <h5 className={`${roboto.className} card-title  mb-2 mb-md-2 mb-lg-3 mb-xl-4`}>A business toolkit.</h5>
-                            <p class="card-text mb-4">
+                            <p className="card-text mb-4">
                                 You and your construction crew should be working-not searching forYou 
                                 and your construction crew should be working-not searching for.
                             </p>
-                            <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                            <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                             
                         </div>
                     </div>
                 </div>
                 <div className='col-12 col-md-6 mb-4 mb-lg-4'>
                     <div className='inventory_management_card card'>
-                        <div class="card-body p-3 p-lg-4">
+                        <div className="card-body p-3 p-lg-4">
                             <div className='card_img mb-4'>
                                 <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                             </div>
 
                             <h5 className={`${roboto.className} card-title  mb-2 mb-md-2 mb-lg-3 mb-xl-4`}>A business toolkit.</h5>
-                            <p class="card-text mb-4">
+                            <p className="card-text mb-4">
                                 You and your construction crew should be working-not searching forYou 
                                 and your construction crew should be working-not searching for.
                             </p>
-                            <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                            <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                             
                         </div>
                     </div>
                 </div>
                 <div className='col-12 col-md-6 mb-4 mb-lg-4'>
                     <div className='inventory_management_card card'>
-                        <div class="card-body p-3 p-lg-4">
+                        <div className="card-body p-3 p-lg-4">
                             <div className='card_img mb-4'>
                                 <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                             </div>
 
                             <h5 className={`${roboto.className} card-title  mb-2 mb-md-2 mb-lg-3 mb-xl-4`}>A business toolkit.</h5>
-                            <p class="card-text mb-4">
+                            <p className="card-text mb-4">
                                 You and your construction crew should be working-not searching forYou 
                                 and your construction crew should be working-not searching for.
                             </p>
-                            <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                            <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                             
                         </div>
                     </div>

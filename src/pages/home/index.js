@@ -22,7 +22,7 @@ const Home = () => {
         <div className='home_hero'>
             <div className='row home_hero_content'>
                 <div className='col-5 text_left'>
-                    <h1 class="gradient-text"> 
+                    <h1 className="gradient-text"> 
                         Redefining <br/>
                         <span className='mb-0'> 
                             <Image src="/images/pages/home-page/curvy-figure.svg" alt="upload" width={300} height={20} />
@@ -34,11 +34,11 @@ const Home = () => {
                         learns, adapts, and evolves with your business in real-time.
                     </p>
                     <div className='d-flex home_btn'>
-                        <button type="button" class="btn primary_btn_lg me-4">
+                        <button type="button" className="btn primary_btn_lg me-4">
                             <span className='me-2'><Rocket className="icon"/></span>
                             Start Free Trial
                         </button>
-                        <button type="button" class="btn white_outline_btn_lg">
+                        <button type="button" className="btn white_outline_btn_lg">
                             <span className='me-2'>
                                 <PlayCircle className="icon"/>
                             </span>
@@ -85,8 +85,8 @@ const Home = () => {
                 </div>
                 <div className='col-10'>
                     <div className='d-flex justify-content-center align-items-center'>
-                        <button type="button" class="btn secondary_fill_btn me-2">See All Features</button>
-                        <button type="button" class="btn primary_btn">Try Sortly Free</button>
+                        <button type="button" className="btn secondary_fill_btn me-2">See All Features</button>
+                        <button type="button" className="btn primary_btn">Try Sortly Free</button>
 
                     </div>
                 </div>
@@ -179,7 +179,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
-                        <button type="button" class="btn primary_btn btn_md">Submit</button>
+                        <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
                     
@@ -193,7 +193,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
-                        <button type="button" class="btn primary_btn btn_md">Submit</button>
+                        <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
                     <div className='col-5 '>
@@ -216,7 +216,7 @@ const Home = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
-                        <button type="button" class="btn primary_btn btn_md">Submit</button>
+                        <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
                     
@@ -291,19 +291,19 @@ const Home = () => {
                         </p>
                         <div className='row '>
                             <div className='col-6 '>
-                            <div class="inevtory_card card p-3">
-                                <div class="card-body p-0">
+                            <div className="inevtory_card card p-3">
+                                <div className="card-body p-0">
                                     <div className='row justify-content-start mx-0'>
                                         <div className='col-2 pe-0'>
                                         <div className='img_bg position-relative me-2'>
-                                        <div class="gradient-pulse-bg position-absolute"> </div>
+                                        <div className="gradient-pulse-bg position-absolute"> </div>
                                             <Store className="icon"/>
 
                                         </div>
                                         </div>
                                         <div className='col-10 ps-0'>
                                         <div className='card_text'>
-                                            <h5 class="card-title">Smart Stock Management</h5>
+                                            <h5 className="card-title">Smart Stock Management</h5>
                                             <p className={`${roboto.className} card-text mb-0`}>
                                                 AI-powered tracking across multiple locations with 
                                                 predictive analytics
@@ -322,19 +322,19 @@ const Home = () => {
 
                             </div>
                             <div className='col-6 '>
-                            <div class="inevtory_card card p-3">
-                                <div class="card-body p-0">
+                            <div className="inevtory_card card p-3">
+                                <div className="card-body p-0">
                                     <div className='row justify-content-start mx-0'>
                                         <div className='col-2 pe-0'>
                                         <div className='img_bg position-relative me-2'>
-                                        <div class="gradient-pulse-bg position-absolute"> </div>
+                                        <div className="gradient-pulse-bg position-absolute"> </div>
                                             <Store className="icon"/>
 
                                         </div>
                                         </div>
                                         <div className='col-10 ps-0'>
                                         <div className='card_text'>
-                                            <h5 class="card-title">Smart Stock Management</h5>
+                                            <h5 className="card-title">Smart Stock Management</h5>
                                             <p className={`${roboto.className} card-text mb-0`}>
                                                 AI-powered tracking across multiple locations with 
                                                 predictive analytics

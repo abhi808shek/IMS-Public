@@ -59,8 +59,8 @@ export default function MainSolution() {
                   .keys()
                   .map((_) => (
                     <div className="col-md-6 col-lg-4 business_toolkit_card_wrapper">
-                      <Link href="/each-solution" style={{ textDecoration: "none" }} class="card business_toolkit_card  bd-top-green">
-                        <div class="card-body p-0">
+                      <Link href="/each-solution" style={{ textDecoration: "none" }} className="card business_toolkit_card  bd-top-green">
+                        <div className="card-body p-0">
                           <div className="icon position-relative ratio ratio-1x1 img_wrapper">
                             <Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: "contain" }}/>
                           </div>
@@ -87,8 +87,8 @@ export default function MainSolution() {
                   .keys()
                   .map((_) => (
                     <div className="col-md-6 col-lg-4 business_toolkit_card_wrapper">
-                      <Link href="/each-solution" style={{ textDecoration: "none" }} class="card business_toolkit_card  bd-top-blue">
-                        <div class="card-body p-0">
+                      <Link href="/each-solution" style={{ textDecoration: "none" }} className="card business_toolkit_card  bd-top-blue">
+                        <div className="card-body p-0">
                           <div className="icon position-relative ratio ratio-1x1 img_wrapper">
                             <Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: "contain" }}/>
                           </div>
@@ -115,8 +115,8 @@ export default function MainSolution() {
                   .keys()
                   .map((_) => (
                     <div className="col-md-6 col-lg-4 business_toolkit_card_wrapper">
-                      <Link href="/each-solution" style={{ textDecoration: "none" }} class="card business_toolkit_card  bd-top-purple">
-                        <div class="card-body p-0">
+                      <Link href="/each-solution" style={{ textDecoration: "none" }} className="card business_toolkit_card  bd-top-purple">
+                        <div className="card-body p-0">
                           <div className="icon position-relative ratio ratio-1x1 img_wrapper">
                             <Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: "contain" }}/>
                           </div>
@@ -143,8 +143,8 @@ export default function MainSolution() {
                   .keys()
                   .map((_) => (
                     <div className="col-md-6 col-lg-4 business_toolkit_card_wrapper">
-                      <Link href="/each-solution" style={{ textDecoration: "none" }} class="card business_toolkit_card  bd-top-blue">
-                        <div class="card-body p-0">
+                      <Link href="/each-solution" style={{ textDecoration: "none" }} className="card business_toolkit_card  bd-top-blue">
+                        <div className="card-body p-0">
                           <div className="icon position-relative ratio ratio-1x1 img_wrapper">
                             <Image src="/images/pages/help-center/icon.svg" alt="upload" fill style={{ objectFit: "contain" }}/>
                           </div>
@@ -187,12 +187,12 @@ export default function MainSolution() {
         <div className="col-md-11 col-lg-9">
           <div className="row">
             <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-              <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+              <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                     Blog Post
                   </h5>
@@ -211,12 +211,12 @@ export default function MainSolution() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-              <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+              <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div  className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                     Blog Post
                   </h5>
@@ -235,12 +235,12 @@ export default function MainSolution() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-              <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+              <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div  className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                     Blog Post
                   </h5>

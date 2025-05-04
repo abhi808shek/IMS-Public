@@ -13,7 +13,7 @@ export default function BlogDetail() {
     <>
       <div className="row breadcrumb-wrapper px-md-3 px-2 mx-0 mx-md-3 mb-md-3 mb-lg-4">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0 align-items-center">
+          <ol className="breadcrumb mb-0 align-items-center">
             <li className={`${roboto.className} breadcrumb-item`}>
               <Link href="/blogs" className="item_link">
                 Blog
@@ -177,19 +177,19 @@ export default function BlogDetail() {
             .keys()
             .map((e, i) => (
               <Link href="/blog-detail" style={{ textDecoration: "none" }} className="col-sm-6 col-md-6 col-lg-3 mb-4" >
-                <div class="card blog_details_card"> 
+                <div className="card blog_details_card"> 
                   <div className="ratio ratio-16x9">
-                    <Image class="card-img-top" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg"alt="Card image cap"/>
+                    <Image className="card-img-top" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg"alt="Card image cap"/>
                   </div>
-                  <div class="card-body p-0 mt-3">
-                    <h5 class="card-title fw-bold mb-2">
+                  <div className="card-body p-0 mt-3">
+                    <h5 className="card-title fw-bold mb-2">
                       6 Inventory management best practises in consstruction
                     </h5>
                     <div className="mb-2 d-flex align-items-center">
-                      <span class="badge badge-pill badge-light shadow-sm text-dark me-2">
+                      <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
                         construction
                       </span>
-                      <span class="badge badge-pill badge-light shadow-sm text-dark me-2">
+                      <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
                         small business
                       </span>
                     </div>

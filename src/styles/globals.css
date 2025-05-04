@@ -2964,7 +2964,7 @@ margin-bottom: 150px;
 	}
 }
  /* Tablets (768px–991px) */
- @media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
 	.aboutus_hero {
 		margin-bottom: 50px;
 	}
@@ -3027,7 +3027,7 @@ margin-bottom: 150px;
 		font-size: 0.75rem;
 	}
 	
- }
+}
 @media (max-width: 767px){
 	.aboutus_hero .hero_container {
 		padding-bottom: 4rem;
@@ -3112,45 +3112,114 @@ margin-bottom: 150px;
 /* end about us page */
 
 /* blogs page start */
+.blog_hero .email_wrapper .email_btn{
+	right: -32px;
+	bottom: 0;
+	height: 110%;
+}
+.blog_hero h1{
+	font-size: 64px;
+    color: #000000;
+    margin-bottom: 51px;
+}
+.blog_hero p{
+	font-size: 32px;
+    color: #666666;
+	margin-bottom: 34px;
+}
+.blog_hero h1 span{
+	font-size: 64px;
+	color:#E12B3E;
+}
+.blog_hero_img {
+    aspect-ratio: 4 / 3;
+}
+.blog_hero .hero_img_bg {
+    z-index: -1;
+    color: transparent;
+    position: absolute;
+    left: 55px !important;
+    top: 43px !important;
+}
+.blog_hero .hero_container {
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 5rem;
+}
+.blog_hero {
+    padding-top: 3rem;
+    margin-bottom: 100px;
+}
 .c {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
 	min-height: 250px;
 }
+.blog_wrapper{
+	margin:0px 70px !important;
+}
 .blog-card-overlay {
 	background: rgba(0, 0, 0, 0.4);
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.blogs-card{
+	padding: 20px;
+	border: none !important;
+	margin-bottom: 32px;
 }
 .blogs-card.card1 {
 	background-image: url('/images/pages/blogs/card-bg1.png');
+	background-size: cover;
+    height: 258px;
 }
 .blogs-card.card2 {
 	background-image: url('/images/pages/blogs/card-bg2.png');
+	background-size: cover;
+    height: 258px;
 }
 .blogs-card .card-title {
-	font-weight: 500;
 	color: white;
 	font-size: 14.77px;
+	margin-bottom: 7.38px;
+	line-height: 23.63px;
 }
 .blogs-card .card-body {
 	z-index: 2;
 }
 .blogs-card .profile-title {
-	font-size: 12px;
+	font-size: 11px;
+}
+.blogs-card .badge{
+	color:#0D0D0D;
+}
+.blogs-filter{
+	padding-right: 29px !important;
 }
 .blogs-filter .title {
 	font-size: 24px;
 	font-weight: 500;
 }
+.blogs-filter .hr_stroke{
+	height: 2px;
+	background-color: #000;
+	opacity: 1;
+}
 .blogs-filter .filter-count {
 	color: #808080;
 }
+
 .blogs-filter .filter-item {
 	border-bottom: 1px solid #D6D6D6;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	padding-bottom: 20px;
+	margin-bottom: 24px;
 	cursor: pointer;
 }
+
 .blogs-filter .filter-item.active svg path {
 	stroke: #DD2A3B;
 }
@@ -3187,6 +3256,172 @@ margin-bottom: 150px;
 .blogs-pages .arrow:hover {
 	border-radius: 50%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+@media (min-width:1200px) and (max-width:1359px){
+	.blog_wrapper {
+		margin: 0px 50px !important;
+	}
+	.blogs-filter .filter-item {
+		font-size: 13px;
+	}
+	.blog_hero h1 {
+		font-size: 45px;
+		margin-bottom: 30px;
+	}
+	.blog_hero p {
+		font-size: 26px;
+		margin-bottom: 34px;
+	}
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+	.blog_hero h1, .blog_hero h1 span {
+        font-size: 39px;
+        margin-bottom: 17px;
+    }
+	.blog_hero p {
+		font-size: 22px;
+	}
+	.blogs-filter .filter-item .filter-text{
+		font-size: 14px;
+		width: 95px;
+		white-space: nowrap;
+		display: inline-block;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.blogs-card.card1,.blogs-card.card2{
+		height: 221px;
+	}
+	.blogs-card .card-title {
+		font-size: 13.77px;
+		line-height: 18.63px;
+	}
+	.blogs-card .profile-title {
+		font-size: 6px;
+	}
+	.blog_wrapper {
+		margin: 0px 30px !important;
+	}
+}
+
+/* Tablets (768px–991px) */
+@media (min-width: 768px) and (max-width: 991px){
+	.blog_hero h1,.blog_hero h1 span {
+		font-size: 43px;
+	}
+	.blog_hero h1{
+		margin-bottom: 20px;
+	}
+	.blog_hero p {
+		font-size: 25px;
+		margin-bottom: 34px;
+	}
+	.blog_hero .email_wrapper .email_btn {
+		right: 1px;
+	}
+	.blog_wrapper {
+		margin: 30px !important;
+	}
+	.blogs-card .profile-title {
+		font-size: 9px;
+	}
+	.blogs-filter .filter-item .filter-text{
+		font-size: 12px;
+		width: 140px;
+		white-space: nowrap;
+		display: inline-block;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.blogs-filter .filter-item {
+        padding-bottom: 20px;
+        margin-bottom: 17px;
+    }
+	.blogs-filter .filter-count{
+		font-size: 12px;
+	}
+}
+@media (max-width: 767px){
+	.blog_hero {
+		padding-top: 2rem;
+		margin-bottom: 30px;
+	}	
+	.blog_hero h1,.blog_hero h1 span {
+		font-size: 27px;
+		margin-bottom: 20px;
+	}
+	.blog_hero p {
+		font-size: 20px;
+		margin-bottom: 34px;
+	}
+	.blog_hero .hero_img_bg {
+        left: 20px !important;
+        top: 10px !important;
+    }
+	.email_wrapper .form-floating>.form-control{
+		min-height: 25px;
+		height: 46px;
+	}
+	.blog_hero .email_wrapper .email_btn {
+		right: -2px;
+		bottom: 0;
+		height: 110%;
+	}
+	.blog_hero .primary_btn {
+		padding: 0.4rem 1.2rem !important;
+    	font-size: 11px !important;
+	}
+	.email_wrapper .form-floating>label {
+		font-size: 12px;
+	}
+	.blog_wrapper {
+		margin: 0px 20px !important;
+	}
+	.blogs-filter .filter-item {
+		padding-bottom: 14px;
+		margin-bottom: 19px;
+		font-size: 12px;
+	}
+	.blog_wrapper .mobile_title{
+		color:#0D0D0D;
+		font-size: 20px;
+	}
+	.blog_wrapper .hamburger{
+		width: 20px;
+		height: 20px;
+		margin-right: 6px;
+	}
+	.blogs-filter{
+		position: absolute;
+		background-color: #ffff;
+		z-index: 9;
+		height: 100%;
+		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+		transition: transform 0.3s ease;
+		top: 2rem;
+        left: -20px;
+		padding: 1.5rem 1.2rem !important;
+	}
+	.blogs-filter.hidden{
+		transform: translateX(-100%);
+	}
+	.blogs-filter.visibel{
+		transform: translateX(0%);
+	}
+	.blogs-pages .page-number {
+		height: 25px;
+		width: 25px;	
+		margin-left: .5rem;
+		margin-right: .5rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		font-size: 10px;
+	}
 }
 /* blogs page end */
 

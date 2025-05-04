@@ -61,8 +61,8 @@ export default function MainIndustries() {
                     .keys()
                     .map((_) => (
                       <Link href="/each-industry"  className="col-md-6 col-lg-6 col-xl-4 pe-md-4" style={{ textDecoration: "none" }}>
-                        <div class="antique_inventory_card card">
-                          <div class="card-body p-0">
+                        <div className="antique_inventory_card card">
+                          <div className="card-body p-0">
                               <div className="mb-2">
                                 <Image src="/images/pages/main-industry/industry.svg" alt="upload" height="20" width="20"/>
                               </div>
@@ -98,12 +98,12 @@ export default function MainIndustries() {
           <div className="col-md-11 col-lg-9">
             <div className="row">
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>
 
-                  <div class="card-body p-0">
+                  <div className="card-body p-0">
                     <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                       Blog Post
                     </h5>
@@ -122,12 +122,12 @@ export default function MainIndustries() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>
 
-                  <div class="card-body p-0">
+                  <div className="card-body p-0">
                     <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                       Blog Post
                     </h5>
@@ -146,12 +146,12 @@ export default function MainIndustries() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div  className="img_conatiner">
                     <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                   </div>
 
-                  <div class="card-body p-0">
+                  <div className="card-body p-0">
                     <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                       Blog Post
                     </h5>

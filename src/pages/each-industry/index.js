@@ -29,7 +29,7 @@ const EachIndustry = () => {
 
             <div className='row  justify-content-center align-items-center video_frame'>
                 <div className='col-10 col-lg-9 col-xl-8'>
-                    <div class="video-frame-wrapper">
+                    <div className="video-frame-wrapper">
                         <iframe 
                             src="https://www.youtube.com/embed/k3Vfj-e1Ma4" 
                             title="YouTube video"
@@ -233,8 +233,8 @@ const EachIndustry = () => {
                                         <p className={`${roboto.className} ms-4`}>Add critical item details with custom fields. </p>
                                     </div>
                                     <div className='d-flex mt-4'>
-                                        <button type="button" class="btn secondary_fill_btn me-2">See All Features</button>
-                                        <button type="button" class="btn primary_btn">Try Sortly Free</button>
+                                        <button type="button" className="btn secondary_fill_btn me-2">See All Features</button>
+                                        <button type="button" className="btn primary_btn">Try Sortly Free</button>
                                     </div>
                                 </div>
                             </div>
@@ -404,12 +404,12 @@ const EachIndustry = () => {
             <div className="col-md-11 col-lg-9">
                 <div className="row">
                 <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                    <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                    <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                     <div className="img_conatiner">
                         <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                     </div>
 
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                         <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                         Blog Post
                         </h5>
@@ -428,12 +428,12 @@ const EachIndustry = () => {
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                    <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                    <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                     <div  className="img_conatiner">
                         <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                     </div>
 
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                         <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                         Blog Post
                         </h5>
@@ -452,12 +452,12 @@ const EachIndustry = () => {
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                    <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                    <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                     <div  className="img_conatiner">
                         <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                     </div>
 
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                         <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                         Blog Post
                         </h5>

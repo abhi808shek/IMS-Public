@@ -26,55 +26,55 @@ const Enterprise = () => {
             </div>
 
             <div className='col-12 col-lg-7 col-xl-6 d-flex d-lg-block align-items-center justify-content-center'>
-                <form class="custom-form">
+                <form className="custom-form">
                     <div className='form_inputs_fields'>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                <input type="text" class="form-control" id="firstName" placeholder="First name" required/>
+                        <div className="row g-3">
+                            <div className="col-md-6">
+                                <div className="form-floating">
+                                <input type="text" className="form-control" id="firstName" placeholder="First name" required/>
                                 <label for="firstName">First name*</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                <input type="text" class="form-control" id="lastName" placeholder="Last name" required/>
+                            <div className="col-md-6">
+                                <div className="form-floating">
+                                <input type="text" className="form-control" id="lastName" placeholder="Last name" required/>
                                 <label for="lastName">Last name*</label>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-floating mt-3">
-                            <input type="email" class="form-control" id="email" placeholder="Work email" required/>
+                        <div className="form-floating mt-3">
+                            <input type="email" className="form-control" id="email" placeholder="Work email" required/>
                             <label for="email">Work email*</label>
                         </div>
 
-                        <div class="form-floating mt-3">
-                            <input type="tel" class="form-control" id="phone" placeholder="Phone number" required/>
+                        <div className="form-floating mt-3">
+                            <input type="tel" className="form-control" id="phone" placeholder="Phone number" required/>
                             <label for="phone">Phone Number*</label>
                         </div>
                     </div>
 
 
                     <div className={`${roboto.className} form-label-section`}>How Many Users Will You Need? *</div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="users" id="user1" required/>
+                    <div className="form-check">
+                    <input className="form-check-input" type="radio" name="users" id="user1" required/>
                     <label className={`${roboto.className} form-check-label`} for="user1">12–15</label>
                     </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="users" id="user2"/>
+                    <div className="form-check">
+                    <input className="form-check-input" type="radio" name="users" id="user2"/>
                     <label className={`${roboto.className} form-check-label`} for="user2">16–20</label>
                     </div>
-                    <div class="form-check mb-2 mb-md-5">
-                    <input class="form-check-input" type="radio" name="users" id="user3"/>
+                    <div className="form-check mb-2 mb-md-5">
+                    <input className="form-check-input" type="radio" name="users" id="user3"/>
                     <label className={`${roboto.className} form-check-label`} for="user3">21+</label>
                     </div>
-                    <div class="form-check mb-5 d-flex align-items-center">
-                    <input class="form-check-input checkbox" type="checkbox" id="terms" required/>
+                    <div className="form-check mb-5 d-flex align-items-center">
+                    <input className="form-check-input checkbox" type="checkbox" id="terms" required/>
                     <label className={`${roboto.className} form-check-label terms-text ms-2`} for="terms">
                         I agree to the <span>Terms of Service</span> and <span>Privacy Policy *</span>
                     </label>
                     </div>
-                    <button type="submit" class="btn primary_btn w-100 py-2">Submit</button>
+                    <button type="submit" className="btn primary_btn w-100 py-2">Submit</button>
                 </form>
             </div>
         </div>
@@ -459,7 +459,7 @@ const Enterprise = () => {
                     <div className='row'>
                         <div className='col-12 col-md-6 mb-3 mb-md-4'>
                             <div className='inventory_management_card card'>
-                                <div class="card-body p-4">
+                                <div className="card-body p-4">
                                     <div className='card_img mb-3 mb-md-4'>
                                         <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                     </div>
@@ -469,13 +469,13 @@ const Enterprise = () => {
                                         You and your construction crew should be working-not searching forYou 
                                         and your construction crew should be working-not searching for.
                                     </p>
-                                    <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                    <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                 </div>
                             </div>
                         </div>
                         <div className='col-12 col-md-6 mb-3 mb-md-4'>
                             <div className='inventory_management_card card'>
-                                <div class="card-body p-4">
+                                <div className="card-body p-4">
                                     <div className='card_img mb-3 mb-md-4'>
                                         <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                     </div>
@@ -485,14 +485,14 @@ const Enterprise = () => {
                                         You and your construction crew should be working-not searching forYou 
                                         and your construction crew should be working-not searching for.
                                     </p>
-                                    <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                    <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                     
                                 </div>
                             </div>
                         </div>
                         <div className='col-12 col-md-6 mb-3 mb-md-4'>
                             <div className='inventory_management_card card'>
-                                <div class="card-body p-4">
+                                <div className="card-body p-4">
                                     <div className='card_img mb-3 mb-md-4'>
                                         <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                     </div>
@@ -502,14 +502,14 @@ const Enterprise = () => {
                                         You and your construction crew should be working-not searching forYou 
                                         and your construction crew should be working-not searching for.
                                     </p>
-                                    <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                    <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                     
                                 </div>
                             </div>
                         </div>
                         <div className='col-12 col-md-6 mb-3 mb-md-4'>
                             <div className='inventory_management_card card'>
-                                <div class="card-body p-4">
+                                <div className="card-body p-4">
                                     <div className='card_img mb-3 mb-md-4'>
                                         <Image className="card_logo" src="/images/pages/each-feature/mail_icon.svg" alt="upload" width={63} height={63} />	
                                     </div>
@@ -519,7 +519,7 @@ const Enterprise = () => {
                                         You and your construction crew should be working-not searching forYou 
                                         and your construction crew should be working-not searching for.
                                     </p>
-                                    <button type="button" class="btn secondary_fill_btn">See Solutions</button>
+                                    <button type="button" className="btn secondary_fill_btn">See Solutions</button>
                                     
                                 </div>
                             </div>

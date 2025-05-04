@@ -29,10 +29,10 @@ const MainFeature = () => {
               for.
             </p>
             <div className="d-flex justify-content-center align-itens-center">
-              <button type="button" class="btn primary_btn me-3">
+              <button type="button" className="btn primary_btn me-3">
                 See All Features
               </button>
-              <button type="button" class="btn secondary_fill_btn">
+              <button type="button" className="btn secondary_fill_btn">
                 Try Sortly Free
               </button>
             </div>
@@ -116,11 +116,11 @@ const MainFeature = () => {
             <div className="row tab_content mx-0">
               {[1, 2, 3, 5, 6, 7, 8, 8]?.map((_, index) => (
                 <Link href="/each-feature"className="col-12 col-md-4"style={{ textDecoration: "none" }}key={index} >
-                  <div class="card p-4">
+                  <div className="card p-4">
                     <div className="card_img mb-4 ratio ratio-4x3 position-relative">
                       <Image src="/images/pages/main-feature/bg2.svg"alt="background"fill className="card_image"style={{ objectFit: "cover" }}/>
                     </div>
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                       <h5
                         className={`${roboto.className} card-title fw-medium`}
                       >
@@ -169,11 +169,11 @@ const MainFeature = () => {
             <div className="row tab_content mx-0">
               {[1, 2, 3, 5, 6, 7, 8, 8]?.map((_, index) => (
                 <Link href="/each-feature" className="col-12 col-md-4" style={{ textDecoration: "none" }} ey={index}>
-                  <div class="card p-4">
+                  <div className="card p-4">
                     <div className="card_img mb-4 ratio ratio-4x3 position-relative">
                       <Image src="/images/pages/main-feature/bg5.svg" alt="background" fill className="card_image" style={{ objectFit: "cover" }}/>
                     </div>
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                       <h5
                         className={`${roboto.className} card-title fw-medium`}
                       >
@@ -222,11 +222,11 @@ const MainFeature = () => {
             <div className="row tab_content mx-0">
               {[1, 2, 3, 5, 6, 7, 8, 8]?.map((_, index) => (
                 <Link href="/each-feature" className="col-12 col-md-4" style={{ textDecoration: "none" }} key={index}>
-                  <div class="card p-4">
+                  <div className="card p-4">
                     <div className="card_img mb-4 ratio ratio-4x3 position-relative">
                       <Image src="/images/pages/main-feature/bg7.svg" alt="background" fill className="card_image" style={{ objectFit: "cover" }}/>
                     </div>
-                    <div class="card-body p-0">
+                    <div className="card-body p-0">
                       <h5 className={`${roboto.className} card-title fw-medium`}>
                         Card title
                       </h5>
@@ -302,7 +302,7 @@ const MainFeature = () => {
                     <h3 className="mb-2">Join 12M+ Users</h3>
                     <p className="mb-0 text-center">Start your journey to better inventory management</p>
                   </div>
-                  <button type="button" class="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
+                  <button type="button" className="btn primary_btn w-100 px-4 py-3">Join Now <span><ArrowRightLineIcon className="arrow_right_icon"/></span></button>
                   <div className="card_bottom d-flex justify-content-center align-items-center mt-4">
                     <div className="d-flex justify-content-center align-items-center me-5">
                       <ShiledCheckLineIcon className="shield_icon me-1"/>
@@ -356,15 +356,15 @@ const MainFeature = () => {
             <div className="row tab_content mx-0">
             {[1, 2, 3, 5, 6, 7, 8, 8]?.map((_, index) => (
                 <Link href="/each-feature" className="col-12 col-md-4" style={{ textDecoration: "none" }} key={index}>
-                <div class="card p-4">
+                <div className="card p-4">
                   <div className="card_img mb-4 ratio ratio-4x3 position-relative">
                     <Image src="/images/pages/main-feature/bg5.svg" alt="background" fill className="card_image" style={{ objectFit: "cover" }}/>
                   </div>
-                  <div class="card-body p-0">
+                  <div className="card-body p-0">
                     <h5 className={`${roboto.className} card-title fw-medium`}>
                       Card title
                     </h5>
-                    <p class="card-text mb-0">
+                    <p className="card-text mb-0">
                       well add content here. we’ll it short and simple. And
                       smile :){" "}
                     </p>
@@ -390,12 +390,12 @@ const MainFeature = () => {
           <div className="col-md-11 col-lg-9">
             <div className="row">
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                   Blog Post
                   </h5>
@@ -414,12 +414,12 @@ const MainFeature = () => {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div  className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                   Blog Post
                   </h5>
@@ -438,12 +438,12 @@ const MainFeature = () => {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
-                <div class="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
+                <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                 <div  className="img_conatiner">
                   <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
                 </div>
 
-                <div class="card-body p-0">
+                <div className="card-body p-0">
                   <h5 className={`${roboto.className} card-title pt-3 mb-3`}>
                   Blog Post
                   </h5>
