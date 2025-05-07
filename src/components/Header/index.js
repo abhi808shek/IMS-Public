@@ -2,6 +2,7 @@ import Link from "next/link";
 import { React, useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import { Pacifico } from 'next/font/google'
 import style from "@/styles/Home.module.css";
 import DashboardIcon from "@/assets/icon/dashboard.svg";
 import StackIcon from "@/assets/icon/stack-line.svg";
@@ -21,6 +22,12 @@ import LinkedinIcon from "@/assets/icon/linkedin-line.svg";
 import GlobalIcon from "@/assets/icon/global-line.svg";
 import Select from "react-select";
 
+
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400', // ✅ Only available weight
+  variable: '--font-inter',
+})
 const Header = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTablet = useMediaQuery({
@@ -29,122 +36,130 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const [solutionShow, setsolutionShow] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <>
-      <div className="top_navbar d-flex justify-content-between align-items-center py-2 px-4">
-        <div className="d-flex align-items-center">
-          <div className="contact me-3">
-            <p className="mb-0 text-white">
-              <span>
-                <PhoneIcon className="phone_icon icon_s14 me-2" />
-              </span>
-              +1 (888) 123-4567
-            </p>
-          </div>
-          <div className="email">
-            <p className="mb-0 text-white">
-              <span>
-                <MailIcon className="mail_icon icon_s14 me-2" />
-              </span>
-              support@inventorypro.com
-            </p>
-          </div>
-        </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="icons pe-4">
-            <Link href="#">
-              <TwitterIcon className="social_icon icon_s15 ms-3" />
-            </Link>
-            <Link href="#">
-              <LinkedinIcon className="social_icon icon_s15 ms-3" />
-            </Link>
-            <Link href="#">
-              <FacebookIcon className="social_icon icon_s15 ms-3" />
-            </Link>
-          </div>
-          <div className="select_language ps-4">
-            <div
-              className={`dropdown position-relative ${
-                showDropdown ? "show" : ""
-              }`}
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
-              <Link
-                href="#"
-                className="nav-link dropdown-toggle"
-                role="button"
-                aria-expanded={showDropdown}
-              >
+
+      <div className="top_navbar py-2 px-2 px-md-4">
+        <div className=" d-block d-md-flex justify-content-between align-items-center top_navbar_container">
+          <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
+            <div className="contact">
+              <p className="mb-0 text-white">
                 <span>
-                  <GlobalIcon className="icon_s15 me-2" />
+                  <PhoneIcon className="phone_icon icon_s14 me-2" />
                 </span>
-                English
-                <span className="ms-2">
-                  <ArrowDownIcon className="icon_s16" />
+                +1 (888) 123-4567
+              </p>
+            </div>
+            <div className="email">
+              <p className="mb-0 text-white">
+                <span>
+                  <MailIcon className="mail_icon icon_s14 me-2" />
                 </span>
+                support@inventorypro.com
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-center align-items-center">
+            <div className="icons pe-4">
+              <Link href="#">
+                <TwitterIcon className="social_icon icon_s15 ms-3" />
               </Link>
+              <Link href="#">
+                <LinkedinIcon className="social_icon icon_s15 ms-3" />
+              </Link>
+              <Link href="#">
+                <FacebookIcon className="social_icon icon_s15 ms-3" />
+              </Link>
+            </div>
+            <div className="select_language ps-4">
               <div
-                className={`dropdown-menu menu_language ${
+                className={`dropdown position-relative ${
                   showDropdown ? "show" : ""
                 }`}
+                onMouseEnter={() => setShowDropdown(true)}
+                onMouseLeave={() => setShowDropdown(false)}
               >
-                <Link className="dropdown-item" href="#">
+                <Link
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  role="button"
+                  aria-expanded={showDropdown}
+                >
+                  <span>
+                    <GlobalIcon className="icon_s15 me-2" />
+                  </span>
                   English
+                  <span className="ms-2">
+                    <ArrowDownIcon className="icon_s16" />
+                  </span>
                 </Link>
-                <Link className="dropdown-item" href="#">
-                  France
-                </Link>
-                <Link className="dropdown-item" href="#">
-                  Hindi
-                </Link>
+                <div
+                  className={`dropdown-menu menu_language ${
+                    showDropdown ? "show" : ""
+                  }`}
+                >
+                  <Link className="dropdown-item active p-0" href="#">
+                    English
+                  </Link>
+                  <Link className="dropdown-item p-0 mt-0" href="#">
+                    France
+                  </Link>
+                  <Link className="dropdown-item p-0 mt-0" href="#">
+                    Hindi
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <nav className="navbar main_header navbar-expand-lg bg-body-tertiary px-4 py-3">
-        {/* <div className="container"> */}
-        <Link className="navbar-brand fs-5" href="/">
-          Logo
+      <div className="nav_container px-2 px-sm-4 py-3"> 
+      <nav className="navbar  main_header  bg-body-tertiary py-0">
+        <Link className={`navbar-brand me-0`} href="/">
+          <p className={`${pacifico.className} mb-0`}>logo</p>
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li
-              className={`nav-item dropdown ${show ? "show" : ""}`}
-              onMouseEnter={() => setShow(true)}
-              onMouseLeave={() => setShow(false)}
-            >
-              <Link
-                className="nav-link dropdown-toggle px-0"
-                href="/feature"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded={show}
-              >
-                Features
-                <span className="ps-1">
-                  <ArrowDownIcon
-                    className={`arrow_down_icon ${show ? "rotate" : ""}`}
-                  />
+          
+        <div className="d-flex align-items-center">
+          <div className="nav_contact_mb me-2 me-sm-4">
+            <div className="nav_btn d-flex justify-content-center align-items-center">
+              <button type="button" className="btn signIn_btn d-flex align-items-center justify-content-center">
+                {" "}
+                <span>
+                  <UserIcon className="user_icon text_primary  me-2" />
                 </span>
+                <p className="mb-0">Sign In</p>
+              </button>
+              <button type="button" className="btn primary_btn d-flex align-items-center justify-content-center se-1 ms-sm-3">
+                <p className="mb-0">Start Free Trial</p>{" "}
+                <span>
+                  <ArrowRightIcon className="arrow_right_icon" />
+                </span>
+              </button>
+            </div>
+          </div>
+          <button
+              className="navbar-toggler custom-toggler"
+              type="button"
+              onClick={() => setNavOpen(!navOpen)}
+              aria-label="Toggle navigation"
+              >
+              <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
+       
+        <div className={`collapse navbar-collapse custom-collapse ${navOpen ? "show" : ""}`}>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-2 px-md-0">
+            <li className={`nav-item dropdown ${show ? "show" : ""}`} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} >
+              <Link className="nav-link dropdown-toggle px-0" href="/feature" role="button" data-bs-toggle="dropdown" aria-expanded={show} >
+                Features
+                <span className="ps-1"> <ArrowDownIcon className={`arrow_down_icon ${show ? "rotate" : ""}`}/> </span>
               </Link>
               <ul className={`dropdown-menu ${show ? "show" : ""}`}>
                 <li>
                   <Link className="dropdown-item" href="/feature">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto dropdown_item_icon">
                         <div className="round_circle">
                           <DashboardIcon className="icon" />
                         </div>
@@ -160,8 +175,8 @@ const Header = () => {
                     </div>
                   </Link>
                   <Link className="dropdown-item" href="/industry">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
                           <StackIcon className="icon" />
                         </div>
@@ -175,8 +190,8 @@ const Header = () => {
                     </div>
                   </Link>
                   <Link className="dropdown-item" href="/blogs">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
                           <BarChartIcon className="icon" />
                         </div>
@@ -193,20 +208,9 @@ const Header = () => {
               </ul>
             </li>
 
-            <li
-              className={`nav-item dropdown ${
-                solutionShow ? "solutionShow" : ""
-              }`}
-              onMouseEnter={() => setsolutionShow(true)}
-              onMouseLeave={() => setsolutionShow(false)}
-            >
-              <Link
-                className="nav-link dropdown-toggle px-0"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded={solutionShow}
-              >
+            <li className={`nav-item dropdown ${ solutionShow ? "show" : "" }`} 
+            onMouseEnter={() => setsolutionShow(true)} onMouseLeave={() => setsolutionShow(false)}>
+              <Link className="nav-link dropdown-toggle px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded={solutionShow}>
                 Solutions
                 <span className="ps-1">
                   <ArrowDownIcon
@@ -216,15 +220,11 @@ const Header = () => {
                   />
                 </span>
               </Link>
-              <ul
-                className={`dropdown-menu ${
-                  solutionShow ? "solutionShow" : ""
-                }`}
-              >
+              <ul className={`dropdown-menu ${ solutionShow ? "show" : ""}`}>
                 <li>
                   <Link className="dropdown-item" href="/solution">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto dropdown_item_icon">
                         <div className="round_circle">
                           <StoreIcon className="icon" />
                         </div>
@@ -238,8 +238,8 @@ const Header = () => {
                     </div>
                   </Link>
                   <Link className="dropdown-item" href="/about-us">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
                           <TruckIcon className="icon" />
                         </div>
@@ -253,8 +253,8 @@ const Header = () => {
                     </div>
                   </Link>
                   <Link className="dropdown-item" href="/enterprise">
-                    <div className="d-flex justify-content-center align-items-center p-2 mx-0">
-                      <div className="col-auto pe-3">
+                    <div className="dropdown-item_wrapper mx-0">
+                      <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
                           <CircleIcon className="icon" />
                         </div>
@@ -284,34 +284,25 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="nav_contact_lg">
             <div>
-              <Link
-                href="/help-center"
-                className="mb-0"
-                style={{ textDecoration: "none", color: "red" }}
-              >
+              <Link href="/help-center" className="mb-0 need_help_btn">
                 <span>
                   <CustomerIcon className="customer_icon me-2" />
                 </span>
                 Need Help?
               </Link>
             </div>
-            <div className="nav_btn d-flex justify-content-center align-items-center ms-4 ps-4">
-              <button
-                type="button"
-                className="btn signIn_btn d-flex align-items-center justify-content-center"
-              >
+            <div className="seprater"> </div>
+            <div className="nav_btn d-flex justify-content-center align-items-center">
+              <button type="button" className="btn signIn_btn d-flex align-items-center justify-content-center">
                 {" "}
                 <span>
                   <UserIcon className="user_icon text_primary me-2" />
                 </span>
                 <p className="mb-0">Sign In</p>
               </button>
-              <button
-                type="button"
-                className="btn primary_btn d-flex align-items-center justify-content-center ms-3"
-              >
+              <button type="button" className="btn primary_btn d-flex align-items-center justify-content-center ms-3">
                 <p className="mb-0">Start Free Trial</p>{" "}
                 <span>
                   <ArrowRightIcon className="arrow_right_icon" />
@@ -320,8 +311,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-        {/* </div> */}
+      
       </nav>
+      </div>
+   
     </>
   );
 };

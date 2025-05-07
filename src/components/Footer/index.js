@@ -109,11 +109,11 @@ const Footer = () => {
 
       </div>
       <div className="footer">
-        <div className='container'>
+        <div className='footer_container'>
           <div className='row'>
-            <div className='col-3 pe-lg-4'>
+            <div className='col-12 col-md-3 pe-lg-4 mb-4 mb-md-0'>
               <div className="info">
-                <div style={{ position: "relative", width: "89px", aspectRatio: "2/1" }} className="img_conatiner">
+                <div className="img_conatiner position-relative ratio ratio-16x9">
                     <Image src="/images/components/footer/cocacola-logo.svg" alt="blog" fill style={{ objectFit: "contain" }}/>
                   </div> 
                   <p className={`${roboto.className} mb-4`}><span className="fw-bold">Become an Inventory Insider:</span> All the inventory news & insights you need, delivered straight to inbox every week.</p>
@@ -126,9 +126,9 @@ const Footer = () => {
               </div>
 
             </div>
-            <div className="col-9 ps-lg-4">
+            <div className="col-12 col-md-9 ps-lg-4">
               <div className="row">
-                <div className="col-3 quick_links">
+                <div className="col-12 col-md-3  mb-2 mb-md-0 quick_links">
                   <p className={`${roboto.className} mb-3`}>Industries</p>
                   <ul className={`${roboto.className} list-unstyled`}>
                     <li className="mb-2"><Link href="#" className="link">Construction </Link></li>
@@ -142,7 +142,7 @@ const Footer = () => {
                   </ul>
 
                 </div>
-                <div className="col-2 quick_links">
+                <div className="col-12 col-md-2  mb-2 mb-md-0 quick_links">
                   <p className={`${roboto.className} mb-3`}>Users</p>
                   <ul className={`${roboto.className} list-unstyled`}>
                     <li className="mb-2"><Link href="#" className="link">World Bank </Link></li>
@@ -156,7 +156,7 @@ const Footer = () => {
                   </ul>
 
                 </div>
-                <div className="col-2 quick_links">
+                <div className="col-12 col-md-2  mb-2 mb-md-0 quick_links">
                   <p className={`${roboto.className} mb-3`}>Users</p>
                   <ul className={`${roboto.className} list-unstyled`}>
                     <li className="mb-2"><Link href="#" className="link">World Bank </Link></li>
@@ -168,7 +168,7 @@ const Footer = () => {
                   </ul>
 
                 </div>
-                <div className="col-2 quick_links">
+                <div className="col-12 col-md-2  mb-2 mb-md-0 quick_links">
                   <p className={`${roboto.className} mb-3`}>Users</p>
                   <ul className={`${roboto.className} list-unstyled`}>
                     <li className="mb-2"><Link href="#" className="link">World Bank </Link></li>
@@ -180,7 +180,7 @@ const Footer = () => {
                   </ul>
 
                 </div>
-                <div className="col-3 quick_links">
+                <div className="col-12 col-md-3  mb-2 mb-md-0 quick_links">
                   <p className={`${roboto.className} mb-3`}>Information</p>
                   <ul className={`${roboto.className} list-unstyled`}>
                     <li className="mb-2"><Link href="#" className="link">Disclaimer</Link></li>
@@ -197,13 +197,13 @@ const Footer = () => {
 
             </div>
           </div>
-          <div className="copywrite row justify-content-between align-items-center">
-            <div className="col-6">
-              <p className="mb-0 pt-0">©2025 Sortly Inc. All rights reserved.</p>
+          <div className="copywrite row justify-content-center   justify-content-md-between align-items-center">
+            <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
+              <p className={`${roboto.className} mb-0 pt-0`}>©2025 Sortly Inc. All rights reserved.</p>
             </div>
-            <div className="col-auto">
+            <div className="col-12 col-md-auto text-center d-flex justify-content-center d-md-block">
               <div className="d-flex">
-                <div className="icon_box d-flex align-items-center justify-content-center">
+                <div className="icon_box d-flex align-items-center justify-content-center ms-0">
                   <FacebookIcon/>
                 </div>
                 <div className="icon_box d-flex align-items-center justify-content-center">
