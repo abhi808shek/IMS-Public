@@ -227,8 +227,8 @@ const Home = () => {
 
         </div>
         <div className='software_product'>
-            <div className='software_product_wrapper right py-5 px-5'>
-                <div className='row justify-content-around align-items-center p-5'>
+            <div className='software_product_wrapper right py-3 py-md-5 px-5'>
+                <div className='row justify-content-around align-items-center p-3 p-md-5'>
                     <div className='col-5 d-flex justify-content-end'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg7.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -246,8 +246,8 @@ const Home = () => {
                     
                 </div>
             </div>
-            <div className='software_product_wrapper left py-5 px-5'>
-                <div className='row justify-content-around align-items-center p-5'>
+            <div className='software_product_wrapper left  px-3 py-md-5 px-5'>
+                <div className='row justify-content-around align-items-center p-3 p-md-5'>
                     <div className='col-5'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
@@ -264,8 +264,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='software_product_wrapper right py-5 px-5'>
-                <div className='row justify-content-around align-items-center p-5'>
+            <div className='software_product_wrapper right px-3 py-md-5 px-5'>
+                <div className='row justify-content-around align-items-center p-3 p-md-5'>
                     <div className='col-5 d-flex justify-content-end'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg7.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />

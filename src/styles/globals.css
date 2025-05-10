@@ -4568,6 +4568,17 @@ transform: scale(1.1) translateX(0.5rem); /* Scale up and move right */
 .software_product .software_product_wrapper {
     margin-bottom: 35px;
 }
+.primary_btn{
+	    font-size: 12px !important;
+
+}
+.secondary_fill_btn{
+	font-size: 11px !important;
+}
+.water_mark_wrapper .water_mark {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 }
   
 /* end home */
