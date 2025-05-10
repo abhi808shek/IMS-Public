@@ -28,11 +28,13 @@ export default function MainIndustries() {
                 construction inventory software.
               </p>
               <div className="d-flex align-items-center">
-                <button type="button" className="btn secondary_fill_btn me-3" >
-                  <span className={`${roboto.className}`}>See All Features</span>
+                <button type="button" className="btn secondary_fill_btn me-3">
+                  <span className={`${roboto.className}`}>
+                    See All Features
+                  </span>
                 </button>
                 <button type="button" className="btn primary_btn">
-                  <span className={`${roboto.className}`}>Try Sortly Free</span>  
+                  <span className={`${roboto.className}`}>Try Sortly Free</span>
                 </button>
               </div>
             </div>
@@ -43,47 +45,73 @@ export default function MainIndustries() {
         </div>
       </div>
 
-     
-        <div className="row align-items-center justify-content-center antique_inventory_cards_wrapper">
-          <div className="col-md-11 col-lg-9">
-            <div className="antique_inventory_cards pb-0">
-              <div className="container antique_inventory_cards_heading">
-                <h3 className={`${roboto.className} fw-bold w-sm-100 w-md-75 mb-0 px-4 px-md-4`}>
-                  Stay on top of your business’svaluable assets.
-                  <br />
-                  Browse Sortly’s asset tracking solutions
-                </h3>
-              </div>
+      <div className="row align-items-center justify-content-center antique_inventory_cards_wrapper">
+        <div className="col-md-11 col-lg-9">
+          <div className="antique_inventory_cards pb-0">
+            <div className="container antique_inventory_cards_heading">
+              <h3
+                className={`${roboto.className} fw-bold w-sm-100 w-md-75 mb-0 px-4 px-md-4`}
+              >
+                Stay on top of your business’svaluable assets.
+                <br />
+                Browse Sortly’s asset tracking solutions
+              </h3>
+            </div>
 
-              <div className="container">
-                <div className="row mx-0">
-                  {Array(15)
-                    .keys()
-                    .map((_) => (
-                      <Link href="/each-industry"  className="col-md-6 col-lg-6 col-xl-4 pe-md-4" style={{ textDecoration: "none" }}>
-                        <div className="antique_inventory_card card">
-                          <div className="card-body p-0">
-                              <div className="mb-2">
-                                <Image src="/images/pages/main-industry/industry.svg" alt="upload" height="20" width="20"/>
-                              </div>
-                              <h5 className={ roboto.className + " mb-2 fw-bold card-title"}>Antiques</h5>
-                              <Link className="d-flex align-items-center justify-content-between link_btn py-0" style={{ textDecoration: "none" }}href="#">
-                                <span className={`${roboto.className}`}> Antiques Inventory Management</span>
-                                <span className="ms-3">
-                                  <Image src="/images/pages/help-center/arrow_right.svg" alt="upload" width={24} height={24}/>
-                                </span>
-                              </Link>
+            <div className="container">
+              <div className="row mx-0">
+                {Array(15)
+                  .keys()
+                  .map((_, index) => (
+                    <Link
+                      href={`/industry/${index}`}
+                      className="col-md-6 col-lg-6 col-xl-4 pe-md-4"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="antique_inventory_card card">
+                        <div className="card-body p-0">
+                          <div className="mb-2">
+                            <Image
+                              src="/images/pages/main-industry/industry.svg"
+                              alt="upload"
+                              height="20"
+                              width="20"
+                            />
                           </div>
+                          <h5
+                            className={
+                              roboto.className + " mb-2 fw-bold card-title"
+                            }
+                          >
+                            Antiques
+                          </h5>
+                          <Link
+                            className="d-flex align-items-center justify-content-between link_btn py-0"
+                            style={{ textDecoration: "none" }}
+                            href="#"
+                          >
+                            <span className={`${roboto.className}`}>
+                              {" "}
+                              Antiques Inventory Management
+                            </span>
+                            <span className="ms-3">
+                              <Image
+                                src="/images/pages/help-center/arrow_right.svg"
+                                alt="upload"
+                                width={24}
+                                height={24}
+                              />
+                            </span>
+                          </Link>
                         </div>
-                      </Link>
-                    ))}
-                </div>
+                      </div>
+                    </Link>
+                  ))}
               </div>
             </div>
           </div>
         </div>
-
-
+      </div>
 
       <div className="main_Solution_bg6">
         <div className="main_solution_content mt-0 pb-0">
@@ -100,7 +128,12 @@ export default function MainIndustries() {
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
                 <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
                   <div className="img_conatiner">
-                    <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+                    <Image
+                      src="/images/pages/each-solution/blog.svg"
+                      alt="blog"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
 
                   <div className="card-body p-0">
@@ -112,8 +145,13 @@ export default function MainIndustries() {
                       superb, and the customer service was outstanding. I highly
                       recommend it to anyone looking for reliability and style."
                     </p>
-                    <Link href="#" className="link_btn w-100 d-flex justify-content-between align-items-center py-0">
-                    <span className={`${roboto.className}`}>Antiques Inventory Management{" "}</span> 
+                    <Link
+                      href="#"
+                      className="link_btn w-100 d-flex justify-content-between align-items-center py-0"
+                    >
+                      <span className={`${roboto.className}`}>
+                        Antiques Inventory Management{" "}
+                      </span>
                       <span className="">
                         <ArrowRightIcon />
                       </span>
@@ -123,8 +161,13 @@ export default function MainIndustries() {
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
                 <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
-                  <div  className="img_conatiner">
-                    <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+                  <div className="img_conatiner">
+                    <Image
+                      src="/images/pages/each-solution/blog.svg"
+                      alt="blog"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
 
                   <div className="card-body p-0">
@@ -136,8 +179,13 @@ export default function MainIndustries() {
                       superb, and the customer service was outstanding. I highly
                       recommend it to anyone looking for reliability and style."
                     </p>
-                    <Link href="#" className="link_btn w-100 d-flex justify-content-between align-items-center py-0">
-                    <span className={`${roboto.className}`}>Antiques Inventory Management{" "}</span> 
+                    <Link
+                      href="#"
+                      className="link_btn w-100 d-flex justify-content-between align-items-center py-0"
+                    >
+                      <span className={`${roboto.className}`}>
+                        Antiques Inventory Management{" "}
+                      </span>
                       <span className="">
                         <ArrowRightIcon />
                       </span>
@@ -147,8 +195,13 @@ export default function MainIndustries() {
               </div>
               <div className="col-md-6 col-lg-4 card_wrapper px-sm-4 px-md-3">
                 <div className="card p-4 p-sm-3 p-xxl-4 mb-4 mb-lg-0">
-                  <div  className="img_conatiner">
-                    <Image src="/images/pages/each-solution/blog.svg" alt="blog" fill style={{ objectFit: "cover" }}/>
+                  <div className="img_conatiner">
+                    <Image
+                      src="/images/pages/each-solution/blog.svg"
+                      alt="blog"
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
 
                   <div className="card-body p-0">
@@ -160,8 +213,13 @@ export default function MainIndustries() {
                       superb, and the customer service was outstanding. I highly
                       recommend it to anyone looking for reliability and style."
                     </p>
-                    <Link href="#" className="link_btn w-100 d-flex justify-content-between align-items-center py-0">
-                    <span className={`${roboto.className}`}>Antiques Inventory Management{" "}</span> 
+                    <Link
+                      href="#"
+                      className="link_btn w-100 d-flex justify-content-between align-items-center py-0"
+                    >
+                      <span className={`${roboto.className}`}>
+                        Antiques Inventory Management{" "}
+                      </span>
                       <span className="">
                         <ArrowRightIcon />
                       </span>
@@ -169,7 +227,6 @@ export default function MainIndustries() {
                   </div>
                 </div>
               </div>
-             
             </div>
           </div>
         </div>
