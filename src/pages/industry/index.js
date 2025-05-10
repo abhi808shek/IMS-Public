@@ -1,3 +1,4 @@
+"use client";
 import Head from "next/head";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
@@ -12,6 +13,35 @@ const roboto = Roboto({
 
 export default function MainIndustries() {
   const [tab, setTab] = useState("Managing");
+  const eachIndustryList = [
+    { title: "Antiques", content: "Antiques Inventory Management" },
+    { title: "Automotive", content: "Automotive Inventory Management" },
+    { title: "Aviation", content: "Aviation Inventory Management" },
+    { title: "Construction", content: "Construction Inventory Management" },
+    { title: "Dental", content: "Dental Inventory Management" },
+    { title: "Education", content: "Education Inventory Management" },
+    { title: "Electronics", content: "Electronics Inventory Management" },
+    { title: "Events", content: "Events Inventory Management" },
+    { title: "Facilities", content: "Facilities Inventory Management" },
+    { title: "Government", content: "Government Inventory Management" },
+    { title: "HVAC", content: "HVAC Inventory Management" },
+    { title: "Information Technology", content: "IT Inventory Management" },
+    {
+      title: "Interior Design",
+      content: "Interior Design Inventory Management",
+    },
+    { title: "Jewelry", content: "Jewelry Inventory Management" },
+    { title: "Logistics", content: "Logistics Inventory Management" },
+    { title: "Maintenance", content: "Maintenance Inventory Management" },
+    { title: "Manufacturing", content: "Manufacturing Inventory Management" },
+    { title: "Medical", content: "Medical Inventory Management" },
+    { title: "Non-Profit", content: "Non-Profit Inventory Management" },
+    { title: "Plumbing", content: "Plumbing Inventory Management" },
+    { title: "Real Estate", content: "Real Estate Inventory Management" },
+    { title: "Restaurant", content: "Restaurant Inventory Management" },
+    { title: "Retail", content: "Retail Inventory Management" },
+    { title: "Warehouse", content: "Warehouse Inventory Management" },
+  ];
 
   return (
     <>
@@ -60,53 +90,51 @@ export default function MainIndustries() {
 
             <div className="container">
               <div className="row mx-0">
-                {Array(15)
-                  .keys()
-                  .map((_, index) => (
-                    <Link
-                      href={`/industry/${index}`}
-                      className="col-md-6 col-lg-6 col-xl-4 pe-md-4"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <div className="antique_inventory_card card">
-                        <div className="card-body p-0">
-                          <div className="mb-2">
-                            <Image
-                              src="/images/pages/main-industry/industry.svg"
-                              alt="upload"
-                              height="20"
-                              width="20"
-                            />
-                          </div>
-                          <h5
-                            className={
-                              roboto.className + " mb-2 fw-bold card-title"
-                            }
-                          >
-                            Antiques
-                          </h5>
-                          <Link
-                            className="d-flex align-items-center justify-content-between link_btn py-0"
-                            style={{ textDecoration: "none" }}
-                            href="#"
-                          >
-                            <span className={`${roboto.className}`}>
-                              {" "}
-                              Antiques Inventory Management
-                            </span>
-                            <span className="ms-3">
-                              <Image
-                                src="/images/pages/help-center/arrow_right.svg"
-                                alt="upload"
-                                width={24}
-                                height={24}
-                              />
-                            </span>
-                          </Link>
+                {eachIndustryList.map((industry, index) => (
+                  <Link
+                    href={`/industry/${industry.title.toLowerCase()}`}
+                    className="col-md-6 col-lg-6 col-xl-4 pe-md-4"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="antique_inventory_card card">
+                      <div className="card-body p-0">
+                        <div className="mb-2">
+                          <Image
+                            src="/images/pages/main-industry/industry.svg"
+                            alt="upload"
+                            height="20"
+                            width="20"
+                          />
                         </div>
+                        <h5
+                          className={
+                            roboto.className + " mb-2 fw-bold card-title"
+                          }
+                        >
+                          {industry.title}
+                        </h5>
+                        <Link
+                          className="d-flex align-items-center justify-content-between link_btn py-0"
+                          style={{ textDecoration: "none" }}
+                          href={`/industry/${industry.title.toLowerCase()}`}
+                        >
+                          <span className={`${roboto.className}`}>
+                            {" "}
+                            {industry.content}
+                          </span>
+                          <span className="ms-3">
+                            <Image
+                              src="/images/pages/help-center/arrow_right.svg"
+                              alt="upload"
+                              width={24}
+                              height={24}
+                            />
+                          </span>
+                        </Link>
                       </div>
-                    </Link>
-                  ))}
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
