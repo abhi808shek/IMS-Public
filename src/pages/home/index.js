@@ -55,71 +55,90 @@ const Home = () => {
     
   return (
     <>
-        <div className='home_hero'>
-            <div className='row home_hero_content'>
-                <div className='col-5 text_left'>
-                    <div class="header_tag_pill display-flex align-items-center py-2 px-3">
-                        <FlashLight className="icon me-1 animate_plus"/>
-                        <span>Revolutionary AI Technology</span>
-                    </div>
-                    <h1 className="gradient-text"> 
-                        Redefining <br/>
-                        <span className='mb-0'> 
-                            <Image src="/images/pages/home-page/curvy-figure.svg" alt="upload" width={300} height={20} />
-                        </span>
-                        Management 
-                    </h1>
-                    <p className="mb-0">
-                        Experience the next generation of AI-powered inventory control that 
-                        learns, adapts, and evolves with your business in real-time.
-                    </p>
-                    <div className='d-flex home_btn'>
-                        <button type="button" className="btn primary_btn_lg me-4">
-                            <span className='me-2'><Rocket className="icon"/></span>
-                            Start Free Trial
-                        </button>
-                        <button type="button" className="btn white_outline_btn_lg">
-                            <span className='me-2'>
-                                <PlayCircle className="icon"/>
-                            </span>
-                            Watch Demo
-                        </button>
-                    </div>
-                    <div className="d-flex align-items-center ">
-                        <div className='d-flex users_wrapper'>
-                            <div className='rounded-circle position-relative users'>
-                                <Image src="/images/pages/home-page/bg1.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
-                            </div>
-                            <div className='rounded-circle position-relative users'>
-                                <Image src="/images/pages/home-page/bg2.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
-                            </div>
-                            <div className='rounded-circle position-relative users'>
-                                <Image src="/images/pages/home-page/bg2.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
-                            </div>
-                            <div className='rounded-circle position-relative users_count d-flex justify-content-center align-items-center'>
-                                <span>+5K</span>
-                            </div>
-                        </div>
-
-                        <div className='text-right'>
-                            <p className='title mb-0 fw-semibold'>Trusted by 5,000+ companies</p>
-                            <p className='sub_title mb-0 mt-0'>across 150+ countries</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className='col-6'>
-                    <div className='hero_img_wrapper'>
-                        <div className='hero_img position-relative ratio ratio-4x3'>
-                            <Image src="/images/pages/home-page/bg3.png" alt="upload" fill style={{ objectFit: 'cover' }}  />
-                        </div>
-                    </div>
-                </div>
+        <div className='home_hero position-relative'>
+            <div className="position-absolute inset_0">
+                <div className=" position-absolute hero_bg_Wrapper bg-radial-custom"></div>
+                <div className=" position-absolute hero_bg_Wrapper bg-radial-purple"></div>
             </div>
+            <div className="home_hero_content  px-4 ">
+           
+                <div className='row position-relative column_gap_4'>
+                    <div className="position-absolute home_hero_content_bg blur-2xl bg-gradient-to-br -inset-8"></div>
+                    <div className="position-absolute inset_0">
+                        <div className="position-absolute hero_icon_bg database">
+                            <Database className="icon"/>
+                        </div>
+                        <div className="position-absolute hero_icon_bg cloud">
+                            <Cloud className="icon"/>
+                        </div>
+                    </div>
+                    <div className='col-lg text_left px-0 mb-5 mb-lg-0'>
+                        <div class="header_tag_pill display-flex align-items-center py-2 px-3">
+                            <FlashLight className="icon me-1 animate_plus"/>
+                            <span>Revolutionary AI Technology</span>
+                        </div>
+                        <h1 className="gradient-text"> 
+                            Redefining <br/>
+                            <span className='mb-0'> 
+                                <Image src="/images/pages/home-page/curvy-figure.svg" alt="upload" width={300} height={20} />
+                            </span>
+                            Management 
+                        </h1>
+                        <p className="mb-0">
+                            Experience the next generation of AI-powered inventory control that 
+                            learns, adapts, and evolves with your business in real-time.
+                        </p>
+                        <div className='flex-column d-flex flex-md-row home_btn align-items-center'>
+                            <button type="button" className="btn primary_btn_lg me-lg-4 mb-3 mb-md-0 ">
+                                <span className='me-2'><Rocket className="icon"/></span>
+                                Start Free Trial
+                            </button>
+                            <button type="button" className="btn white_outline_btn_lg">
+                                <span className='me-2'>
+                                    <PlayCircle className="icon"/>
+                                </span>
+                                Watch Demo
+                            </button>
+                        </div>
+                        <div className="flex-column flex-md-row d-flex align-items-center trusted_users">
+                            <div className='d-flex users_wrapper me-4 mb-3 mb-md-0'>
+                                <div className='rounded-circle position-relative users'>
+                                    <Image src="/images/pages/home-page/bg1.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
+                                </div>
+                                <div className='rounded-circle position-relative users'>
+                                    <Image src="/images/pages/home-page/bg2.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
+                                </div>
+                                <div className='rounded-circle position-relative users'>
+                                    <Image src="/images/pages/home-page/bg2.jpg" alt="upload"  fill style={{ objectFit: 'cover' }} />
+                                </div>
+                                <div className='rounded-circle position-relative users_count d-flex justify-content-center align-items-center'>
+                                    <span>+5K</span>
+                                </div>
+                            </div>
+
+                            <div className='text-center text-md-right'>
+                                <p className='title mb-0 fw-semibold'>Trusted by 5,000+ companies</p>
+                                <p className='sub_title mb-0 mt-0'>across 150+ countries</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className='col-lg px-0'>
+                        <div className="position-relative">
+                                <div className='hero_img_wrapper position-absolute -inset-4 bg-gradient-to-r blur-xl '></div>
+                                <div className='hero_img position-relative ratio ratio-1x1 backdrop-blur-sm shadow-xl'>
+                                    <Image src="/images/pages/home-page/bg3.png" alt="upload" fill style={{ objectFit: 'cover' }}  />
+                                </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                        
+
         </div>
         <div className='container simple_inventory'>
             <div className='row justify-content-center align-items-center simple_inventory_heading'>
-                <div className='col-10 text-center'>
+                <div className='col-md-11 col-lg-12 text-center'>
                     <h2  className={`${roboto.className} fw-bold`}>One platform <span>SIMPLE</span> inventory management and accounts software</h2>
                 </div>
                 <div className='col-8 text-center sub_title'>
@@ -135,7 +154,7 @@ const Home = () => {
             </div>
 
             <div className='row simple_inventory_card_wrapper align-items-center'>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-order.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -145,7 +164,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-invoicing.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -155,7 +174,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-challan.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -165,7 +184,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-report.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -175,7 +194,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-items.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -185,7 +204,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-2 d-flex'>
+                <div className='col-4 col-md-2 d-flex'>
                     <div className='card'>
                         <div className='card_img ratio ratio-1x1'>
                             <Image src="/images/pages/home-page/icon-ledger.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -238,7 +257,7 @@ const Home = () => {
                         <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
-                    <div className='col-5 '>
+                    <div className='col-5 d-flex justify-content-end'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg4.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
                         </div>
@@ -554,11 +573,11 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className='row justify-content-center gap_2 position-relative'>
+                <div className='row justify-content-center gap_2 position-relative pricing_cards'>
                     <div className='position-absolute inset_0 price-card-bg-custom'>
 
                     </div>
-                    <div className='col-3 px-0'>
+                    <div className='col-md-4 col-xl-3 px-xl-0'>
                         <div className='pricing_card'>
                             <h3 className='fw-semibol mb-2'>Starter</h3>
                             <p className='fw-bold card_sub_heading mb-3'>$49<span className='text_mute'>/month</span></p>
@@ -570,7 +589,7 @@ const Home = () => {
                             <button type="button" class="btn white_outline_btn_md w-100">Get Started</button>
                         </div>
                     </div>
-                    <div className='col-3 px-0'>
+                    <div className='col-md-4 col-xl-3 px-xl-0'>
                         <div className='pricing_card most_popular position-relative'>
                             <div className='pill_tag px-3 py-1 text-center position-absolute'>
                                 <span className='text_sm'>Most Popular</span>
@@ -586,7 +605,7 @@ const Home = () => {
                             <button type="button" class="btn primary_btn w-100">Get Started</button>
                         </div>
                     </div>
-                    <div className='col-3 px-0'>
+                    <div className='col-md-4 col-xl-3 px-xl-0'>
                         <div className='pricing_card'>
                             <h3 className='fw-semibol mb-2'>Starter</h3>
                             <p className='fw-bold card_sub_heading mb-3'>$49<span className='text_mute'>/month</span></p>
