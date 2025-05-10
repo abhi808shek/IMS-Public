@@ -302,6 +302,8 @@ a {
 .nav_container{
 	margin-left: 51px !important;
 	margin-right: 51px !important;
+	padding-left: 6rem;
+	padding-right: 6rem;
 }
 .main_header {
 	background-color: #ffff !important;
@@ -2775,6 +2777,15 @@ margin-bottom: 150px;
 .help_form .file-upload-box {
 	background-color: #f9f9f9;
 	cursor: pointer;
+}
+.help_form .file-upload-box .input_lable{
+	top:calc(50% - 12px);
+	right:calc(50% - 97px);
+}
+.help_form .file-upload-box .file_input{
+	opacity: 0;
+	height: 100%;
+	width: 100%;
 }
 .help_form .btn-primary.btn-blue{
 	background-color: #484572 !important;

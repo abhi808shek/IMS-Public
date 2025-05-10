@@ -106,8 +106,12 @@ const HelpCenter = () => {
                             </div>
                             <div className="mb-4">
                                 <label for="fileUpload" className="form-label">Attachments</label>
-                                <div className="file-upload-box border border-secondary rounded p-3 text-muted text-center" id="fileUpload">
-                                <span className="text-danger fw-bold">Add file</span> or drop files here
+                                <div className="file-upload-box border border-secondary rounded p-2 text-muted text-center position-relative" id="fileUpload">
+                                {/* <span className="text-danger fw-bold">Add file</span> or drop files here */}
+                                <p className='mb-0 position-absolute input_lable'><span className="text-danger fw-bold">
+                                    Add file</span> or drop files here</p>
+                                
+                                 <input type="file" id="file-input" className='file_input'></input>
                                 </div>
                             </div>
                             <button type="submit" className="btn btn-primary btn-blue">Submit</button>
