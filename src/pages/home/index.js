@@ -1,8 +1,16 @@
-import {React, useState} from 'react'
+import {React, useState, useRef} from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { Roboto } from 'next/font/google'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
 import PlayCircle from "@/assets/icon/play-circle-line.svg"
 import Rocket from "@/assets/icon/rocket-line.svg"
 import Store from "@/assets/icon/store.svg"
@@ -652,6 +660,16 @@ const Home = () => {
                         </div>
                     </div>
 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div className='conatiner water_mark_wrapper'>
+            <div className='row'>
+                <div className='col-12 text-center water_mark'>
+                    <p>INNOVATE • OPTIMIZE • GROW</p>
 
                 </div>
 

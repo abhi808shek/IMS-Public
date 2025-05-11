@@ -235,8 +235,6 @@ export default function Features() {
 				</div>
 			</div>
 
-				
-	
 			<div className='each_industry_invetory inventory_import'>
 				<div className='custom_container container '>
 					<div className='row justify-content-center align-items-center'>
@@ -378,7 +376,20 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
-	
+
+			<div class="grid-container">
+				<div class="card_int">1</div>
+				<div class="card_int">2</div>
+				<div class="card_int">3</div>
+				<div class="card_int">4</div>
+				<div class="card_int">5</div>
+				<div class="card_int">6</div>
+				<div class="card_int">7</div>
+				<div class="card_int">8</div>
+				<div class="card_int">9</div>
+				<div class="card_int">10</div>
+			</div>
+
 
 			<div className="main_Solution_bg6">
 				<div className="main_solution_content mt-0 pb-0">

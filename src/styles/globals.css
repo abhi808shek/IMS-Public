@@ -42,6 +42,35 @@ a {
 	}
 }
 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 is the max in a row */
+  gap: 24px;
+}
+
+.card_int {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Make every 7th card span full row to force a line break */
+.card_int:nth-child(7n + 1) {
+  grid-column: 1 / -1;
+  display: none; /* optional: hide the spacer card or style it as a divider */
+}
+
+/* Optional spacing row (acts as a break) */
+.card_int.break {
+  grid-column: 1 / -1;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* common css */
 /* color */
 .text_black {
@@ -685,12 +714,12 @@ a {
 		margin-left: 8px;
 		margin-right: 8px;
 	}
+	.navbar .main_header{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 @media (max-width: 767px){
-	.nav_container {
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
 	.navbar-brand p {
 		font-size: 20px;
 		margin-right: 0rem !important;
@@ -710,8 +739,10 @@ a {
 		font-size: 12px;
 	}
 	.nav_container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+		margin-left: 0px !important;
+    	margin-right: 0px !important;
 	}
 }
   
@@ -4824,6 +4855,23 @@ transform: scale(1.1) translateX(0.5rem); /* Scale up and move right */
 }
 .get_demo .white_outline_btn_md{
 	width: 100% !important;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 }
   
