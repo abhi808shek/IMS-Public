@@ -16,10 +16,10 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className={inter.className}>
+      <main className={`${inter.className} main_wrapper`}>
         <Component {...pageProps} />
-      </main>
       <Footer />
+      </main>
     </>
   );
 }

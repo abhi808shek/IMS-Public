@@ -28,6 +28,11 @@ const pacifico = Pacifico({
   weight: '400', // ✅ Only available weight
   variable: '--font-inter',
 })
+ const handleNavItemClick = () => {
+  setShow(false);
+  setsolutionShow(false);
+  setNavOpen(false);
+};
 const Header = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTablet = useMediaQuery({
@@ -37,9 +42,10 @@ const Header = () => {
   const [solutionShow, setsolutionShow] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+ 
   return (
     <>
-
+      <div className="header">
       <div className="top_navbar py-2 px-2 px-md-4">
         <div className=" d-block d-md-flex justify-content-between align-items-center top_navbar_container">
           <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
@@ -157,7 +163,7 @@ const Header = () => {
               </Link>
               <ul className={`dropdown-menu ${show ? "show" : ""}`}>
                 <li>
-                  <Link className="dropdown-item" href="/feature">
+                  <Link className="dropdown-item" href="/feature" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto dropdown_item_icon">
                         <div className="round_circle">
@@ -174,7 +180,7 @@ const Header = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="dropdown-item" href="/industry">
+                  <Link className="dropdown-item" href="/industry" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
@@ -189,7 +195,7 @@ const Header = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="dropdown-item" href="/blogs">
+                  <Link className="dropdown-item" href="/blogs" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
@@ -222,7 +228,7 @@ const Header = () => {
               </Link>
               <ul className={`dropdown-menu ${ solutionShow ? "show" : ""}`}>
                 <li>
-                  <Link className="dropdown-item" href="/solution">
+                  <Link className="dropdown-item" href="/solution" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto dropdown_item_icon">
                         <div className="round_circle">
@@ -237,7 +243,7 @@ const Header = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="dropdown-item" href="/about-us">
+                  <Link className="dropdown-item" href="/about-us" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
@@ -252,7 +258,7 @@ const Header = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="dropdown-item" href="/enterprise">
+                  <Link className="dropdown-item" href="/enterprise" onClick={() => setNavOpen(!navOpen)}>
                     <div className="dropdown-item_wrapper mx-0">
                       <div className="col-auto  dropdown_item_icon">
                         <div className="round_circle">
@@ -313,6 +319,7 @@ const Header = () => {
         </div>
       
       </nav>
+      </div>
       </div>
    
     </>

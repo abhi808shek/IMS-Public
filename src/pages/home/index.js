@@ -89,7 +89,7 @@ const Home = () => {
                             learns, adapts, and evolves with your business in real-time.
                         </p>
                         <div className='flex-column d-flex flex-md-row home_btn align-items-center'>
-                            <button type="button" className="btn primary_btn_lg me-lg-4 mb-3 mb-md-0 ">
+                            <button type="button" className="btn primary_btn_lg me-md-4 mb-3 mb-md-0 ">
                                 <span className='me-2'><Rocket className="icon"/></span>
                                 Start Free Trial
                             </button>
@@ -226,15 +226,49 @@ const Home = () => {
             </div>
 
         </div>
+        <div className="get_demo position-relative">
+            <div className="position-absolute inset_0 bg1"></div>
+            <div className="position-absolute inset_0 bg2"></div>
+            <div className=" container ">
+                <div className="heading_wrapper text-center mb-5">
+                    <h3>Restock on time, every time.</h3>
+                    <p className="mb-4 mb-xl-5 sub_heading">Prediko help shopify brands make smarter forecasts and create POs faster.</p>
+                    <div className=" row flex-column flex-md-row justify-content-center align-items-center">
+                        <div className="col-11 col-md-12">
+                            <button type="button" class="btn primary_btn mb-4 mb-md-0 me-md-3">Get Demo</button>
+                            <button type="button" class="btn white_outline_btn_md ">Start 14-day Free Trail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="ratio ratio-16x9 position-relative">
+                    <Image src="/images/pages/main-feature/bg1.svg" alt="background" fill className="bg_image" style={{ objectFit: "cover" }}/>
+                </div>
+            </div>
+        </div>
+
+     
+
+
+        <div className='conatiner water_mark_wrapper'>
+            <div className='row'>
+                <div className='col-12 text-center water_mark'>
+                    <p>INNOVATE • OPTIMIZE • GROW</p>
+
+                </div>
+
+            </div>
+
+        </div>
         <div className='software_product'>
-            <div className='software_product_wrapper right py-3 py-md-5 px-5'>
-                <div className='row justify-content-around align-items-center p-3 p-md-5'>
-                    <div className='col-5 d-flex justify-content-end'>
+            <div className='software_product_wrapper right py-3 py-md-5 px-md-5 ps-5 pe-3'>
+                <div className='row justify-content-end justify-content-md-around align-items-center p-4 p-md-5'>
+                    <div className='col-10 col-md-5 d-flex justify-content-end mb-5 mb-md-0'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg7.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
                         </div>
                     </div>
-                    <div className='col-5'>
+                    <div className='col-10 col-md-5'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -246,9 +280,9 @@ const Home = () => {
                     
                 </div>
             </div>
-            <div className='software_product_wrapper left  px-3 py-md-5 px-5'>
-                <div className='row justify-content-around align-items-center p-3 p-md-5'>
-                    <div className='col-5'>
+            <div className='software_product_wrapper left  ps-3 pe-5 py-md-5 px-5'>
+                <div className='row justify-content-start justify-content-md-around align-items-center p-4 p-md-5'>
+                    <div className='col-10 col-md-5 order-2 order-md-1'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -257,21 +291,21 @@ const Home = () => {
                         <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
-                    <div className='col-5 d-flex justify-content-end'>
+                    <div className='col-10 col-md-5 d-flex justify-content-end order-1 order-md-2 mb-3 mb-md-0'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg4.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='software_product_wrapper right px-3 py-md-5 px-5'>
-                <div className='row justify-content-around align-items-center p-3 p-md-5'>
-                    <div className='col-5 d-flex justify-content-end'>
+            <div className='software_product_wrapper right py-3 py-md-5 px-md-5 ps-5 pe-3'>
+                <div className='row justify-content-end justify-content-md-around align-items-center p-4 p-md-5'>
+                    <div className='col-10 col-md-5 d-flex justify-content-end mb-5 mb-md-0'>
                         <div className='ratio ratio-4x3 position-relative img_wrapper'>
                             <Image src="/images/pages/home-page/bg7.svg" alt="upload" fill style={{ objectFit: 'cover' }}  />
                         </div>
                     </div>
-                    <div className='col-5'>
+                    <div className='col-10 col-md-5'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -296,7 +330,7 @@ const Home = () => {
             <div className='bg2 position-absolute'></div>
             <div className='possibilities_wrapper_container row'>
                 <div className='row justify-content-center top_heading_wrapper z-1'>
-                    <div className='col-8 text-center scale-hover'>
+                    <div className='col-11 col-lg-8 text-center scale-hover'>
                         <div className='pill_tag d-flex align-items-center column_gap_1 mb-4 m-auto'>
                             <FlashLight className="icon text_red fw-semibold"/>
                             <span className='text_red fw_semibold'>NEXT-GEN FEATURES</span>
@@ -310,7 +344,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='row column_gap_4 justify-content-center mx-0 feature_1'>
-                    <div className='col-lg left_panal position-relative px-0'>
+                    <div className='col-lg left_panal position-relative px-0 mb-5 mb-lg-0'>
                         <div className='img_wrapper_outer position-relative'>
                             <div className='image_wrapper ratio ratio-4x3 position-relative'>
                                 <Image src="/images/pages/home-page/bg8.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />
@@ -352,7 +386,7 @@ const Home = () => {
                                 learns and adapts to your unique business requirements in real-time.
                             </p>
                         <div className='row '>
-                            <div className='col-6 '>
+                            <div className='col-12 col-md-6 mb-4 mb-md-0'>
                                 <div className="white_card inevtory_card p-3">
                                     <div className='row justify-content-start mx-0 column_gap_1'>
                                         <div className='col-auto px-0'>
@@ -372,7 +406,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-6 '>
+                            <div className='col-12 col-md-6 mb-4 mb-md-0'>
                                 <div className="white_card inevtory_card p-3">
                                     <div className='row justify-content-start mx-0 column_gap_1'>
                                         <div className='col-auto px-0'>
@@ -397,9 +431,9 @@ const Home = () => {
                 </div>
                 <div className='row column_gap_4 justify-content-center mx-0 feature_2'>
                     
-                    <div className='col-lg workflow_wrapper px-0'>
+                    <div className='col-12 col-xl workflow_wrapper px-0'>
                         <div className='row mx-0 align-items-center column_gap_4 justify-content-center'>
-                            <div className='col-lg-5 px-0'>
+                            <div className='col-lg-5 px-0 mb-5 mb-lg-0'>
                                 <div className='workflow_list'>
                                     <h3 className={`${roboto.className} fw-bold mb-3`}>Streamlined <br/> Workflows</h3>
                                     <p className='text_gray mb-4'>
@@ -469,7 +503,7 @@ const Home = () => {
                         </div>
                     </div>
                         
-                    <div className='col-lg advance_management_wrapper px-0 display-flex align-items-center'>
+                    <div className='col-12 col-xl advance_management_wrapper px-0 display-flex align-items-center'>
                         <div className='row column_gap_4 justify-content-center align-items-center mx-0 position-relative'>
                             <div className='position-absolute bg'>
 
@@ -478,7 +512,7 @@ const Home = () => {
                                 <Database className="database_icon icon position-absolute"/>
                                 <Cloud className="cloud_icon icon position-absolute"/>
                             </div>
-                            <div className='col-lg px-0'>
+                            <div className='col-lg px-0 mb-5 mb-lg-0'>
                                 <div className='advance_management_img_wrapper position-relative'>
                                     <div className='advance_management_img posotion-relative ratio ratio-4x3'>
                                         <Image src="/images/pages/home-page/bg10.jpg" alt="upload" fill style={{ objectFit: 'cover' }}  />

@@ -20,7 +20,7 @@ const EachIndustry = () => {
             <div className='row justify-content-center heading'>
                 <div className='col-7'>
                     <h1 className={`${roboto.className} text-center fw-bold`}>The Best Construction Inventory Software</h1>
-                    <p className={`${roboto.className} text-center fw-bold`}>
+                    <p className={`${roboto.className} text-center fw-400`}>
                         You and your construction crew should be working-not searching for supplies or hurting down missing 
                         materials. With Sortly’s construction inventory software.
                     </p>
@@ -29,7 +29,7 @@ const EachIndustry = () => {
 
             <div className='row  justify-content-center align-items-center video_frame'>
                 <div className='col-10 col-lg-9 col-xl-8'>
-                    <div className="video-frame-wrapper">
+                    {/* <div className="video-frame-wrapper">
                         <iframe 
                             src="https://www.youtube.com/embed/k3Vfj-e1Ma4" 
                             title="YouTube video"
@@ -37,8 +37,11 @@ const EachIndustry = () => {
                             allowfullscreen
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                         </iframe>
+                    </div> */}
+                        <div className="ratio ratio-16x9 position-relative">
+                            <Image src="/images/pages/main-feature/bg1.svg" alt="background" fill className="bg_image" style={{ objectFit: "cover" }}/>
+                        </div>
                     </div>
-                </div>
                 <div className='each_industry_bg_img position-absolute'>
                     <Image className="me-4" src="/images/pages/each-industry/bg1.svg" alt="upload" fill style={{ objectFit: 'contain' }} />	
                 </div>
