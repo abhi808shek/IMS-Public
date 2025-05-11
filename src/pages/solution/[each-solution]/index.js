@@ -1,58 +1,106 @@
 "use client";
-import React from "react";
-import { Roboto } from "next/font/google";
+// Import icons from Lucide (or your preferred library)
+import {
+  Box,
+  Smartphone,
+  Package,
+  Tag,
+  Home,
+  Layers,
+  Barcode,
+} from "lucide-react";
 import Image from "next/image";
+import { Roboto } from "next/font/google";
 import { useState } from "react";
 import Link from "next/link";
 import ArrowRightIcon from "@/assets/icon/arrow-right.svg";
-import CheckBoxIcon from "@/assets/icon/check-box.svg";
-import { antiquesDetails } from "@/constant/data";
 
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-const EachIndustry = () => {
+export default function Features() {
   const [tab, setTab] = useState("Managing");
-  const detailsObject = {
-    routes: "/",
-    description: antiquesDetails,
-  };
+  const solutionListRow1 = [
+    {
+      title: "Inventory Management",
+      content: "Track, organize, and manage all your business’s inventory.",
+      icon: Box, // Use appropriate icon
+    },
+    {
+      title: "Asset Tracking",
+      content:
+        "Track your business’s assets, including equipment, tools, machinery, vehicles, and more.",
+      icon: Smartphone, // Placeholder icon name
+    },
+    {
+      title: "Supplies & Consumables",
+      content:
+        "Track the supplies and raw materials your business consumes to provide its services.",
+      icon: Package, // Placeholder icon name
+    },
+  ];
+  const solutionListRow2 = [
+    {
+      title: "Selling",
+      content: "Track the products and goods you sell to your customers.",
+      icon: Tag, // Placeholder icon name
+    },
+    {
+      title: "Home",
+      content:
+        "Track and inventory your personal belongings to stay organized during your move.",
+      icon: Home, // Placeholder icon name
+    },
+    {
+      title: "Industries",
+      content:
+        "Find your industry and learn how Sortly can help your business track inventory and assets.",
+      icon: Layers, // Placeholder icon name
+    },
+  ];
+
+  const solutionListRow3 = [
+    {
+      title: "Mobile Inventory Tracking",
+      content: "Manage inventory on the go with our easy-to-use mobile app.",
+      icon: Smartphone, // Placeholder icon name
+    },
+    {
+      title: "Barcoding",
+      content: "Manage inventory and assets with built-in QR & barcoding.",
+      icon: Barcode, // Placeholder icon name
+    },
+  ];
+
   return (
     <>
-      <div className="each_industry_hero position-relative">
-        <div className="row justify-content-center heading">
-          <div className="col-7">
-            <h1 className={`${roboto.className} text-center fw-bold`}>
-              {antiquesDetails.title1}
-            </h1>
-            <p className={`${roboto.className} text-center fw-bold`}>
-              {antiquesDetails.content1}
-            </p>
-          </div>
-        </div>
-
-        <div className="row  justify-content-center align-items-center video_frame">
-          <div className="col-10 col-lg-9 col-xl-8">
-            <div className="video-frame-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/k3Vfj-e1Ma4"
-                title="YouTube video"
-                frameborder="0"
-                allowfullscreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              ></iframe>
+      <div className="each_solution_hero">
+        <div className="row each_solution_bg">
+          <div className="col-12 col-md-12 col-lg-6 m-0 d-flex align-items-center justify-content-center">
+            <div className="each_solution_left_panel">
+              <h1 className={`${roboto.className} each_solution_header`}>
+                Inventory Software for your industry.
+              </h1>
+              <p className={`${roboto.className} each_solution_text mb-4`}>
+                {" "}
+                You and your construction crew should be working-not searching
+                for supplies or hurting down missing materials. With Sortly’s
+                construction inventory software.
+              </p>
+              <div className="d-flex align-items-center">
+                <button type="button" className="btn secondary_fill_btn me-3">
+                  See All Features
+                </button>
+                <button type="button" className="btn primary_btn">
+                  Try Sortly Free
+                </button>
+              </div>
             </div>
           </div>
-          <div className="each_industry_bg_img position-absolute">
-            <Image
-              className="me-4"
-              src="/images/pages/each-industry/bg1.svg"
-              alt="upload"
-              fill
-              style={{ objectFit: "contain" }}
-            />
+          <div className="col-md-12 col-lg-6 px-4 px-lg-0">
+            <div className="each_solution_right_panel ratio ratio-1x1"></div>
           </div>
         </div>
       </div>
@@ -60,12 +108,15 @@ const EachIndustry = () => {
       <div className="each_industry_construstion_supply">
         <div className="custom_container container ">
           <div className="row justify-content-center align-items-center">
-            <div className="col-8 each_feature_heading">
+            <div className="col-10 each_feature_heading">
               <h2 className={`${roboto.className} text-center`}>
-                {antiquesDetails.title2}
+                Visualize all your construction supplies and equipment on your
+                Sortly dashboard
               </h2>
               <p className={`${roboto.className} text-center mb-0`}>
-                {antiquesDetails.content2}
+                Sortly helps businesses of all sizes track the inventory and
+                assets that make their company run- saving them time, money, ans
+                stress.
               </p>
             </div>
           </div>
@@ -74,18 +125,7 @@ const EachIndustry = () => {
         <div className="construction_supplies_checklist_bg construction_supplies position-relative">
           <div className="container ">
             <div className="row justify-content-between align-items-center">
-              <div className="col-lg-7 col-xl-8 mb-4 mb-md-5 mb-lg-0">
-                <div className="img_box ratio ratio-4x3 position-relative">
-                  <Image
-                    className="me-4"
-                    src="/images/pages/each-industry/bg2.svg"
-                    alt="upload"
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              </div>
-              <div className="col-lg-5 col-xl-4 pe-lg-5 pe-xl-4">
+              <div className="col-lg-5 col-xl-4 pe-lg-5 pe-xl-4 mb-4">
                 <div className="check_list">
                   {/* <p className={`${roboto.className} fw-bold  mb-1 heading_tag`}>Key <span>Features</span></p> */}
                   {/* <p>Organize and automate your inventory at the touch of a button. </p> */}
@@ -145,6 +185,202 @@ const EachIndustry = () => {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-7 col-xl-8 mb-4 mb-md-5 mb-lg-0">
+                <div className="img_box ratio ratio-4x3 position-relative">
+                  <Image
+                    className="me-4"
+                    src="/images/pages/each-industry/bg2.svg"
+                    alt="upload"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="business_inventory_toolkit_cards">
+        <div className="row justify-content-center align-itens-center mx-0">
+          <div className="col-lg-11 col-xl-10 px-4">
+            <div className="row mx-0">
+              <div className="col-12">
+                <h1 className={`${roboto.className} fw-bold`}>
+                  A business toolkit for
+                  <br />
+                  every business
+                </h1>
+              </div>
+            </div>
+
+            <div className="row mx-0">
+              <div className="col-md-6 toolkit_card_wrapper left">
+                <div className="d-flex flex-column toolkit_card green">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-2`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-green.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 toolkit_card_wrapper right">
+                <div className="d-flex flex-column toolkit_card blue">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-blue.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6 toolkit_card_wrapper left">
+                <div className="d-flex flex-column toolkit_card blue">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-blue.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 toolkit_card_wrapper right">
+                <div className="d-flex flex-column toolkit_card green">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-green.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6 toolkit_card_wrapper left">
+                <div className="d-flex flex-column toolkit_card green">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-green.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 toolkit_card_wrapper right">
+                <div className="d-flex flex-column toolkit_card blue">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-blue.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6 toolkit_card_wrapper left">
+                <div className="d-flex flex-column toolkit_card blue">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-blue.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 toolkit_card_wrapper right">
+                <div className="d-flex flex-column toolkit_card green">
+                  <h4 className={`${roboto.className} fw-bold mb-2`}>
+                    Antiques
+                  </h4>
+                  <p className={`${roboto.className} mb-1`}>
+                    Track,organize and manage all your business’s inventory
+                  </p>
+                  <div className={`${roboto.className}`}>
+                    <span>Antiques Inventory Management</span>
+                    <Image
+                      className="ms-4"
+                      src="/images/pages/each-solution/left-green.svg"
+                      alt="left-green"
+                      width={9}
+                      height={16}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -155,10 +391,13 @@ const EachIndustry = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-10 each_feature_heading">
               <h2 className={`${roboto.className} mb-4 text-center`}>
-                {antiquesDetails.title3}
+                Visualize all your construction supplies and equipment on your
+                Sortly dashboard
               </h2>
               <p className={`${roboto.className} text-center mb-0`}>
-                {antiquesDetails.content3}
+                Sortly helps businesses of all sizes track the inventory and
+                assets that make their company run- saving them time, money, ans
+                stress.
               </p>
             </div>
           </div>
@@ -222,215 +461,6 @@ const EachIndustry = () => {
                       monitor condition.
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="inventory_checklist inventory_checklist_bg_right">
-          <div className="custom_container container ">
-            <div className="row justify-content-between inventory_checklist_content align-items-center">
-              <div className="col-12 col-lg-5 col-xl-4 px-4 pe-lg-5 mb-5 mb-lg-0 d-flex align-items-center">
-                <div className="check_list">
-                  {/* <p className={`${roboto.className} fw-bold heading_tag`}>Key <span>Features</span></p> */}
-                  {/* <p className='mb-4'>Organize and automate your inventory at the touch of a button. </p> */}
-                  <div className="list">
-                    <div className="d-flex justify-content-end align-items-center mb-3">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-end align-items-center mb-3">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-end align-items-center mb-0">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 px-4 px-lg-0">
-                <div className="check_list_bg ms-auto ratio ratio-4x3">
-                  <Image
-                    src="/images/pages/each-feature/bg3.svg"
-                    alt="upload"
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="inventory_checklist inventory_checklist_bg_left">
-          <div className="custom_container container ">
-            <div className="row justify-content-between inventory_checklist_content  align-items-center">
-              <div className="col-6 col-12 col-lg-6 px-4 px-lg-0 order-2 order-lg-1">
-                <div className="check_list_bg ms-auto ratio ratio-4x3">
-                  <Image
-                    src="/images/pages/each-feature/bg3.svg"
-                    alt="upload"
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              </div>
-              <div className="col-12 col-lg-5 col-xl-4 px-4 pe-lg-5 mb-5 mb-lg-0 d-flex align-items-center order-1 order-lg-2">
-                <div className="check_list">
-                  {/* <p className={`${roboto.className} fw-bold  mb-1 heading_tag`}>Key <span>Features</span></p> */}
-                  <p>
-                    Organize and automate your inventory at the touch of a
-                    button.{" "}
-                  </p>
-                  <div className="list">
-                    <div className="d-flex justify-content-end align-items-center mb-3">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-end align-items-center mb-3">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-end align-items-center mb-3">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        <span className="fw-bold">Upload high-resolution</span>
-                        photos so you can visually track and verify inventory
-                        and monitor condition.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="inventory_checklist inventory_checklist_bg_right">
-          <div className="custom_container container ">
-            <div className="row justify-content-between inventory_checklist_content align-items-center">
-              <div className="col-12 col-lg-5 col-xl-4 px-4 pe-lg-5 mb-5 mb-lg-0 d-flex align-items-center">
-                <div className="check_list">
-                  {/* <p className={`${roboto.className} fw-bold heading_tag`}>Key <span>Features</span></p> */}
-                  <p className="check">
-                    <span className="me-3">
-                      <CheckBoxIcon />
-                    </span>
-                    Organizing
-                  </p>
-                  <p className="mb-4">
-                    Organize and automate your inventory at the touch of a
-                    button.{" "}
-                  </p>
-                  <div className="list">
-                    <div className="d-flex justify-content-lg-end align-items-center mb-1">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        Easily upload your existing inventory list into Sortly.{" "}
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-lg-end align-items-center mb-1">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        Organize inventory folders by location, type, and more.{" "}
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-lg-end align-items-center mb-0">
-                      <Image
-                        src="/images/pages/each-feature/check.svg"
-                        alt="upload"
-                        width={32}
-                        height={32}
-                      />
-                      <p className={`${roboto.className} ms-4`}>
-                        Add critical item details with custom fields.{" "}
-                      </p>
-                    </div>
-                    <div className="d-flex mt-4">
-                      <button
-                        type="button"
-                        className="btn secondary_fill_btn me-2"
-                      >
-                        See All Features
-                      </button>
-                      <button type="button" className="btn primary_btn">
-                        Try Sortly Free
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 px-4 px-lg-0">
-                <div className="check_list_bg ms-auto ratio ratio-4x3">
-                  <Image
-                    src="/images/pages/each-feature/bg3.svg"
-                    alt="upload"
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
                 </div>
               </div>
             </div>
@@ -853,6 +883,4 @@ const EachIndustry = () => {
       </div>
     </>
   );
-};
-
-export default EachIndustry;
+}
