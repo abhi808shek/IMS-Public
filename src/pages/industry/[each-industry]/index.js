@@ -21,15 +21,6 @@ const EachIndustry = () => {
   };
   return (
     <>
-<<<<<<< HEAD
-        <div className='each_industry_hero position-relative'>
-            <div className='row justify-content-center heading'>
-                <div className='col-7'>
-                    <h1 className={`${roboto.className} text-center fw-bold`}>The Best Construction Inventory Software</h1>
-                    <p className={`${roboto.className} text-center fw-400`}>
-                        You and your construction crew should be working-not searching for supplies or hurting down missing 
-                        materials. With Sortly’s construction inventory software.
-=======
       <div className="each_industry_hero position-relative">
         <div className="row justify-content-center heading">
           <div className="col-7">
@@ -203,7 +194,6 @@ const EachIndustry = () => {
                       <span className="fw-bold">Upload high-resolution</span>
                       photos so you can visually track and verify inventory and
                       monitor condition.
->>>>>>> 52eac4f (Routing by Id fixed)
                     </p>
                   </div>
                   <div className="d-flex justify-content-end align-items-center mb-3">
@@ -235,84 +225,7 @@ const EachIndustry = () => {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-
-            <div className='row  justify-content-center align-items-center video_frame'>
-                <div className='col-10 col-lg-9 col-xl-8'>
-                    {/* <div className="video-frame-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/k3Vfj-e1Ma4" 
-                            title="YouTube video"
-                            frameborder="0"
-                            allowfullscreen
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-                        </iframe>
-                    </div> */}
-                        <div className="ratio ratio-16x9 position-relative">
-                            <Image src="/images/pages/main-feature/bg1.svg" alt="background" fill className="bg_image" style={{ objectFit: "cover" }}/>
-                        </div>
-                    </div>
-                <div className='each_industry_bg_img position-absolute'>
-                    <Image className="me-4" src="/images/pages/each-industry/bg1.svg" alt="upload" fill style={{ objectFit: 'contain' }} />	
-                </div>
-            </div>
-        </div>
-                    
-
-
-        <div className='each_industry_construstion_supply'>
-            <div className='custom_container container '>
-                <div className='row justify-content-center align-items-center'>
-                    <div className='col-8 each_feature_heading'>
-                        <h2 className={`${roboto.className} text-center`}>
-                           Visualize all your construction supplies and equipment on your Sortly dashboard
-                        </h2>
-                        <p className={`${roboto.className} text-center mb-0`}>
-                            Sortly helps businesses of all sizes track the inventory and assets 
-                            that make their company run- saving them time, money, ans stress.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className='construction_supplies_checklist_bg construction_supplies position-relative'>  
-                <div className='container '>
-                    <div className='row justify-content-between align-items-center'>
-                        <div className='col-lg-7 col-xl-8 mb-4 mb-md-5 mb-lg-0'>
-                            <div className='img_box ratio ratio-4x3 position-relative'>
-                            <Image className="me-4" src="/images/pages/each-industry/bg2.svg" alt="upload" fill style={{ objectFit: 'contain' }} />	
-                            </div>
-                        </div>
-                        <div className='col-lg-5 col-xl-4 pe-lg-5 pe-xl-4'>
-                            <div className='check_list'>
-                                {/* <p className={`${roboto.className} fw-bold  mb-1 heading_tag`}>Key <span>Features</span></p> */}
-                                {/* <p>Organize and automate your inventory at the touch of a button. </p> */}
-                                <div className='list'>
-                                    <div className='d-flex justify-content-end align-items-center mb-3'>
-                                        <Image src="/images/pages/each-feature/check.svg" alt="upload"  width={32} height={32} />
-                                        <p className={`${roboto.className} ms-4`}><span className='fw-bold'>Upload high-resolution</span>photos so you can visually track and verify inventory and monitor condition.</p>
-                                    </div>
-                                    <div className='d-flex justify-content-end align-items-center mb-3'>
-                                        <Image src="/images/pages/each-feature/check.svg" alt="upload"  width={32} height={32} />
-                                        <p className={`${roboto.className} ms-4`}><span className='fw-bold'>Upload high-resolution</span>photos so you can visually track and verify inventory and monitor condition.</p>
-                                    </div>
-                                    <div className='d-flex justify-content-end align-items-center mb-3'>
-                                        <Image src="/images/pages/each-feature/check.svg" alt="upload"  width={32} height={32} />
-                                        <p className={`${roboto.className} ms-4`}><span className='fw-bold'>Upload high-resolution</span>photos so you can visually track and verify inventory and monitor condition.</p>
-                                    </div>
-                                    <div className='d-flex justify-content-end align-items-center mb-0'>
-                                        <Image src="/images/pages/each-feature/check.svg" alt="upload"  width={32} height={32} />
-                                        <p className={`${roboto.className} ms-4`}><span className='fw-bold'>Upload high-resolution</span>photos so you can visually track and verify inventory and monitor condition.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-=======
           </div>
->>>>>>> 52eac4f (Routing by Id fixed)
         </div>
 
         <div className="inventory_checklist inventory_checklist_bg_right">
