@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-import {React, useState, useRef} from 'react'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Image from "next/image";
-import { Roboto } from 'next/font/google'
-// Import Swiper React components
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/effect-coverflow';
-// import 'swiper/css/pagination';
-// import { EffectCoverflow, Pagination } from 'swiper/modules';
-
-import PlayCircle from "@/assets/icon/play-circle-line.svg"
-import Rocket from "@/assets/icon/rocket-line.svg"
-import Store from "@/assets/icon/store.svg"
-import Stack from "@/assets/icon/stack-line.svg"
-import RadarLine from "@/assets/icon/radar-line.svg"
-import FileList from "@/assets/icon/file-list.svg"
-import ArrowRight from "@/assets/icon/arrow-right-line.svg"
-import FlowChart from "@/assets/icon/flow-chart.svg"
-import ShieldUSer from "@/assets/icon/shield-user-line.svg"
-import Book from "@/assets/icon/book-2-line.svg"
-import Team from "@/assets/icon/team-line.svg"
-import Database from "@/assets/icon/database-2-line.svg"
-import Cloud from "@/assets/icon/cloud-line.svg"
-import FlashLight from "@/assets/icon/flashlight-line.svg"
-import CheckLine from "@/assets/icon/check-line.svg"
-import dynamic from 'next/dynamic';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
-=======
 import { React, useState } from "react";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
@@ -52,7 +18,6 @@ import FlashLight from "@/assets/icon/flashlight-line.svg";
 import CheckLine from "@/assets/icon/check-line.svg";
 import dynamic from "next/dynamic";
 // import OwlCarousel from "react-owl-carousel";
->>>>>>> 8763dc9 (Code fixed)
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -843,102 +808,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-
-        <div className='pricing_card_wrapper pricing-bg-gradient-to-br position-relative'>
-            <div className='position-absolute inset_0'>
-                <div className='pricing-bg-radial-gradient_one position-absolute inset_0'></div>
-                <div className='pricing-bg-radial-gradient_second  position-absolute inset_0'></div>
-
-            </div>
-            <div className='price_container'>
-                <div className='row'>
-                    <div className='col-12 heading text-center'>
-                        <h2 className='fw-bold mb-3'>Transparent Pricing for Every Business</h2>
-                        <p>Choose the plan that best fits your business needs. No hidden fees.</p>
-
-                    </div>
-
-                </div>
-                <div className='row justify-content-center gap_2 position-relative pricing_cards'>
-                    <div className='position-absolute inset_0 price-card-bg-custom'>
-
-                    </div>
-                    <div className='col-md-4 col-xl-3 px-xl-0'>
-                        <div className='pricing_card'>
-                            <h3 className='fw-semibol mb-2'>Starter</h3>
-                            <p className='fw-bold card_sub_heading mb-3'>$49<span className='text_mute'>/month</span></p>
-                            <ul className='check_list list-unstyled'>
-                                <li><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                            </ul>
-                            <button type="button" class="btn white_outline_btn_md w-100">Get Started</button>
-                        </div>
-                    </div>
-                    <div className='col-md-4 col-xl-3 px-xl-0'>
-                        <div className='pricing_card most_popular position-relative'>
-                            <div className='pill_tag px-3 py-1 text-center position-absolute'>
-                                <span className='text_sm'>Most Popular</span>
-
-                            </div>
-                            <h3 className='fw-semibol mb-2'>Starter</h3>
-                            <p className='fw-bold card_sub_heading mb-3'>$49<span className='text_mute'>/month</span></p>
-                            <ul className='check_list list-unstyled'>
-                                <li><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                            </ul>
-                            <button type="button" class="btn primary_btn w-100">Get Started</button>
-                        </div>
-                    </div>
-                    <div className='col-md-4 col-xl-3 px-xl-0'>
-                        <div className='pricing_card'>
-                            <h3 className='fw-semibol mb-2'>Starter</h3>
-                            <p className='fw-bold card_sub_heading mb-3'>$49<span className='text_mute'>/month</span></p>
-                            <ul className='check_list list-unstyled'>
-                                <li><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                                <li className='mt-2'><CheckLine className="icon me-2"/><span>Up to 1,000 items</span></li>
-                            </ul>
-                            <button type="button" class="btn white_outline_btn_md w-100">Get Started</button>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-        <div className='conatiner water_mark_wrapper'>
-            <div className='row'>
-                <div className='col-12 text-center water_mark'>
-                    <p>INNOVATE • OPTIMIZE • GROW</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-  
-        <div className="container mx-auto py-10">
-           <OwlCarousel className="owl-theme" {...options}>
-                <div className="item"><h4>1</h4></div>
-                <div className="item"><h4>2</h4></div>
-                <div className="item"><h4>3</h4></div>
-                <div className="item"><h4>4</h4></div>
-                </OwlCarousel>
-         </div>
-
-
-      
-=======
       </div>
->>>>>>> 8763dc9 (Code fixed)
     </>
   );
 };
