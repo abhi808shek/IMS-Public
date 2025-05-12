@@ -4878,3 +4878,51 @@ transform: scale(1.1) translateX(0.5rem); /* Scale up and move right */
 }
   
 /* end home */
+
+/* privacy Policy */
+	.privacy_policy .header_wrapper h1{
+		color: #313138;
+		letter-spacing: -1px;
+		font-size: 64px;
+	}
+	.privacy_policy .header_wrapper p{
+		font-size: 14px;
+		color: #313138;
+		margin-bottom: 40px;
+	}
+    .policy_table .link {
+      color: #e63946;
+      text-decoration: none;
+    }
+    .policy_table .link:hover {
+      text-decoration: underline;
+    }
+	.policy_table{
+		border: 1px solid black !important;
+	}
+	.policy_table .heading{
+		background-color: #00bcd4 !important;
+		padding: 10px !important;
+		text-align: left;
+		font-weight: bold;
+	}
+	.list li::marker {
+    font-weight: 700;
+	}
+	ol.list {
+    list-style-position: inside;
+	}
+	.custom-header th{
+      background-color: #d9d9d9 !important;
+      font-weight: bold;
+      text-align: center;
+    }
+	.legal_basic{
+		border: 1px solid black !important;
+	}
+	@media(max-width:576px){
+		.privacy_policy .header_wrapper h1 {
+			font-size: 43px;
+		}
+	}
+/* end privacy Policy*/
