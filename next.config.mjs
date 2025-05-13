@@ -8,5 +8,8 @@ const nextConfig = {
     return config
   },
   reactStrictMode: true,
+  images: {
+    domains: ['swiperjs.com']
+  }
 }
 export default nextConfig;

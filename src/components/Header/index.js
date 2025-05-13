@@ -121,7 +121,7 @@ const Header = () => {
         </div>
       </div>
       <div className="nav_container  py-3"> 
-      <nav className="navbar  main_header  bg-body-tertiary py-0">
+      <nav className="navbar  main_header py-0">
         <Link className={`navbar-brand me-0`} href="/">
           <p className={`${pacifico.className} mb-0`}>logo</p>
         </Link>

@@ -29,6 +29,7 @@ import CheckLine from "@/assets/icon/check-line.svg"
 import dynamic from 'next/dynamic';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Carousel1 from "@/components/Homepage/Carousel";
 
 
 const roboto = Roboto({
@@ -60,7 +61,7 @@ const testimonials = [
 ];
 
 const Home = () => {
-    
+
   return (
     <>
         <div className='home_hero position-relative'>
@@ -69,7 +70,7 @@ const Home = () => {
                 <div className=" position-absolute hero_bg_Wrapper bg-radial-purple"></div>
             </div>
             <div className="home_hero_content  px-4 ">
-           
+
                 <div className='row position-relative column_gap_4'>
                     <div className="position-absolute home_hero_content_bg blur-2xl bg-gradient-to-br -inset-8"></div>
                     <div className="position-absolute inset_0">
@@ -85,15 +86,15 @@ const Home = () => {
                             <FlashLight className="icon me-1 animate_plus"/>
                             <span>Revolutionary AI Technology</span>
                         </div>
-                        <h1 className="gradient-text"> 
+                        <h1 className="gradient-text">
                             Redefining <br/>
-                            <span className='mb-0'> 
+                            <span className='mb-0'>
                                 <Image src="/images/pages/home-page/curvy-figure.svg" alt="upload" width={300} height={20} />
                             </span>
-                            Management 
+                            Management
                         </h1>
                         <p className="mb-0">
-                            Experience the next generation of AI-powered inventory control that 
+                            Experience the next generation of AI-powered inventory control that
                             learns, adapts, and evolves with your business in real-time.
                         </p>
                         <div className='flex-column d-flex flex-md-row home_btn align-items-center'>
@@ -129,7 +130,7 @@ const Home = () => {
                                 <p className='sub_title mb-0 mt-0'>across 150+ countries</p>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div className='col-lg px-0'>
                         <div className="position-relative">
@@ -141,7 +142,7 @@ const Home = () => {
                     </div>
                 </div>
              </div>
-                        
+
 
         </div>
         <div className='container simple_inventory'>
@@ -255,7 +256,7 @@ const Home = () => {
             </div>
         </div>
 
-     
+
 
 
         <div className='conatiner water_mark_wrapper'>
@@ -279,13 +280,13 @@ const Home = () => {
                     <div className='col-10 col-md-5'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
                         <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
-                    
+
                 </div>
             </div>
             <div className='software_product_wrapper left  ps-3 pe-5 py-md-5 px-5'>
@@ -293,7 +294,7 @@ const Home = () => {
                     <div className='col-10 col-md-5 order-2 order-md-1'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
                         <button type="button" className="btn primary_btn btn_md">Submit</button>
@@ -316,13 +317,13 @@ const Home = () => {
                     <div className='col-10 col-md-5'>
                         <p className={`${roboto.className} title`}>Software product companies</p>
                         <p className={`${roboto.className} description`}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
                         </p>
                         <button type="button" className="btn primary_btn btn_md">Submit</button>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -346,7 +347,7 @@ const Home = () => {
                         </div>
                         <h3  className={`${roboto.className} top_heading fw-bod text-center mb-4`}>One Platform, Endless Possibilities</h3>
                         <p className={`${roboto.className} sub_heading fw-bod text-center`}>
-                            Experience the future of inventory management with our AI-powered system. Transform <br/>your operations with 
+                            Experience the future of inventory management with our AI-powered system. Transform <br/>your operations with
                             cutting-edge features designed for the modern enterprise.
                         </p>
                     </div>
@@ -366,7 +367,7 @@ const Home = () => {
                                 <div className='card_icon d-flex justify-content-center align-items-center position-relative me-2'>
                                 <RadarLine className="icon"/>
                                 </div>
-                                    
+
                                 <div className='card_text'>
                                     <p className='title mb-0'>Live Tracking</p>
                                 </div>
@@ -390,7 +391,7 @@ const Home = () => {
                             <div className='position-absolute inventory_control-content'></div>
                             <h4 className={`${roboto.className} title fw-bod text-center mb-4`}>Complete Inventory Control</h4>
                             <p className={`${roboto.className} sub_title  mb-4`}>
-                                Experience next-level inventory management with our AI-powered solution that 
+                                Experience next-level inventory management with our AI-powered solution that
                                 learns and adapts to your unique business requirements in real-time.
                             </p>
                         <div className='row '>
@@ -407,7 +408,7 @@ const Home = () => {
                                         <div className='col-lg px-0'>
                                             <h5 className="text_lg">Smart Stock Management</h5>
                                             <p className={`${roboto.className} text_gray mb-0`}>
-                                                AI-powered tracking across multiple locations with 
+                                                AI-powered tracking across multiple locations with
                                                 predictive analytics
                                             </p>
                                         </div>
@@ -427,7 +428,7 @@ const Home = () => {
                                         <div className='col-lg px-0'>
                                             <h5 className="text_lg">Smart Stock Management</h5>
                                             <p className={`${roboto.className} text_gray mb-0`}>
-                                                AI-powered tracking across multiple locations with 
+                                                AI-powered tracking across multiple locations with
                                                 predictive analytics
                                             </p>
                                         </div>
@@ -438,14 +439,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='row column_gap_4 justify-content-center mx-0 feature_2'>
-                    
+
                     <div className='col-12 col-xl workflow_wrapper px-0'>
                         <div className='row mx-0 align-items-center column_gap_4 justify-content-center'>
                             <div className='col-lg-5 px-0 mb-5 mb-lg-0'>
                                 <div className='workflow_list'>
                                     <h3 className={`${roboto.className} fw-bold mb-3`}>Streamlined <br/> Workflows</h3>
                                     <p className='text_gray mb-4'>
-                                        Automate your business processes with integrated workflows 
+                                        Automate your business processes with integrated workflows
                                         for orders, invoicing, and delivery management.
                                     </p>
                                     <div className='workflow_list_wrapper'>
@@ -492,8 +493,8 @@ const Home = () => {
                                 <div className='worflow_img_wrapper position-relative'>
                                     <div className='worflow_img position-relative ratio ratio-4x3'>
                                         <Image src="/images/pages/home-page/bg9.jpg" alt="upload" fill style={{ objectFit: 'contain' }}  />
-                                    </div> 
-                                        
+                                    </div>
+
 
                                     <div className='white_card worflow_card position-absolute'>
                                         <div className='d-flex justify-content-center align-items-center'>
@@ -510,7 +511,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                        
+
                     <div className='col-12 col-xl advance_management_wrapper px-0 display-flex align-items-center'>
                         <div className='row column_gap_4 justify-content-center align-items-center mx-0 position-relative'>
                             <div className='position-absolute bg'>
@@ -555,7 +556,7 @@ const Home = () => {
                                             </div>
                                             <p className='title fw-semibold'>Financial Ledger</p>
                                         </div>
-                                            
+
                                         <div className='d-flex align-items-center justify-content-between text_sm'>
                                             <span className='text_gray'>Today's Entries</span>
                                             <span className='fw-semibold'>127</span>
@@ -571,7 +572,7 @@ const Home = () => {
                                                 <Team className="icon"/>
                                             </div>
                                             <p className='title fw-semibold'>User Management</p>
-                                            
+
                                         </div>
                                         <div className='d-flex align-items-center justify-content-between text_sm'>
                                             <span className='text_gray'>Total Roles</span>
@@ -666,7 +667,7 @@ const Home = () => {
             </div>
 
         </div>
-        <div className='conatiner water_mark_wrapper'>
+        <div className='container water_mark_wrapper'>
             <div className='row'>
                 <div className='col-12 text-center water_mark'>
                     <p>INNOVATE • OPTIMIZE • GROW</p>
@@ -678,18 +679,13 @@ const Home = () => {
         </div>
 
 
-  
-        <div className="container mx-auto py-10">
-           <OwlCarousel className="owl-theme" {...options}>
-                <div className="item"><h4>1</h4></div>
-                <div className="item"><h4>2</h4></div>
-                <div className="item"><h4>3</h4></div>
-                <div className="item"><h4>4</h4></div>
-                </OwlCarousel>
-         </div>
+
+     
+            <Carousel1 />
+         
 
 
-      
+
     </>
   )
 }

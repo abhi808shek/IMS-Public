@@ -2,6 +2,7 @@ import React from 'react'
 import { Roboto } from 'next/font/google'
 import Image from "next/image";
 import Link from 'next/link';
+import UploadCloud from "@/assets/icon/upload-cloud-2-line.svg";
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -106,13 +107,22 @@ const HelpCenter = () => {
                             </div>
                             <div className="mb-4">
                                 <label for="fileUpload" className="form-label">Attachments</label>
-                                <div className="file-upload-box border border-secondary rounded p-2 text-muted text-center position-relative" id="fileUpload">
-                                {/* <span className="text-danger fw-bold">Add file</span> or drop files here */}
-                                <p className='mb-0 position-absolute input_lable'><span className="text-danger fw-bold">
-                                    Add file</span> or drop files here</p>
+                                <div className='dropedown_box flex-column p-3 mb-3'>
+                                    <div>
+                                        <p className='text-center mb-1'><UploadCloud className="icon text_gray"/></p>
+                                        <p className='mb-0 text_gray'>Drag your file here</p>
+                                    </div>
+                                    <p className='mb-2 text_gray'>or</p>
+                                    <div className="file-upload-box border border-secondary rounded p-2 text-muted text-center position-relative" id="fileUpload">
                                 
-                                 <input type="file" id="file-input" className='file_input'></input>
+                                        <p className='mb-0 position-absolute input_lable'><span className="text-danger fw-bold">
+                                            Add file</span></p>
+                                        
+                                        <input type="file" id="file-input" className='file_input'></input>
+                                    </div>
+
                                 </div>
+                                
                             </div>
                             <button type="submit" className="btn btn-primary btn-blue">Submit</button>
                         </form>
