@@ -39,7 +39,7 @@ export default function BlogDetail() {
         <div className="row d-flex justify-content-center">
           <div className="col-md-10 col-lg-8">
             <div className="fw-bold heading_badge">Construction</div>
-            <h1  className={roboto.className + " fw-bold heading"}>
+            <h1 className={roboto.className + " fw-bold heading"}>
               Download Shortly's 2025 <br />
               state of construction
               <br />
@@ -55,7 +55,13 @@ export default function BlogDetail() {
       <div className="container feature_image">
         <div className="row d-flex justify-content-center">
           <div className="ratio ratio-16x9">
-            <Image className="me-4" alt="upload" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg" />
+            <Image
+              className="me-4"
+              alt="upload"
+              layout="fill"
+              objectFit="cover"
+              src="/images/pages/blogs-detail/blog-detail-banner.jpeg"
+            />
           </div>
         </div>
       </div>
@@ -113,9 +119,14 @@ export default function BlogDetail() {
           <div className="col-md-10 col-lg-8">
             <h5 className="fw-bold mb-4">About Shortly</h5>
             <div className="ratio ratio-4x3">
-              <Image className="d-block mx-auto mb-4" alt="upload" src="/images/pages/blogs-detail/about-shortly.png" fill objectFit="contain" />
+              <Image
+                className="d-block mx-auto mb-4"
+                alt="upload"
+                src="/images/pages/blogs-detail/about-shortly.png"
+                fill
+                objectFit="contain"
+              />
             </div>
-
           </div>
         </div>
       </div>
@@ -125,7 +136,9 @@ export default function BlogDetail() {
           <div className="col-md-11 col-md-8">
             <p>
               Sortly is an{" "}
-              <span className="heighlight_text">inventory management solution</span>{" "}
+              <span className="heighlight_text">
+                inventory management solution
+              </span>{" "}
               that helps you track, manage, and organize your inventory from any
               device, in any location. We're an easy-to-use inventory software
               that's perfect for construction businesses of all sizes. Sortly
@@ -135,7 +148,9 @@ export default function BlogDetail() {
             </p>
             <p>
               With Sortly, you can{" "}
-              <span className="heighlight_text">track construction inventory</span>{" "}
+              <span className="heighlight_text">
+                track construction inventory
+              </span>{" "}
               like supplies, parts, tools, equipment, and anything else that
               matters to your construction business. It comes equipped with
               smart features like{" "}
@@ -164,7 +179,8 @@ export default function BlogDetail() {
             <p>
               <b>
                 Start your two-week{" "}
-                <span className="heighlight_text">free trial of Sortly</span> today.
+                <span className="heighlight_text">free trial of Sortly</span>{" "}
+                today.
               </b>
             </p>
           </div>
@@ -173,33 +189,39 @@ export default function BlogDetail() {
 
       <div className="container mb-4 px-3 px-md-4">
         <div className="row">
-          {Array(4)
-            .keys()
-            .map((e, i) => (
-              <Link href="/blog-detail" style={{ textDecoration: "none" }} className="col-sm-6 col-md-6 col-lg-3 mb-4" >
-                <div className="card blog_details_card"> 
-                  <div className="ratio ratio-16x9">
-                    <Image className="card-img-top" layout="fill" objectFit="cover" src="/images/pages/blogs-detail/blog-detail-banner.jpeg"alt="Card image cap"/>
-                  </div>
-                  <div className="card-body p-0 mt-3">
-                    <h5 className="card-title fw-bold mb-2">
-                      6 Inventory management best practises in consstruction
-                    </h5>
-                    <div className="mb-2 d-flex align-items-center">
-                      <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
-                        construction
-                      </span>
-                      <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
-                        small business
-                      </span>
-                    </div>
-                    <div className="date-time">
-                      March 21 2025 • 3 min read
-                    </div>
-                  </div>
+          {[1, 2, 34, 5].map((e, i) => (
+            <Link
+              href="/blog-detail"
+              style={{ textDecoration: "none" }}
+              className="col-sm-6 col-md-6 col-lg-3 mb-4"
+            >
+              <div className="card blog_details_card">
+                <div className="ratio ratio-16x9">
+                  <Image
+                    className="card-img-top"
+                    layout="fill"
+                    objectFit="cover"
+                    src="/images/pages/blogs-detail/blog-detail-banner.jpeg"
+                    alt="Card image cap"
+                  />
                 </div>
-              </Link>
-            ))}
+                <div className="card-body p-0 mt-3">
+                  <h5 className="card-title fw-bold mb-2">
+                    6 Inventory management best practises in consstruction
+                  </h5>
+                  <div className="mb-2 d-flex align-items-center">
+                    <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
+                      construction
+                    </span>
+                    <span className="badge badge-pill badge-light shadow-sm text-dark me-2">
+                      small business
+                    </span>
+                  </div>
+                  <div className="date-time">March 21 2025 • 3 min read</div>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </>
